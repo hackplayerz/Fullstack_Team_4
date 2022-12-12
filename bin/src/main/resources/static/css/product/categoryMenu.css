@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+#category
+{
+    margin-left: 10px;
+}
+#categoryName
+{
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+#subCategory
+{    
+    left: 50px;
+    width: 1600px;
+    height: 90px;
+    background-color: grey;
+}
+#subCategoryContent
+{
+    font-size: 16px;
+    margin: 15px;
+    margin-left: 15px;
+    text-align: left;
+}
+#subCategoryContent ul li:first-child
+{
+    font-weight: bold;
+}
+
+#subCategoryContent ul li
+{
+    display: inline-block;
+    padding: 7px;
+}
+#subCategoryMenu a
+{
+    text-decoration: none;
+    color: black;
+}
+#subCategoryMenu a:hover
+{
+    cursor: pointer;
+}

@@ -1,0 +1,205 @@
+/*
+* prdInfo.css
+*/
+
+#bigFrame {
+	width: 1600px;
+	margin:0 auto;
+	margin-top:50px;
+	margin-bottom:300px;
+	background-color:white;
+	
+}
+#header{
+	width: 1600px;
+	margin: auto;
+}
+#nav{
+	width: 1600px;
+	margin: auto;
+}
+#highFrame {
+	margin-left: 300px;
+	position:absolute;
+	background-color:#FAFAFA;
+	padding:10px 20px 10px 10px;
+	width:850px;
+	height:461px;
+}
+
+#imageFrame {
+	float:left;
+	padding:10px;
+}
+
+#prdImage {
+	border:1px solid #DCDCDC;
+	width:500px;
+	height:435px;
+}
+
+#prdName {
+	margin-left:50px;
+	margin-bottom:19px;
+	font-size:22px;
+	font-weight:bold;
+	height:55px;
+	width:240px;
+	border:none;
+	background-color:#FAFAFA
+}
+
+#prdPrice {
+	margin-bottom:19px;
+	font-size:18px;
+	font-weight:bold;
+	width:90px;
+	border:none;
+	background-color:#FAFAFA
+}
+
+#prdInfoFrame {
+	float:left;
+	padding-top:18px;
+}
+
+#prdInfo {
+	padding-top:27px;
+	margin-left:50px;
+	border-top:1px solid #DCDCDC;
+}
+
+#prdInfo dl {
+	height:32px;
+}
+
+#prdInfo dl dt {
+	float:left;
+	width:80px;
+	font-family:Corbel;
+}
+
+#prdInfo dl dd {
+	float:left;
+	width:120px;
+	font-family:Corbel;
+}
+
+#prdAmount {
+	width:62px;
+}
+
+#buttonFrame {
+	margin-left:5px;
+	padding-top:5px;
+}
+
+#prdInfoImageFrame {
+	padding-top:600px;
+	width:800px;
+	margin-left:350px;
+}
+
+#shoppingCart {
+	background-color:#E0E0E0;
+	border:none;
+	height:85px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	color:#8A0808;
+	font-weight:bold;
+}
+
+#sample {
+	background-color:#FFEC99;
+	border:none;
+	height:85px;
+	width:70px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	color:#8A0808;
+	font-weight:bold;
+}
+
+#buy {
+	background-color:#5E5E5E;
+	border:none;
+	height:85px;
+	color:white;
+	width:71px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	font-weight:bold;
+}
+
+
+#reviewTableFrame {
+	margin-top:150px;
+	margin-left:350px;
+	padding:20px 20px 50px;
+	border:1px solid #E0E0E0;
+	width:800px;
+	height:auto;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+#reviewTable {
+	border-collapse:collapse;
+	text-align:center;
+}
+
+.NoLine {
+	width:80px;
+}
+
+.NameLine {
+	width:600px;
+}
+
+.ValueLine {
+	width:100px;
+}
+
+#reviewButton {
+	float:right;
+	margin-top:11px;
+	margin-right:9px;
+	font-size:15px;
+}
+#footer{
+	width: 1600px;
+	margin: auto;
+	height: 500px;
+	padding-top: 100px;
+
+}
+#footer div img{
+	float: left;
+	margin-left: 5%;
+	margin-top: 60px;
+	width: 100px;
+	height: 100px;
+}
+#compamy{
+	padding-top: 50px;
+	margin-left: 60px;
+	float: left;
+}
+#compamy div{
+	margin-bottom: 10px;
+}
+
+
+
+
+
+
