@@ -6,9 +6,9 @@
 	<head>
 	<meta charset="UTF-8">
 	<title>상품상세페이지</title>
-		<link rel="stylesheet" type="text/css" href="<c:url value='css/prdInfo/prdInfo.css'/>">
+		<link rel="stylesheet" type="text/css" href="<c:url value='/css/prdInfo/prdInfo.css'/>">
 		<script src="<c:url value='/js/prdInfo/prdInfo.js'/>"></script>
-		<!-- Header 메인창 -->
+		<!-- toplink -->
 		<c:import url="/WEB-INF/views/layout/toplink.jsp"/>
 	</head>
 	<body>
