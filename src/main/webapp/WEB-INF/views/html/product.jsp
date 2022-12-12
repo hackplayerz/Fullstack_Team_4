@@ -14,7 +14,7 @@
     <script src="<c:url value = '/js/jquery-3.6.1.min.js' />"></script>    
     <script src="<c:url value = '/js/product/product.js' />"></script>    
     <script src="<c:url value = '/js/index/menu.js' />"></script>    
-    <script src=" <c:url value = '/js/index/index.js' />"></script>
+    <script src="<c:url value = '/js/index/index.js' />"></script>
 
     <!-- Header 메인창 -->
     <c:import url="/WEB-INF/views/layout/toplink.jsp"/>
