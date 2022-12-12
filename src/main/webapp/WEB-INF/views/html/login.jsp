@@ -6,9 +6,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Login</title>
-<link rel="stylesheet" type="text/css" href="<c:url value='../css/sign/Login.css' />">
+<link rel="stylesheet" type="text/css" href="<c:url value='/css/sign/Login.css' />">
 
-<link rel="stylesheet" type="text/css" href="<c:url value='../css/index/headerMenu.css' />">
+<link rel="stylesheet" type="text/css" href="<c:url value='/css/index/headerMenu.css' />">
 <script src="../js/jquery-3.6.1.min.js"></script>
 <script src="../js/index/index.js"></script>
 </head>
@@ -42,7 +42,7 @@
         <button type="submit">로그인</button>
         <footer id="footer">
             <hr/>
-            <div><img src="<c:url value='../img/index/free-icon-profile-3135707.png' />"></div>
+            <div><img src="<c:url value='/img/index/free-icon-profile-3135707.png' />"></div>
             <div id="compamy">
                 <div>COMPAMY : 비전공같은 전공 / CALL CENTER : 영업부 031-0000-0000</div>
                 <div>ADRESS : 서울 어딘가</div>
