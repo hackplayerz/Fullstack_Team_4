@@ -10,53 +10,6 @@
 }
 #section{
 	width: 1600px;
+	height: 2400px;
 	margin: auto;
-}
-#footer{
-	width: 1600px;
-	margin: auto;
-	margin-top: 200px;
-	height: 500px;
-	padding-top: 300px;
-
-}
-#footer div img{
-	float: left;
-	margin-left: 5%;
-	margin-top: 60px;
-	width: 100px;
-	height: 100px;
-}
-#compamy{
-	padding-top: 50px;
-	margin-left: 60px;
-	float: left;
-}
-#compamy div{
-	margin-bottom: 10px;
-}
-#Avent{
-	height: 800px;
-}
-#dogAvent1{
-	margin-left: 5%;
-	float: left;
-}
-#dogAvent1 img{
-	width: 700px;
-	height: 700px;
-}
-#dogAvent2{
-	float: left;
-}
-#dogAvent2 img{
-	width: 700px;
-	height: 380px;
-}
-#dogAvent3{
-	float: left;
-}
-#dogAvent3 img{
-	width: 700px;
-	height: 320px;
 }

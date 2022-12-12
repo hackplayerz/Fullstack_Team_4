@@ -9,8 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>메인</title>
     <link rel="stylesheet" type="text/css" href="css/index/index.css">
-    <link rel="stylesheet" type="text/css" href="css/index/headerMenu.css">
-    <link rel="stylesheet" type="text/css" href="css/index/menu.css">
     <link rel="stylesheet" type="text/css" href="css/index/slideShow.css">
     <link rel="stylesheet" type="text/css" href="css/index/product.css">
     <script src="js/jquery-3.6.1.min.js"></script>
@@ -79,16 +77,6 @@
         </article>
         
     </section>
-    <footer id="footer">
-        <hr/>
-        <div><img src="img/index/free-icon-profile-3135707.png"></div>
-        <div id="compamy">
-            <div>COMPAMY : 비전공같은 전공 / CALL CENTER : 영업부 031-0000-0000</div>
-            <div>ADRESS : 서울 어딘가</div>
-            <div>개인정보책임자 : 누군가 / 사업자 등록번호 100-23-00000 / 통신판매업 신고번호 : 2022-경기성남-0000호[사업자정보확인]</div>
-            <div>Copyright by 비전공같은 전공. All rights reserved</div>
-        </div>
-        
-    </footer>
+    <c:import url="/WEB-INF/views/layout/footer.jsp" />
 </body>
 </html>
