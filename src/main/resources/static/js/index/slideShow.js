@@ -2,7 +2,7 @@
  *  slideShow.js
  */
  
- $(document).ready(function(){
+$(document).ready(function(){
 	// 이동한 이미지의 index 값 저장 (현재 위치)
 	var movedIndex = 0;
 	var imgIndex = 3;
