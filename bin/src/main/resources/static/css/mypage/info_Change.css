@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+/* 사이드 메뉴 부분 */
+body{
+  width: 1600px;
+  
+}
+.side_menu {
+  display : inline-block;
+}
+nav {
+	width : 280px;
+	background-color : white;
+	border-right : 1px solid #ddd;
+	position:fixed;
+	height:100%;
+}
+
+.side_menu h4{
+	text-align : center;
+}
+
+.side_menu ul {
+	list-style : none;
+}
+
+.side_menu li {
+	height : 30px;
+	line-height : 30px;
+	display:inline-block;
+	padding : 0 20px;
+	font-size : 12px;
+}
+
+.side_menu a { 
+  text-decoration : none; 
+  color : black;  
+}
+
+.side_menu li a:hover{
+	background-color : darkgrey;
+	color : white;
+	font-weight : bold;
+}
+
+/* 정보변경 영역 */
+.my_Info {
+  width : 70%;
+  margin-left : 280px;
+  padding-left : 80px;
+  /* padding: 30px; */
+}
+
+/* 테이블 영역 */
+.my_Info .info_table {
+  border : 1px solid lightgrey;
+  border-collapse : separate;
+  border-spacing : 10px 15px;
+  width: 850px;
+}
+
+.info_table th{
+  background-color : lightgrey;
+  font-size : 13px;
+  width : 150px;
+}
+
+.info_table td{
+  width : 500px;
+}
+
+.info_table .my_name {
+  left : 100px;
+  width: 300px;
+  height : 30px;
+  border-radius: 5px;
+}
+
+.info_table .id_def {
+  width: 150px;
+  height : 25px;
+  border-radius: 5px;
+  background-color : lightgrey;
+  color : white;
+  font-weight : bold;
+  font-size: 11px;
+}
+
+.info_table .pwd1 {
+  width: 150px;
+  height : 25px;
+  border-radius: 5px;
+}
+
+.info_table .pwd_txt{
+	color : grey;
+	font-weight : bord;
+	font-size : 11px;
+	margin-left : 10px; 
+}
+
+.info_table .pwd2 {
+  width: 150px;
+  height : 25px;
+  border-radius: 5px;
+}
+
+.pwd2_contents .check_Pwd {
+  width: 130px;
+  height: 28px;
+  font-weight : bord;
+  font-size: 13px;
+  margin-left : 10px; 
+  margin-right : 15px;
+  border-radius: 5px;
+  background-color: black;
+  color : white;
+  border : none;
+}
+
+.pwd2_contents .pwd_Equal{
+	display : none;
+	color : green;
+	font-weight : bold;
+	font-size : 11px;
+	margin-left : 10px; 
+}
+
+.pwd2_contents .pwd_Nequal{
+	display : none;
+	color : red;
+	font-weight : bold;
+	font-size : 11px;
+	margin-left : 10px; 
+}
+
+.info_table .year {
+  width: 50px;
+  height : 23px;
+  border-radius: 5px;
+}
+
+.info_table .month {
+  width: 50px;
+  height : 30px;
+  border-radius: 5px;
+}
+
+.info_table .date {
+  width: 55px;
+  height : 30px;
+  border-radius: 5px;
+}
+
+
+.info_table .my_Pnum{
+  left : 100px;
+  width: 300px;
+  height : 30px;
+  border-radius: 5px;
+}
+
+.info_table .my_Addr{
+  left : 100px;
+  width: 300px;
+  height : 30px;
+  border-radius: 5px;
+}
+
+.info_table .my_Addr_detail{
+  left : 100px;
+  width: 300px;
+  height : 30px;
+  border-radius: 5px;
+}
+
+/* 버튼 영역 */
+.info_btn {
+  width : 70%;
+  margin : auto;
+  margin-left : 200px; 
+  text-align : center;
+  display : inline-block;
+  /* padding : 30px; */
+}
+
+.info_btn .change {
+  width: 200px;
+  height: 50px;
+  font-weight : bord;
+  font-size: 16px;
+  margin-left : 20%;
+  margin-right : 20px;
+  border-radius: 5px;
+  background-color: black;
+  color : white;
+  border : none;
+  
+}
+
+.info_btn .cancel {
+  width: 200px;
+  height: 50px;
+  font-weight : bord;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px lightgray solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
