@@ -22,7 +22,8 @@
     <header id="header">
         <div id="headerBox">
             <div id="logoBox">
-                <a href="../index.html"><h1>비전공 애견샵</h1></a>
+                <a href="<c:url value = '/' />"><h1>비전공 애견샵</h1></a>
+                
             </div>
             <div id ="headerMenuBox">
                 <div id="hMenuItem" class="signIn"><a href="#" class="signInA">로그인</a></div>
@@ -34,76 +35,77 @@
     <nav id="nav">
         <div id="mainMenuBox">
             <ul id="menuItem">
-                <li><a href="../html/product.html" id="menu1" value="3">강아지 사료</a></li>
-                <li><a href="../html/product.html" id="menu2" value="2">간식/저키</a></li>
-                <li><a href="../html/product.html" id="menu3" value="3">미용/목욕용품</a></li>
-                <li><a href="../html/product.html" id="menu4" value="2">위생/배변용품</a></li>
-                <li><a href="../html/product.html" id="menu5" value="3">장난감/훈련용품</a></li>
-                <li><a href="../html/product.html" id="menu6" value="3">식기/물병</a></li>
-                <li><a href="../html/product.html" id="menu7" value="3">의류/악세사리</a></li>
-                <li><a href="../html/product.html" id="menu8" value="2">샘플</a></li>
-                <li><a href="../html/product.html" id="menu9" value="2">고객센터</a></li>
+                <li><a href="<c:url value = '/html/product' />" id="menu1" value="3">강아지 사료</a></li>
+                <li><a href="<c:url value = '/html/product' />" id="menu2" value="2">간식/저키</a></li>
+                <li><a href="<c:url value = '/html/product' />" id="menu3" value="3">미용/목욕용품</a></li>
+                <li><a href="<c:url value = '/html/product' />" id="menu4" value="2">위생/배변용품</a></li>
+                <li><a href="<c:url value = '/html/product' />" id="menu5" value="3">장난감/훈련용품</a></li>
+                <li><a href="<c:url value = '/html/product' />" id="menu6" value="3">식기/물병</a></li>
+                <li><a href="<c:url value = '/html/product' />" id="menu7" value="3">의류/악세사리</a></li>
+                <li><a href="<c:url value = '/html/product' />" id="menu8" value="2">샘플</a></li>
+                <li><a href="<c:url value = '/html/product' />" id="menu9" value="2">고객센터</a></li>
             </ul>
         </div>
         <div id="subMenuBox">
             <!-- 서브 메뉴 아이템 6개  -->
             <div class="subMenuItem" id="subMenuItem1">
                 <ul id = "submenu1" class="submenu">
-                    <li><a href="../html/product.html" id="menu1">퍼피사료</a></li>
-                    <li><a href="../html/product.html" id="menu1">어덜트사료</a></li>
-                    <li><a href="../html/product.html" id="menu1">시니어사료</a></li>
+                    <li><a href="<c:url value = '/html/product' />" id="menu1">퍼피사료</a></li>
+                    <li><a href="<c:url value = '/html/product' />" id="menu1">어덜트사료</a></li>
+                    <li><a href="<c:url value = '/html/product' />" id="menu1">시니어사료</a></li>
+                    
                 </ul>
             </div>
             <div class="subMenuItem" id="subMenuItem2">
                 <ul id = "submenu2" class="submenu">
-                    <li><a href="../html/product.html" id="menu2">간식</a></li>
-                    <li><a href="../html/product.html" id="menu2">저키</a></li>
+                    <li><a href="<c:url value = '/html/product' />" id="menu2">간식</a></li>
+                    <li><a href="<c:url value = '/html/product' />" id="menu2">저키</a></li>
                 </ul>
             </div>
             <div class="subMenuItem" id="subMenuItem3">
                 <ul id = "submenu3" class="submenu">
-                    <li><a href="../html/product.html" id="menu3">샴푸</a></li>
-                    <li><a href="../html/product.html" id="menu3">린스</a></li>
-                    <li><a href="../html/product.html" id="menu3">클리퍼</a></li>
+                    <li><a href="<c:url value = '/html/product' />" id="menu3">샴푸</a></li>
+                    <li><a href="<c:url value = '/html/product' />" id="menu3">린스</a></li>
+                    <li><a href="<c:url value = '/html/product' />" id="menu3">클리퍼</a></li>
                 </ul>
             </div>
             <div class="subMenuItem" id="subMenuItem4">
                 <ul id = "submenu4" class="submenu">
-                    <li><a href="../html/product.html" id="menu4">미용가위</a></li>
-                    <li><a href="../html/product.html" id="menu4">배변패드</a></li>
+                    <li><a href="<c:url value = '/html/product' />" id="menu4">미용가위</a></li>
+                    <li><a href="<c:url value = '/html/product' />" id="menu4">배변패드</a></li>
                 </ul>
             </div>
             <div class="subMenuItem" id="subMenuItem5">
                 <ul id = "submenu5" class="submenu">
-                    <li><a href="../html/product.html" id="menu5">짖음제어</a></li>
-                    <li><a href="../html/product.html" id="menu5">봉제,치칠,고무</a></li>
-                    <li><a href="../html/product.html" id="menu5">행동제어</a></li>
+                    <li><a href="<c:url value = '/html/product' />" id="menu5">짖음제어</a></li>
+                    <li><a href="<c:url value = '/html/product' />" id="menu5">봉제,치칠,고무</a></li>
+                    <li><a href="<c:url value = '/html/product' />" id="menu5">행동제어</a></li>
                 </ul>
             </div>
             <div class="subMenuItem" id="subMenuItem6">
                 <ul id = "submenu6" class="submenu">
-                    <li><a href="../html/product.html" id="menu6">자동급식기</a></li>
-                    <li><a href="../html/product.html" id="menu6">사료보관통</a></li>
-                    <li><a href="../html/product.html" id="menu6">젖병</a></li>
+                    <li><a href="<c:url value = '/html/product' />" id="menu6">자동급식기</a></li>
+                    <li><a href="<c:url value = '/html/product' />" id="menu6">사료보관통</a></li>
+                    <li><a href="<c:url value = '/html/product' />" id="menu6">젖병</a></li>
                 </ul>
             </div>
             <div class="subMenuItem" id="subMenuItem7">
                 <ul id = "submenu7" class="submenu">
-                    <li><a href="../html/product.html" id="menu7">의류</a></li>
-                    <li><a href="../html/product.html" id="menu7">신발/양말</a></li>
-                    <li><a href="../html/product.html" id="menu7">머리핀/고무줄</a></li>
+                    <li><a href="<c:url value = '/html/product' />" id="menu7">의류</a></li>
+                    <li><a href="<c:url value = '/html/product' />" id="menu7">신발/양말</a></li>
+                    <li><a href="<c:url value = '/html/product' />" id="menu7">머리핀/고무줄</a></li>
                 </ul>
             </div>
             <div class="subMenuItem" id="subMenuItem8">
                 <ul id = "submenu8" class="submenu">
-                    <li><a href="../html/product.html" id="menu8">프로모션 샘플</a></li>
-                    <li><a href="../html/product.html" id="menu8">이벤트</a></li>
+                    <li><a href="<c:url value = '/html/product' />" id="menu8">프로모션 샘플</a></li>
+                    <li><a href="<c:url value = '/html/product' />" id="menu8">이벤트</a></li>
                 </ul>
             </div>
             <div class="subMenuItem" id="subMenuItem9">
                 <ul id = "submenu9" class="submenu">
-                    <li><a href="../html/product.html" id="menu9">공지사항</a></li>
-                    <li><a href="../html/product.html" id="menu9">마이페이지</a></li>
+                    <li><a href="<c:url value = '/html/product' />" id="menu9">공지사항</a></li>
+                    <li><a href="<c:url value = '/html/product' />" id="menu9">마이페이지</a></li>
                 </ul>
             </div>
         </div>
@@ -142,7 +144,7 @@
             <div id="content">
                 <div id="product">
                     <div class="productSource">
-                        <a href="../html/prdInfo.html"><img src="../img/product/06950f7e9aaffab2bd5d790056acb907.jpg" class="image"></a>
+                        <a href="<c:url value = '/html/prdInfo' />"><img src="../img/product/06950f7e9aaffab2bd5d790056acb907.jpg" class="image"></a>                        
                         <p class="name">
                             sdsdsdsdsdsd
                         </p>
@@ -151,7 +153,7 @@
                         </p>
                     </div>
                     <div class="productSource">
-                        <a href="../html/prdInfo.html"><img src="../img/product/06950f7e9aaffab2bd5d790056acb907.jpg" class="image"></a>
+                        <a href="<c:url value = '/html/prdInfo' />"><img src="../img/product/06950f7e9aaffab2bd5d790056acb907.jpg" class="image"></a>
                         <p class="name">
                             sdsdsdsdsdsd
                         </p>
@@ -160,7 +162,7 @@
                         </p>
                     </div>
                     <div class="productSource">
-                        <a href="../html/prdInfo.html"><img src="../img/product/06950f7e9aaffab2bd5d790056acb907.jpg" class="image"></a>
+                        <a href="<c:url value = '/html/prdInfo' />"><img src="../img/product/06950f7e9aaffab2bd5d790056acb907.jpg" class="image"></a>
                         <p class="name">
                             sdsdsdsdsdsd
                         </p>
@@ -169,7 +171,7 @@
                         </p>
                     </div>
                     <div class="productSource">
-                        <a href="../html/prdInfo.html"><img src="../img/product/_02 (1).png" class="image"></a>
+                        <a href="<c:url value = '/html/prdInfo' />"><img src="../img/product/_02 (1).png" class="image"></a>
                         <p class="name">
                             sdsdsdsdsdsd
                         </p>
@@ -178,7 +180,7 @@
                         </p>
                     </div>
                     <div class="productSource">
-                        <a href="../html/prdInfo.html"><img src="../img/product/_02.png" class="image"></a>
+                        <a href="<c:url value = '/html/prdInfo' />"><img src="../img/product/_02.png" class="image"></a>
                         <p class="name">
                             sdsdsdsdsdsd
                         </p>
