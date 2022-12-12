@@ -1,0 +1,46 @@
+#footer{
+	background-color: rgba(19, 18, 18, 0.541);
+	margin: auto;
+	height: 200px;
+	margin-top: -10px;
+}
+#footer div img{
+	float: left;
+	margin-left: 5%;
+	margin-top: 30px;
+	width: 100px;
+	height: 100px;
+}
+#compamy{
+	padding-top: 30px;
+	margin-left: 60px;
+	float: left;
+}
+#compamy div{
+	margin-bottom: 10px;
+}
+#Avent{
+	height: 800px;
+}
+#dogAvent1{
+	margin-left: 5%;
+	float: left;
+}
+#dogAvent1 img{
+	width: 700px;
+	height: 700px;
+}
+#dogAvent2{
+	float: left;
+}
+#dogAvent2 img{
+	width: 700px;
+	height: 380px;
+}
+#dogAvent3{
+	float: left;
+}
+#dogAvent3 img{
+	width: 700px;
+	height: 320px;
+}

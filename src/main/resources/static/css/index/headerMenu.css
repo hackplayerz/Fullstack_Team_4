@@ -1,34 +1,54 @@
 @charset "UTF-8";
-
+#header{
+	width: 1600px;
+	background-color: #ece6cc;
+	
+}
+ul {
+	margin-top:0;
+	padding:0;
+	list-style:none;  /* type 없음 */
+}
+a{
+    text-decoration:none; /* <a> 태그 밑줄 없애기 */
+	color:black;
+	font-size:14px;
+	font-weight:bold;
+}
 #headerBox {
-	margin-left: 15%;
 	line-height:60px;
 	padding:15px;
-    display: flex;
     align-items: center;
 }
 
 #logoBox {
-    float:right;
-    padding-left:15%;
-	margin:auto;
-	height:60px;
+	margin-top: 10px;
+	float: left;
+	height:100px;
+	margin-left: 700px;
     width: 250px;
-	line-height:60px;
 }
 #logoBox a{
     text-decoration: none;
+	font-size:14px;
     color:black;
 }
-#logoHref a:hover{
-    color:black;
+#logoBox a img{
+	margin-top: 20px;
+	float: left;
+	width: 50px;
+	height: 50px;
 }
+#logoBox a h1{
+	margin-left: 60px;
+}
+
 #headerMenuBox{
-	margin-right: 10%;
-	background:white;
+	margin-left: 1200px;
 	padding:20px;
 	text-align:center;
 }
+
 
 #hMenuItem {
 	display: inline-block;
