@@ -4,4 +4,4 @@ $(document).ready(function() {
         optAmount = $('.p').val();
         console.log("클릭함")
     });
-}
+});
