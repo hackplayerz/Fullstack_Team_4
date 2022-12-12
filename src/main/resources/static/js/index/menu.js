@@ -41,10 +41,10 @@ $('.submenuItem li').on('mouseleave', function(){
 $('.submenuClick').on('click', function(){
     console.log($(this))
     if($(document).find("title").text() ==="메인"){
-            location.href = '../webapp/html/product.html';
+            location.href = '/html/product';
     }
     else{
-        location.href = '../html/product.html';
+        location.href = '/html/product';
     }
     console.log($(this).text());
     console.log($(this).attr("id"))
@@ -54,10 +54,10 @@ $('.submenuClick').on('click', function(){
 $('.submenuItem li').on('click', function(){
     console.log($(this))
     if($(document).find("title").text() ==="메인"){
-            location.href = '../webapp/html/product.html';
+            location.href = '/html/product';
     }
     else{
-        location.href = '../html/product.html';
+        location.href = '/html/product';
     }
 });
 
