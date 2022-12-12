@@ -10,8 +10,4 @@ public class MainController {
 		return "index";
 	}
 
-    @RequestMapping("/html/product")
-	public String menuPage() {
-		return "/html/product";
-	}
 }
