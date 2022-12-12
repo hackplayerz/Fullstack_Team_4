@@ -6,22 +6,24 @@
 <head>
 <meta charset="UTF-8">
 <title>hw</title>
-<link rel="stylesheet" type="text/css" href="<c:url value='../css/sign/hw.css' />">
-<link rel="stylesheet" type="text/css" href="<c:url value='../css/index/headerMenu.css' />">
-    <script src="../js/jquery-3.6.1.min.js"></script>
-    <script src="../js/sign/hw.js"></script>
-    <script src="../js/index/index.js"></script>
+<c:url value='/js/index/index.js' />
+
+<link rel="stylesheet" type="text/css" href="<c:url value='/css/sign/hw.css' />">
+<link rel="stylesheet" type="text/css" href="<c:url value='/css/index/headerMenu.css' />">
+    <script src="<c:url value='/js/jquery-3.6.1.min.js' />"></script>
+    <script src="<c:url value='/js/sign/hw.js' />"></script>
+    <script src="<c:url value='/js/index/index.js' />"></script>
 </head>
 <body>
     <header id="header">
         <div id="headerBox">
             <div id="logoBox">
-                <a href="<c:url value='../index.html' />"><h1>비전공 애견샵</h1></a>
+                <a href="<c:url value='/index.html' />"><h1>비전공 애견샵</h1></a>
             </div>
             <div id ="headerMenuBox">
-                <div id="hMenuItem" class="signIn"><a href="<c:url value='../login.html' />" class="signInA">로그인</a></div>
-                <div id="hMenuItem" class="signUp"><a href="<c:url value='../hw.html' />" class="signUnA">회원가입</a></div>
-                <div id="hMenuItem" class="myPage"><a href="<c:url value='../myPage.html' />" class="myPageA">마이페이지</a></div>
+                <div id="hMenuItem" class="signIn"><a href="<c:url value='/login.html' />" class="signInA">로그인</a></div>
+                <div id="hMenuItem" class="signUp"><a href="<c:url value='/hw.html' />" class="signUnA">회원가입</a></div>
+                <div id="hMenuItem" class="myPage"><a href="<c:url value='/myPage.html' />" class="myPageA">마이페이지</a></div>
             </div>
         </div>
     </header>
@@ -107,7 +109,7 @@
     </div>
     <footer id="footer">
         <hr/>
-        <div><img src="<c:url value='../img/index/free-icon-profile-3135707.png' />"></div>
+        <div><img src="<c:url value='/img/index/free-icon-profile-3135707.png' />"></div>
         <div id="compamy">
             <div>COMPAMY : 비전공같은 전공 / CALL CENTER : 영업부 031-0000-0000</div>
             <div>ADRESS : 서울 어딘가</div>
