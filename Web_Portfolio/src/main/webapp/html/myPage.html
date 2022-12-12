@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>마이페이지 - 주문현황</title>
+  <link rel="stylesheet" type="text/css" href="../css/mypage/myPage.css">
+  <link rel="stylesheet" type="text/css" href="../css/index/headerMenu.css">
+    <link rel="stylesheet" type="text/css" href="../css/index/menu.css">
+  <script src="../js/jquery-3.6.1.min.js"></script>
+  <script src="../js/index/menu.js"></script>
+    <script src="../js/index/index.js"></script>
+    <script src="../js/mypage/receiveMypage.js"></script>
+  
+</head>
+<body>
+  <header id="header">
+    <div id="headerBox">
+        <div id="logoBox">
+            <a href="../index.html"><h1>비전공 애견샵</h1></a>
+        </div>
+        <div id ="headerMenuBox">
+            <div id="hMenuItem" class="signIn"><a href="#" class="signInA">로그인</a></div>
+            <div id="hMenuItem" class="signUp"><a href="#" class="signUnA">회원가입</a></div>
+            <div id="hMenuItem" class="myPage"><a href="#" class="myPageA">마이페이지</a></div>
+        </div>
+    </div>
+</header>
+<nav id="nav">
+  <div id="mainMenuBox">
+      <ul id="menuItem">
+          <li><a href="../html/product.html" id="menu1" value="3">강아지 사료</a></li>
+          <li><a href="../html/product.html" id="menu2" value="2">간식/저키</a></li>
+          <li><a href="../html/product.html" id="menu3" value="3">미용/목욕용품</a></li>
+          <li><a href="../html/product.html" id="menu4" value="2">위생/배변용품</a></li>
+          <li><a href="../html/product.html" id="menu5" value="3">장난감/훈련용품</a></li>
+          <li><a href="../html/product.html" id="menu6" value="3">식기/물병</a></li>
+          <li><a href="../html/product.html" id="menu7" value="3">의류/악세사리</a></li>
+          <li><a href="../html/product.html" id="menu8" value="2">샘플</a></li>
+          <li><a href="../html/product.html" id="menu9" value="2">고객센터</a></li>
+      </ul>
+  </div>
+  <div id="subMenuBox">
+      <!-- 서브 메뉴 아이템 6개  -->
+      <div class="subMenuItem" id="subMenuItem1">
+          <ul id = "submenu1" class="submenu">
+              <li><a href="../html/product.html" id="menu1">퍼피사료</a></li>
+              <li><a href="../html/product.html" id="menu1">어덜트사료</a></li>
+              <li><a href="../html/product.html" id="menu1">시니어사료</a></li>
+          </ul>
+      </div>
+      <div class="subMenuItem" id="subMenuItem2">
+          <ul id = "submenu2" class="submenu">
+              <li><a href="../html/product.html" id="menu2">간식</a></li>
+              <li><a href="../html/product.html" id="menu2">저키</a></li>
+          </ul>
+      </div>
+      <div class="subMenuItem" id="subMenuItem3">
+          <ul id = "submenu3" class="submenu">
+              <li><a href="../html/product.html" id="menu3">샴푸</a></li>
+              <li><a href="../html/product.html" id="menu3">린스</a></li>
+              <li><a href="../html/product.html" id="menu3">클리퍼</a></li>
+          </ul>
+      </div>
+      <div class="subMenuItem" id="subMenuItem4">
+          <ul id = "submenu4" class="submenu">
+              <li><a href="../html/product.html" id="menu4">미용가위</a></li>
+              <li><a href="../html/product.html" id="menu4">배변패드</a></li>
+          </ul>
+      </div>
+      <div class="subMenuItem" id="subMenuItem5">
+          <ul id = "submenu5" class="submenu">
+              <li><a href="../html/product.html" id="menu5">짖음제어</a></li>
+              <li><a href="../html/product.html" id="menu5">봉제,치칠,고무</a></li>
+              <li><a href="../html/product.html" id="menu5">행동제어</a></li>
+          </ul>
+      </div>
+      <div class="subMenuItem" id="subMenuItem6">
+          <ul id = "submenu6" class="submenu">
+              <li><a href="../html/product.html" id="menu6">자동급식기</a></li>
+              <li><a href="../html/product.html" id="menu6">사료보관통</a></li>
+              <li><a href="../html/product.html" id="menu6">젖병</a></li>
+          </ul>
+      </div>
+      <div class="subMenuItem" id="subMenuItem7">
+          <ul id = "submenu7" class="submenu">
+              <li><a href="../html/product.html" id="menu7">의류</a></li>
+              <li><a href="../html/product.html" id="menu7">신발/양말</a></li>
+              <li><a href="../html/product.html" id="menu7">머리핀/고무줄</a></li>
+          </ul>
+      </div>
+      <div class="subMenuItem" id="subMenuItem8">
+          <ul id = "submenu8" class="submenu">
+              <li><a href="../html/product.html" id="menu8">프로모션 샘플</a></li>
+              <li><a href="../html/product.html" id="menu8">이벤트</a></li>
+          </ul>
+      </div>
+      <div class="subMenuItem" id="subMenuItem9">
+          <ul id = "submenu9" class="submenu">
+              <li><a href="../html/product.html" id="menu9">공지사항</a></li>
+              <li><a href="../html/product.html" id="menu9">마이페이지</a></li>
+          </ul>
+      </div>
+  </div>
+</nav>
+  <!-- 사이드 메뉴 영역 -->
+  <section class="side_menu">
+    <nav id="nav2">
+      <h4>&nbsp;&nbsp;마이 페이지</h4>
+      <ul>
+        <li><a href="myPage.html">마이페이지</a>
+        <li><a href="info_Change_Bf.html">개인정보변경</a>
+      </ul>
+    </nav>
+  </section>
+  <!-- 진행 중인 주문 -->
+  <div id="bodypage">
+  <section class="order_status">
+    <h5>| 진행 중인 주문</h5>
+    <div class="status_box">
+      <table class="order_ing">
+        <thead>
+          <tr>
+            <td>결제완료</td><td>&nbsp;&nbsp;</td>
+            <td>배송준비중</td><td>&nbsp;&nbsp;</td>
+            <td>배송중</td><td>&nbsp;&nbsp;</td>
+            <td>배송완료</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="o_num">0</td>
+            <td>></td>
+            <td class="o_num">0</td>
+            <td>></td>
+            <td class="o_num">0</td>
+            <td>></td>
+            <td class="o_num">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  
+  <!-- 장바구니 부분 -->
+  <section class="cart">
+    <h5>| 장바구니</h5>
+    <!-- 장바구니에 대한 간단한 정보를 보여주는 부분 -->
+    <div class="cart_infomation">
+      <ul class="cart_info">
+        <li>장바구니 상품은 최대 1년 보관되며, 담은 시점과 현재의 판매 가격이 달라질 수 있습니다.</li>
+        <li>가격, 옵션 등 정보가 변경될 경우 주문이 불가할 수 있습니다.</li>
+      </ul>
+    </div>
+    <!-- 장바구니 테이블 -->
+    <table class="cart_list">
+      <form>
+        <thead>
+          <tr>
+            <td><input type="checkbox"> </td>
+            <td colspan ="2">상품정보</td>
+            <td>수량</td>
+            <td>주문액</td>
+            <td>배송비</td>
+            <td>주문관리</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class = "cart_list_item">
+            <td><input type="checkbox"> </td>
+            <!-- 이 구역안에 전부 a태그를 주어야 함. HOW ?  -->
+            <td><img src="../img/mypage/pet_pack.PNG" alt ="강아지 이동 가방"></td>
+            <!-- 해당 브랜드에 대한 페이지 있으면 주소 삽입 없으면 현행 유지 -->
+            <td><a href="#"> 브랜드명 넣기(있을경우)</a>
+              <p> 강아지 이동 가방 </p>
+              <span class="price"> 20,000원 </span>
+            </td>
+            <td class="etc" >
+              <div class="amount">
+                <button class="change" style="cursor:pointer">━</button>
+                <input type="text" class="q_num" size="1" maxlength="2">
+                <button class="change" style="cursor:pointer">╊</button>
+              </div>
+            </td>
+            <td class="etc"> 주문액 = 수량 * price
+            </td>
+            <td class="etc">
+              무료
+            </td>
+            <td class="etc">
+              <button class="cart_list_option" style="cursor:pointer">삭제하기</button>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="7">
+              <button class="cart_list_option" style="cursor:pointer">선택 삭제</button>
+            </td>
+          </tr>
+        </tfoot>
+      </form>
+    </table>
+  </section>
+  <br>
+  <!-- 결제 예정금액 구역 구현하기 -->
+  <section class="payment">
+    <h5>| 결제 예정금액</h5>
+    <!-- 결제 예정금액 안에 문자에 대해서 CSS를 주기 위해 문자 앞에 class를 줌  -->
+    <!-- '상품 금액'과 '배송비', 그리고 +, = 를 하나의 클래스로 정하였음 -->
+    <div class="pay_box">
+      <span class="pay_box_text1">스토어 주문합계 &nbsp; : &nbsp;</span>
+      <span class="pay_box_text2">상품 금액 &nbsp;</span>
+      <span class="pay_box_text3">000,000원 &nbsp;</span>
+      <span class="pay_box_text2">+ &nbsp;</span>
+      <span class="pay_box_text2">배송비 &nbsp;</span>
+      <span class="pay_box_text4">0원 &nbsp;</span>
+      <span class="pay_box_text2">= &nbsp;</span>
+      <span class="pay_box_text5">000,000원</span>
+    </div>
+    <div class="pay_btx">
+      <button type="button" onClick="location.href='../index.html'"class="con_shopping" style="cursor:pointer">쇼핑 계속하기</button> 
+      <button class="stop_shopping" style="cursor:pointer">바로구매</button>
+    </div>
+  </section>
+</div>
+<footer id="footer">
+  <hr/>
+  <div><img src="../img/index/free-icon-profile-3135707.png"></div>
+  <div id="compamy">
+      <div>COMPAMY : 비전공같은 전공 / CALL CENTER : 영업부 031-0000-0000</div>
+      <div>ADRESS : 서울 어딘가</div>
+      <div>개인정보책임자 : 누군가 / 사업자 등록번호 100-23-00000 / 통신판매업 신고번호 : 2022-경기성남-0000호[사업자정보확인]</div>
+      <div>Copyright by 비전공같은 전공. All rights reserved</div>
+  </div>
+  
+</footer>
+</body>
+</html>
