@@ -1,98 +1,61 @@
-@charset "UTF-8";
-
-#mainMenuBox {
-    width:94%;
-	height:35px;
-    margin-left:6%;
-	line-height:35px; 
-	background-color:#ffffff;
-	z-index:10; /* 스크롤 시 위에 오도록 */
-	
+nav{
+    width: 1600px;
+    height: 70px;
+    padding:0;
+    margin:0;
+    
 }
-ul {
+nav ul {
 	margin-top:0;
 	padding:0;
 	list-style:none;  /* type 없음 */
 }
-a{
+nav a{
     text-decoration:none; /* <a> 태그 밑줄 없애기 */
 	color:black;
-	font-size:14px;
 	font-weight:bold;
+  
 }
-a:hover{
-    color:black;	
-}
-#mainMenuBox ul {
-	margin:0;
-}
-
-#mainMenuBox ul li{
-	float:left;  /* 한 줄로 왼쪽 정렬 */
-	text-align:center;
-	width:10%;  /*항목 모두 동일한 너비  */
-	height:30px;
-	line-height:30px;
-	
-}
-#subMenuBox {
-    width:94%;
-	height:100px;
-	background-color:#ffffff;
-	z-index:10; /* 스크롤 시 위에 오도록 */
-	text-align:left;
-	padding-bottom:0;
-    margin-left:6%;
-    visibility:hidden; /* 시작 시 sub 메뉴 항목 숨김 */
-
-}
-.subMenuItem {
-    width:100px;
-	background-color:#ffffff;
-	margin-top:10;
+.submenu {
+    width: 1599px;
+    display: flex;
+    overflow: hidden;
+    border-right: 1px solid #a94b00;
+  }
+  .submenuClick{
+    height: 45px;
+    font: small-caps bold 20px/2 sans-serif;
+    border-bottom: 1px solid #a94b00;
+    cursor : pointer;
+  }
+  .submenuli hr{
+    margin: 0 auto;
+    height:1px;
+    border:0;
+    background: #a94b00;
+  }
+  .submenu li {
+    width: 199px;
+    flex-grow: 1;
+    text-align: center;
+    line-height: 40px;
+    background-color: #faa159;
+    border-left: 1px solid #a94b00;
+    border-top: 1px solid #a94b00;
+    z-index:10;
+    height: 25%;
+  }
+  .submenuItem li{
+    height: 0px;
+    overflow: hidden;
+    border-left: none;
+    border-top: none;
+    border-bottom: 1px dotted #a94b00;
+    font-size: 15px;
+    font-weight: bold;
     
-}
-#subMenuItem1 {
-	position:absolute;
-	margin-left:40px;
-}
-
-#subMenuItem2 {
-	position:absolute;
-	margin-left:195px;
-}
-
-#subMenuItem3 {
-	position:absolute;
-	margin-left:330px;
-}
-
-#subMenuItem4 {
-	position:absolute;
-	margin-left:483px;
-}
-
-#subMenuItem5 {
-	position:absolute;
-	margin-left:625px;
-}
-
-#subMenuItem6 {
-	position:absolute;
-	margin-left:797px;
-}
-
-#subMenuItem7 {
-	position:absolute;
-	margin-left:935px;
-}
-
-#subMenuItem8 {
-	position:absolute;
-	margin-left:1115px;
-}
-
-#subMenuItem9 {
-	position:absolute;
-	margin-left:1250px;
-}
+  }
+  .submenuName {
+    font-size: 20px;
+  }
+  

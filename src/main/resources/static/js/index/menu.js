@@ -1,50 +1,65 @@
-/**
- * menu.js
- */
- $(document).ready(function(){
-	
-	// [전체보기 ▼] 버튼 클릭 시 모든 서브 메뉴 항목 보이게
-	$('#menuItem').on('mouseenter', function(){
-			$('#subMenuBox').css('visibility', 'visible');
-	});
-	$('#subMenuBox').on('mouseleave', function(){
-		$('#subMenuBox').css('visibility', 'hidden');
-	});
+$(document).ready(function(){
+$('.submenu').on('mouseenter', function(){
+    $('.submenuItem li').css('height', '40px');
+    $('.submenuItem li').css('transition-duration', '1s');
+    $('.submenuItem li').css('z-index', '10');
+});
 
-	let mainMenubl = false;
-	$('#menuItem').click(function(index){
-		
-		console.log(index.target.id);
-		console.log(index.target.innerHTML);
-		const menuSize = parseInt($('#'+index.target.id).attr('value'));
-		console.log(menuSize);
-		var test = $('#sub'+index.target.id).children('li').children('a').toArray();
-		for(let i =0; i < test.length; i++){
-			test[i] = test[i].innerHTML;
-		}
-		localStorage.setItem('menuName',index.target.innerHTML);
-		localStorage.setItem('menuSize',menuSize);
-		localStorage.setItem('submenu',test);
-		localStorage.setItem('mainMenubl',mainMenubl);
-		
-	})
+$('.submenu').on('mouseleave', function(){
+    $('.submenuItem li').css('height', '0px');
+    $('.submenuItem li').css('transition-duration', '1s');
+    $('.submenuItem li').css('z-index', '10');
+});
+$('.submenuli').on('mouseenter', function(){
+    $(this).css('background-color', 'rgb(255, 217, 0)');
+    $(this).css('transition-duration', '0.5s');
+    
+});
+$('.submenuli').on('mouseleave', function(){
+    $(this).css('background-color', '#faa159');
+    $(this).css('transition-duration', '0.5s');
+    
+});
 
-	$(".submenu li a").click(function(index){
-		console.log(index.target.innerHTML);
-		console.log(index.target.id);
-		console.log($('#'+index.target.id).text());
-		var subArray = $('#sub'+index.target.id).children('li').children('a').toArray();
-		for(let i =0; i < subArray.length; i++){
-			subArray[i] = subArray[i].innerHTML;
-		}
-		console.log(subArray);
-		var mainmenuName = $('#'+index.target.id).text();
-		mainMenubl = true;
-		localStorage.setItem('menuName',mainmenuName);
-		localStorage.setItem('menuSize',subArray.length);
-		localStorage.setItem('submenu',subArray);
-		localStorage.setItem('mainMenubl',mainMenubl);
-		localStorage.setItem('subName',index.target.innerHTML);
-	})
+$('.submenuItem li').on('mouseenter', function(){
+    if($(this).attr("class")!="submenuItemNull"){
+        $(this).css('background-color', 'rgb(255, 217, 0)');
+        $(this).css('transition-duration', '0.5s');
+        $(this).css('cursor', 'pointer');
+    }
+        
+    
+});
+$('.submenuItem li').on('mouseleave', function(){
+    if($(this).attr("class")!="submenuItemNull"){
+        $(this).css('background-color', '#faa159');
+        $(this).css('transition-duration', '0.5s');
+    }
+    
+    
+});
+$('.submenuClick').on('click', function(){
+    console.log($(this))
+    if($(document).find("title").text() ==="메인"){
+            location.href = '../webapp/html/product.html';
+    }
+    else{
+        location.href = '../html/product.html';
+    }
+    console.log($(this).text());
+    console.log($(this).attr("id"))
+    console.log($('#'+$(this).attr("id")))
+});
+
+$('.submenuItem li').on('click', function(){
+    console.log($(this))
+    if($(document).find("title").text() ==="메인"){
+            location.href = '../webapp/html/product.html';
+    }
+    else{
+        location.href = '../html/product.html';
+    }
+});
 
 })
+
