@@ -11,7 +11,7 @@ $(document).ready(function(){
    /* 코드 합칠 경우 1234 대신 hwPw로 바꿔줘야함*/
 	if($('#E_pwd').val()===hwPw){
 	  alert("개인정보를 변경합니다.");
-	  location.href="../html/info_Change.html";
+	  location.href="info_Change.jsp";	// 링크 안될경우 앞에 ../붙이면 될 것 같음
 	}
 	else{
 	  alert("비밀번호가 다릅니다.");
