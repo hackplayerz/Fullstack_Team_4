@@ -5,6 +5,9 @@
 <link rel="stylesheet" type="text/css" href="<c:url value='css/index/menu.css'/>">
 <link rel="stylesheet" type="text/css" href="<c:url value='css/index/footer.css'/>">
 <link rel="stylesheet" type="text/css" href="<c:url value='css/index/headerMenu.css'/>">
-<link rel="stylesheet" type="text/css" href="<c:url value='css/index/menu.css'/>">
+<link rel="stylesheet" type="text/css" href="<c:url value='css/index/slideShow.css'/>">
+<link rel="stylesheet" type="text/css" href="<c:url value='css/index/product.css'/>">
+<link rel="stylesheet" type="text/css" href="<c:url value='css/index/index.css'/>">
+
 <script src="<c:url value='/js/jquery-3.6.1.min.js'/>"></script>
 <script src="<c:url value='/js/index/menu.js'/>"></script>
