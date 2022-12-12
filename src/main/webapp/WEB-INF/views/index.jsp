@@ -8,12 +8,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>메인</title>
-    <link rel="stylesheet" type="text/css" href="css/index/index.css">
-    <link rel="stylesheet" type="text/css" href="css/index/slideShow.css">
-    <link rel="stylesheet" type="text/css" href="css/index/product.css">
-    <script src="js/jquery-3.6.1.min.js"></script>
-    <script src="js/index/slideShow.js"></script>
-    <script src="js/index/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="<c:url value='css/index/index.css' />">
+    <link rel="stylesheet" type="text/css" href="<c:url value='css/index/slideShow.css' />">
+    <link rel="stylesheet" type="text/css" href="<c:url value='css/index/product.css' />">
+    <script src="<c:url value='js/jquery-3.6.1.min.js' />"></script>
+    <script src="<c:url value='js/index/slideShow.js' />"></script>
+    <script src="<c:url value='js/index/index.js' />"></script>
     <c:import url="/WEB-INF/views/layout/toplink.jsp"/>
 </head>
 <body>
