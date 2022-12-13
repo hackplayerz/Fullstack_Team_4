@@ -52,8 +52,7 @@ public class MemberController {
 												HttpSession session) {
 		// 로그인 체크 결과 
 		String result = service.loginCheck(param); // result : "success" 또는 "fail"
-		
-		
+		System.out.println(param.values());
 		// 아이디와 비밀번호 일치하면 (로그인 성공하면)
 		// 서비스에서 "success" 반환받았으면
 		if(result.equals("success")) {
@@ -88,6 +87,8 @@ public class MemberController {
 									  @RequestParam("memHp2") String memHp2,
 									  @RequestParam("memHp3") String memHp3) {
 		vo.setMbHp(memHp1 + "-" + memHp2 + "-" + memHp3);
+		System.out.println(vo.toString());
+		
 		service.insertMember(vo);
 		return "html/login"; // 회원 가입 후 로그인 폼으로 이동
 	}

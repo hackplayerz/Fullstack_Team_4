@@ -85,6 +85,23 @@ public class memberVO {
 	public void setMbAddress2(String mbAddress2) {
 		this.mbAddress2 = mbAddress2;
 	}
+
+	@Override
+	public String toString() {
+		return "{" +
+			" mbId='" + getMbId() + "'" +
+			", mbPw='" + getMbPw() + "'" +
+			", mbName='" + getMbName() + "'" +
+			", mbBirth='" + getMbBirth() + "'" +
+			", mbDate='" + getMbDate() + "'" +
+			", mbEmail='" + getMbEmail() + "'" +
+			", mbGen='" + getMbGen() + "'" +
+			", mbHp='" + getMbHp() + "'" +
+			", mbZipcode='" + getMbZipcode() + "'" +
+			", mbAddress1='" + getMbAddress1() + "'" +
+			", mbAddress2='" + getMbAddress2() + "'" +
+			"}";
+	}
 	
 	
 	
