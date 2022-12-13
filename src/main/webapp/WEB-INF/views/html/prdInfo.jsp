@@ -6,10 +6,10 @@
 	<head>
 	<meta charset="UTF-8">
 	<title>상품상세페이지</title>
-		<link rel="stylesheet" type="text/css" href="<c:url value='/css/prdInfo/prdInfo.css'/>">
-		<script src="<c:url value='/js/prdInfo/prdInfo.js'/>"></script>
 		<!-- toplink -->
 		<c:import url="/WEB-INF/views/layout/toplink.jsp"/>
+		<link rel="stylesheet" type="text/css" href="<c:url value='/css/prdInfo/prdInfo.css'/>">
+		<script src="<c:url value='/js/prdInfo/prdInfo.js'/>"></script>
 	</head>
 	<body>
 		<!-- header -->
@@ -43,10 +43,7 @@
 						<!-- 상품 판매 정보 끝 -->
 						<div id="buttonFrame">
 							<!-- 장바구니 샘플 구매 버튼 -->
-							<button type="button" id="shoppingCart" onclick="location.href='myPage.html'">
-								<span>장바구니</span>
-								<span>담기</span>
-							</button>
+							<button id="shoppingCart"><a href="<c:url value='/member/insertMypage'/>">장바구니 담기</a></button>
 							<button type="submit" id="sample">샘플받기</button>
 							<button type="submit" id="buy">구매</button>
 							<!-- 장바구니 샘플 구매 버튼 끝 -->
