@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.spring_boot.projectEx.model.memberVO;
+import com.spring_boot.projectEx.model.MemberVO;
 import com.spring_boot.projectEx.service.MemberService;
 
 
@@ -82,7 +82,7 @@ public class MemberController {
 	
 	// 회원가입
 	@RequestMapping("/member/insert")
-	public String insert(memberVO vo,
+	public String insert(MemberVO vo,
 									  @RequestParam("memHp1") String memHp1,
 									  @RequestParam("memHp2") String memHp2,
 									  @RequestParam("memHp3") String memHp3) {
