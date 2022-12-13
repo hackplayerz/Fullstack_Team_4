@@ -37,12 +37,12 @@ img {
 
 }
 #nav2 {
-  float: left;
+	float: left;
 	width : 280px;
-  margin-left: 80px;
+	margin-left: 80px;
 	background-color : white;
 	border-bottom: 1px solid #ddd;
-  border-top: 1px solid #ddd;
+	border-top: 1px solid #ddd;
 	height:100%;
 }
 
@@ -210,7 +210,7 @@ img {
 }
 
 .payment .pay_box .pay_box_text2 {
-  color : #727371;
+  /*color : #727371;*/
   font-size: 13px;
   font-weight: bold;
 }
