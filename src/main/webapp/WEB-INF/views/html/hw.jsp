@@ -5,40 +5,34 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<<<<<<< HEAD
 <title>회원가입폼</title>
+<title>hw</title>
 
 <link rel="stylesheet" type="text/css" href="<c:url value='/css/sign/hw.css' />">
 <link rel="stylesheet" type="text/css" href="<c:url value='/css/index/headerMenu.css' />">
     <script src="<c:url value='/js/jquery-3.6.1.min.js' />"></script>
     <script src="<c:url value='/js/sign/hw.js' />"></script>
     <script src="<c:url value='/js/index/index.js' />"></script>
+    
     <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
     <script src="<c:url value='/js/searchZip.js' />"></script>	
+
+    <c:import url="/WEB-INF/views/layout/toplink.jsp"/>
+
 </head>
 <body>
-    <header id="header">
-        <div id="headerBox">
-            <div id="logoBox">
-                <a href="<c:url value='/index.html' />"><h1>비전공 애견샵</h1></a>
-            </div>
-            <div id ="headerMenuBox">
-                <div id="hMenuItem" class="signIn"><a href="<c:url value='/login.html' />" class="signInA">로그인</a></div>
-                <div id="hMenuItem" class="signUp"><a href="<c:url value='/hw.html' />" class="signUnA">회원가입</a></div>
-                <div id="hMenuItem" class="myPage"><a href="<c:url value='/myPage.html' />" class="myPageA">마이페이지</a></div>
-            </div>
-        </div>
-    </header>
+    <c:import url="/WEB-INF/views/layout/header.jsp" />
 	<div class="member">
+	<form id="hwform" name="hwform" method="post"  action="<c:url value='/member/insert'/>">
         <!-- 1. 필드 -->
         <div class="field">
             <b>ID</b>
-            <span class="placehold-text">
-                <input type="text" id="idInput">
-            </span>
+                <input type="text" id="mbId" name="mbId">
         </div>
         <div class="field">
             <b>비밀번호</b>
-            <input class="userpw" type="password" id="pwInput">
+            <input class="userpw" type="password" id="mbPw" name="mbPw">
         </div>
         <div class="field">
             <b>비밀번호 재확인</b>
@@ -46,16 +40,15 @@
         </div>
         <div class="field">
             <b>이름</b>
-            <input type="text" id="nameInput">
+            <input type="text" id="mbName" name="mbName">
         </div>
 
         <!-- 2. 필드(생년월일) -->
         <div class="field birth">
             <b>생년월일</b>
             <div>
-                <input type="number" placeholder="년(4자)" id="yearInput">                
-                <select id="optM">
-                    <option value="">월</option>
+                <input type="number" placeholder="년(4자)" id="mbBirthY" name="mbBirthY">                
+                <select id="mbBirthM" name="mbBirthM">
                     <option value="1">1월</option>
                     <option value="2">2월</option>
                     <option value="3">3월</option>
@@ -69,14 +62,14 @@
                     <option value="11">11월</option>
                     <option value="12">12월</option>
                 </select>
-                <input type="number" placeholder="일" id="dayInput">
+                <input type="number" placeholder="일" id="mbBirthD" name="mbBirthD">
             </div>
         </div>
 
         <!-- 3. 필드(성별) -->
         <div class="field gender">
             <b>성별</b>
-            <select id="tjInput">
+            <select id="mbGen" name="mbGen">
             	<option value="">선택</option>
             	<option value="남자">남자</option>
             	<option value="여자">여자</option>
@@ -86,13 +79,16 @@
         <!-- 4. 이메일_전화번호 -->
         <div class="field">
             <b>본인 확인 이메일</b>
-            <input type="email" placeholder="선택입력" id="emailInput">
+            <input type="email" placeholder="선택입력" id="mbEmail" name="mbEmail">
         </div>
         
         <div class="field tel-number">
             <b>휴대전화</b>
             <div>
-                <input type="tel" id="telInput">
+                <input type="text" id="memHp1" name="memHp1" size="3"> 
+		                    - <input type="text" id="memHp2" name="memHp2" size="4">
+		                    - <input type="text" id="memHp3" name="memHp3" size="4">
+
             </div>
         </div>
         
@@ -100,30 +96,24 @@
         <div class="field">
             <b>주소</b>
             <span class="placehold-text">
-            <input type="text" id="addressInput" name="addressInput" size="5" readonly>
+            <input type="text" id="mbZipcode" name="mbZipcode" size="5" readonly>
             <input type="button" id="searchZipBtn" name="searchZipBtn" value="우편번호 찾기"><br>
-		    <input type="text" id="address1" name="address1" placeholder="주소 입력" size="70" readonly> <br>
-		    <input type="text" id="address2" name="address2" placeholder="상세 주소 입력" size="70">
+		    <input type="text" id="mbAddress1" name="mbAddress1" placeholder="주소 입력" size="70" readonly> <br>
+		    <input type="text" id="mbAddress2" name="mbAddress2" placeholder="상세 주소 입력" size="70">
 		    </span>
             
         </div>
 
         <!-- 6. 가입하기 버튼 -->
-        <button type="button" id="signUpBt">가입하기</button>
+        <br><input type="submit" value="완료">
+		    <input type="reset" value="취소">
+
         
+    </form>
+      
         <!-- 7. 푸터 -->
         
     </div>
-    <footer id="footer">
-        <hr/>
-        <div><img src="<c:url value='/img/index/free-icon-profile-3135707.png' />"></div>
-        <div id="compamy">
-            <div>COMPAMY : 비전공같은 전공 / CALL CENTER : 영업부 031-0000-0000</div>
-            <div>ADRESS : 서울 어딘가</div>
-            <div>개인정보책임자 : 누군가 / 사업자 등록번호 100-23-00000 / 통신판매업 신고번호 : 2022-경기성남-0000호[사업자정보확인]</div>
-            <div>Copyright by 비전공같은 전공. All rights reserved</div>
-        </div>
-        
-    </footer>
+    <c:import url="/WEB-INF/views/layout/footer.jsp" />
 </body>
 </html>
