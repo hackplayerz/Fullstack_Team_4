@@ -25,6 +25,7 @@ public class ProductController {
         var categoryList = service.getSubCategory(sub);
         model.addAttribute("prdList", prdList);
         model.addAttribute("subCategory",categoryList);
+        //TODO: 문자열 자르기
         return "html/product";
     }
 	

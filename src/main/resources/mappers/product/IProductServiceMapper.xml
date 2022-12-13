@@ -2,6 +2,12 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.spring_boot.projectEx.dao.IProductDAO">
 
+	<resultMap type="com.spring_boot.projectEx.model.CategoryVO" id="categoryResult">
+		<result property="ctgId" column='ctgId'/>
+		<result property="ctgName" column='ctgName'/>
+		<result property="subName" column='subName'/>
+	</resultMap>
+
     <resultMap id="prdResult" type="com.spring_boot.projectEx.model.ProductVO">
         <result property="prdNo"  column="prdNo"  />
   		<result property="prdName"  column="prdName"  />
@@ -24,5 +30,12 @@
     <select id="detailViewProduct" parameterType="string" 
     resultType="com.spring_boot.projectEx.model.ProductVO">
         SELECT * FROM product WHERE prdNo = #{prdNo}
+    </select>
+    
+    <!-- 서브 카테고리 메뉴 가져옴 -->
+    <select id="getSubCategory" parameterType="string" resultMap="categoryResult">
+    	SELECT * FROM category
+    	WHERE ctgId=#{ctgId}
+    	ORDER BY ctgId
     </select>
 </mapper>
