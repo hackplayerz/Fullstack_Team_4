@@ -5,14 +5,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>hw</title>
-<c:url value='/js/index/index.js' />
+<title>회원가입폼</title>
 
 <link rel="stylesheet" type="text/css" href="<c:url value='/css/sign/hw.css' />">
 <link rel="stylesheet" type="text/css" href="<c:url value='/css/index/headerMenu.css' />">
     <script src="<c:url value='/js/jquery-3.6.1.min.js' />"></script>
     <script src="<c:url value='/js/sign/hw.js' />"></script>
     <script src="<c:url value='/js/index/index.js' />"></script>
+    <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+    <script src="<c:url value='/js/searchZip.js' />"></script>	
 </head>
 <body>
     <header id="header">
@@ -98,7 +99,13 @@
         <!-- 5. 주소 -->
         <div class="field">
             <b>주소</b>
-            <span class="placehold-text"><input type="text" id="addressInput"></span>
+            <span class="placehold-text">
+            <input type="text" id="addressInput" name="addressInput" size="5" readonly>
+            <input type="button" id="searchZipBtn" name="searchZipBtn" value="우편번호 찾기"><br>
+		    <input type="text" id="address1" name="address1" placeholder="주소 입력" size="70" readonly> <br>
+		    <input type="text" id="address2" name="address2" placeholder="상세 주소 입력" size="70">
+		    </span>
+            
         </div>
 
         <!-- 6. 가입하기 버튼 -->
