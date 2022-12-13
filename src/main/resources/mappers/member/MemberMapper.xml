@@ -18,8 +18,8 @@
   	
   	<!-- 회원 등록 -->
   	<insert id="insertMember">
-  		INSERT INTO member(mbId, mbPw, mbName, mbBirth, mbGen, mbEmail, mbDate, mbHp, mbZipcode, mbAddress1, mbAddress2)
-  		VALUES (#{mbId},  #{mbPw}, #{mbName}, #{mbBirth}, #{mbGen}, #{mbEmail}, #{mbDate}, #{mbHp}, #{mbZipcode}, #{mbAddress1}, #{mbAddress2})
+  		INSERT INTO member(mbId, mbPw, mbName, mbBirth, mbGen, mbEmail, mbHp, mbZipcode, mbAddress1, mbAddress2)
+  		VALUES (#{mbId},  #{mbPw}, #{mbName}, #{mbBirth}, #{mbGen}, #{mbEmail}, #{mbHp}, #{mbZipcode}, #{mbAddress1}, #{mbAddress2})
   	</insert>
   	
   </mapper>
