@@ -77,3 +77,5 @@ INSERT INTO category VALUES("4","장난감/훈련용품","짖음제어,봉제/�
 INSERT INTO category VALUES("5","식기/물병","자동급식기,사료보관통,젖병");
 INSERT INTO category VALUES("6","의류/악세사리","의류,신발/양말,머리핀/고무줄");
 INSERT INTO category VALUES("7","샘플","프로모션 샘플,이벤트");
+
+INSERT INTO product VALUES("001","개밥",10000,"개밥조아",120,"맛있는개밥","001.jpg",0,0,"0");
