@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,7 +59,7 @@
             <div id="content">
                 <div id="product">
                     <!-- 상품 컨텐츠 -->
-                    <c:foreach var="prd" items="${prdList}">
+                    <c:forEach var="prd" items="${prdList}">
                         <div class="productSource">
                             <a href="<c:url value = '/html/prdInfo/${prd.prdNo}' />"><img src="<c:url value='/img/product/${prd.prdImg}' />" class="image"></a>                       
                             
@@ -68,7 +70,7 @@
                                 ${prd.prdPrice}
                             </p>
                         </div>
-                    </c:foreach>
+                    </c:forEach>
 
                 </div>  	
             </div> 
