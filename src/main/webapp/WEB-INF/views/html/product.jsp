@@ -37,11 +37,11 @@
                 <!-- 서브 카테고리 메뉴 -->
                     <div id="subCategoryContent">
                         <ul id="subCategoryMenu"> 
-                            
+                            <!--
                             <c:forEach var="i" begin="0" end="${fn:length(subCategory)-1}">
                                 <li id="menu"+i class="menu"><a href="#">${ subCategory[i] }</a></li>
                             </c:forEach>
-
+                            -->
                         </ul>
                     </div>                             
             </section>    
@@ -58,7 +58,9 @@
 
             <div id="content">
                 <div id="product">
-                    <!-- 상품 컨텐츠 -->
+
+                    <!--
+                    <!-- 상품 컨텐츠 ->
                     <c:forEach var="prd" items="${prdList}">
                         <div class="productSource">
                             <a href="<c:url value = '/html/prdInfo/${prd.prdNo}' />"><img src="<c:url value='/img/product/${prd.prdImg}' />" class="image"></a>                       
@@ -72,6 +74,7 @@
                         </div>
                     </c:forEach>
 
+                    -->
                 </div>  	
             </div> 
         </section>
