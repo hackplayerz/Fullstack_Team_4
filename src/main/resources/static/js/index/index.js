@@ -19,7 +19,7 @@ $(document).ready(function(){
 	$('.myPageA').on('click',function(){
         if($(document).find("title").text() ==="메인"){
             if(loginBl)
-                location.href = '../webapp/html/myPage.html';
+               location.href = '../webapp/html/myPage.jsp';
             else{
                 alert("로그인을 먼저하세요.");
             }
@@ -28,10 +28,9 @@ $(document).ready(function(){
             if(loginBl)
                 location.href = '../html/myPage.html';
             else{
-                alert("로그인을 먼저하세요.");
+               alert("로그인을 먼저하세요.");
             }
         }
-
     })
     $('.signInA').on('click',function(){
         
