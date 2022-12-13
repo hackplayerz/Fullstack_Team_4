@@ -51,21 +51,24 @@
         
         <article  id="content2"> <!-- 베스트 상품 -->    
             <div id="productBox" >
-                <div class="product">
+                <div class="prdRecommend">신규 상품</div>
+                <div class="Mainproduct">
                     <div><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood1.jpg">네츄럴코어 헬로쿠키<P>4000원</P></a></div>
                     <div><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood2.jpg">네츄럴코어 헬로쿠키 <P>4000원</P></a></div>
                     <div><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood3.jpg">네츄럴코어 헬로쿠키 <P>4000원</P></a></div>
                     <div><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood4.jpg">네츄럴코어 헬로쿠키 <P>4000원</P></a></div>
                     <div><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood1.jpg">네츄럴코어 헬로쿠키 <P>4000원</P></a></div>
                 </div>
-                <div class="product">
+                <div class="prdRecommend">많이 보는 상품</div>
+                <div class="Mainproduct">
                     <div><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood1.jpg">네츄럴코어 헬로쿠키<P>4000원</P></a></div>
                     <div><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood2.jpg">네츄럴코어 헬로쿠키 <P>4000원</P></a></div>
                     <div><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood3.jpg">네츄럴코어 헬로쿠키 <P>4000원</P></a></div>
                     <div><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood4.jpg">네츄럴코어 헬로쿠키 <P>4000원</P></a></div>
                     <div><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood1.jpg">네츄럴코어 헬로쿠키 <P>4000원</P></a></div>
                 </div>
-                <div class="product">
+                <div class="prdRecommend">주문량이 많은 상품</div>
+                <div class="Mainproduct">
                     <div><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood1.jpg">네츄럴코어 헬로쿠키<P>4000원</P></a></div>
                     <div><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood2.jpg">네츄럴코어 헬로쿠키 <P>4000원</P></a></div>
                     <div><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood3.jpg">네츄럴코어 헬로쿠키 <P>4000원</P></a></div>

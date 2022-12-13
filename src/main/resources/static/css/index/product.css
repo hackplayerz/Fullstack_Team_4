@@ -1,7 +1,13 @@
 @charset "UTF-8";
 
 /* product.css */
-
+#prdRecommend{
+	width: 1600px;
+}
+#Mainproduct{
+	width: 1600px;
+	height: 600px;
+}
 #productBox {
 	height:700px;
 	background:white;
