@@ -43,9 +43,9 @@
 						<!-- 상품 판매 정보 끝 -->
 						<div id="buttonFrame">
 							<!-- 장바구니 샘플 구매 버튼 -->
-							<button id="shoppingCart"><a href="<c:url value='/member/insertMypage'/>">장바구니 담기</a></button>
+							<button id="shoppingCart"><a href="<c:url value='/member/insert_Mypage'/>">장바구니 담기</a></button>
 							<button type="submit" id="sample">샘플받기</button>
-							<button type="submit" id="buy"><a href="<c:url value='/member/insertMypage'/>">구매</button>
+							<button type="submit" id="buy"><a href="<c:url value='/member/insert_Mypage'/>">구매</button>
 							<!-- 장바구니 샘플 구매 버튼 끝 -->
 						</div>
 					</form>	
