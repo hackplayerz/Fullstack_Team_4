@@ -37,7 +37,11 @@
                 <!-- 서브 카테고리 메뉴 -->
                     <div id="subCategoryContent">
                         <ul id="subCategoryMenu"> 
-                            
+                            <!--
+                            <c:forEach var="i" begin="0" end="${fn:length(subCategory)-1}">
+                                <li id="menu"+i class="menu"><a href="#">${ subCategory[i] }</a></li>
+                            </c:forEach>
+                            -->
                         </ul>
                     </div>                             
             </section>    
