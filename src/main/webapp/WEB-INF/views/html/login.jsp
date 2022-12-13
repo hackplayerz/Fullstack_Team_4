@@ -16,7 +16,7 @@
 	<c:import url="/WEB-INF/views/layout/header.jsp" />
 		<h2>로그인</h2>
 		<div class="container">
-			<form action="#">
+			<form id="Login" name="Login">
 				<p class=""><input type="text" name="id" placeholder="아이디"></p>
 				<p class=""><input type="password" name="password" placeholder="비밀번호"></p>
 			</form>
@@ -26,7 +26,7 @@
               <li>/</li>
               <li><a href="#">비밀번호찾기</a></li>
               <li>/</li>
-              <li><a href="<c:url value='hw.html' />">회원가입</a></li>
+              <li><a href="<c:url value='/member/hwForm' />">회원가입</a></li>
         </ul>
         <button type="submit">로그인</button>
         <c:import url="/WEB-INF/views/layout/footer.jsp" />
