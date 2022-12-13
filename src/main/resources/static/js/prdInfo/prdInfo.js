@@ -23,6 +23,13 @@ $(document).ready(function() {
 	});
 	
 	
+	$('#shoppingCart').mouseover(function(){
+		$('#shoppingCart').css('background-color', 'white');
+	});
+	$('#shoppingCart').mouseout(function(){
+		$('#shoppingCart').css('background-color', '#E0E0E0');
+	});
+	
 	getPrdInfo();
 });
 
