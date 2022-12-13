@@ -35,13 +35,11 @@
                 <!-- 서브 카테고리 메뉴 -->
                     <div id="subCategoryContent">
                         <ul id="subCategoryMenu"> 
-                            <li id="menu0" class="menu"><a href="#">ALL</a></li>
-                            <li>|</li>
-                            <li id="menu1" class="menu"><a href="#">간식</a></li>
-                            <li>|</li>
-                            <li id="menu2" class="menu"><a href="#">개껌</a></li>
-                            <li>|</li>
-                            <li id="menu3" class="menu"><a href="#">캔</a></li>
+                            
+                            <c:forEach var="i" begin="0" end="${fn:length(subCategory)-1}">
+                                <li id="menu"+i class="menu"><a href="#">${ subCategory[i] }</a></li>
+                            </c:forEach>
+
                         </ul>
                     </div>                             
             </section>    
@@ -58,51 +56,19 @@
 
             <div id="content">
                 <div id="product">
-                    <div class="productSource">
-                        <a href="<c:url value = '/html/prdInfo' />"><img src="../img/product/06950f7e9aaffab2bd5d790056acb907.jpg" class="image"></a>                        
-                        <p class="name">
-                            sdsdsdsdsdsd
-                        </p>
-                        <p class="price">
-                            00000원
-                        </p>
-                    </div>
-                    <div class="productSource">
-                        <a href="<c:url value = '/html/prdInfo' />"><img src="../img/product/06950f7e9aaffab2bd5d790056acb907.jpg" class="image"></a>
-                        <p class="name">
-                            sdsdsdsdsdsd
-                        </p>
-                        <p class="price">
-                            00000원
-                        </p>
-                    </div>
-                    <div class="productSource">
-                        <a href="<c:url value = '/html/prdInfo' />"><img src="../img/product/06950f7e9aaffab2bd5d790056acb907.jpg" class="image"></a>
-                        <p class="name">
-                            sdsdsdsdsdsd
-                        </p>
-                        <p class="price">
-                            00000원
-                        </p>
-                    </div>
-                    <div class="productSource">
-                        <a href="<c:url value = '/html/prdInfo' />"><img src="../img/product/_02 (1).png" class="image"></a>
-                        <p class="name">
-                            sdsdsdsdsdsd
-                        </p>
-                        <p class="price">
-                            00000원
-                        </p>
-                    </div>
-                    <div class="productSource">
-                        <a href="<c:url value = '/html/prdInfo' />"><img src="../img/product/_02.png" class="image"></a>
-                        <p class="name">
-                            sdsdsdsdsdsd
-                        </p>
-                        <p class="price">
-                            00000원
-                        </p>
-                    </div>
+                    <!-- 상품 컨텐츠 -->
+                    <c:foreach var="prd" items="${prdList}">
+                        <div class="productSource">
+                            <a href="<c:url value = '/html/prdInfo/${prd.prdNo}' />"><img src="<c:url value='/img/product/${prd.prdImg}' />" class="image"></a>                       
+                            
+                            <p class="name">
+                                ${prd.prdName}
+                            </p>
+                            <p class="price">
+                                ${prd.prdPrice}
+                            </p>
+                        </div>
+                    </c:foreach>
 
                 </div>  	
             </div> 
