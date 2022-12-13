@@ -12,7 +12,7 @@
  			type:"post",
  			url:"/member/login",
  			data: {"id":$('#id').val(),
- 			            "password":$('#password').val()},
+ 			            "pw":$('#pw').val()},
  			dataType:'text',
  			success:function(result){
  				if(result == "success"){
