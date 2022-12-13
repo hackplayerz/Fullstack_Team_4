@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.spring_boot.projectEx.dao.ICartDAO;
 import com.spring_boot.projectEx.model.CartVO;
-import com.spring_boot.projectEx.model.MemberVO;
+import com.spring_boot.projectEx.model.memberVO;
 import com.spring_boot.projectEx.model.OrderInfoVO;
 
 @Service
@@ -54,7 +54,7 @@ public class CartService implements ICartService {
 	}
 
 	@Override
-	public MemberVO getMemberInfo(String memId) {
+	public memberVO getMemberInfo(String memId) {
 		return dao.getMemberInfo(memId);
 	}
 
