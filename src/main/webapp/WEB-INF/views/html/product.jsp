@@ -38,6 +38,9 @@
                     <div id="subCategoryContent">
                         <ul id="subCategoryMenu"> 
                             
+                            <c:forEach var='category' items="${subCategory}">
+                            	'${category}'
+                            </c:forEach>
                             
                         </ul>
                     </div>                             

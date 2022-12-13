@@ -3,10 +3,12 @@ package com.spring_boot.projectEx.service;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import com.spring_boot.projectEx.model.CategoryVO;
 import com.spring_boot.projectEx.model.ProductVO;
 
-public interface IProductService {
-    
+public interface IProductService 
+{
+    public ArrayList<CategoryVO> getSubCategory(String ctgId);
     public ArrayList<ProductVO> ListAllProduct(); //  전체 상품 조회    
     public ArrayList<ProductVO> ctgListProduct(String ctgId); // 카테고리별 상품 조회
     public void insertProduct(ProductVO prd); // 상품 등록

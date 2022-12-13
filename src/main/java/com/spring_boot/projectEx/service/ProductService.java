@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import com.spring_boot.projectEx.dao.IProductDAO;
+import com.spring_boot.projectEx.model.CategoryVO;
 import com.spring_boot.projectEx.model.ProductVO;
 
 @Service
@@ -62,5 +63,10 @@ public class ProductService implements IProductService{
         // TODO Auto-generated method stub
         return null;
     }
+
+	@Override
+	public ArrayList<CategoryVO> getSubCategory(String ctgId) {
+		return dao.getSubCategory(ctgId);
+	}
     
 }

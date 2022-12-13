@@ -22,7 +22,9 @@ public class ProductController {
     public String OnProductFormView(@PathVariable String sub, Model model)
     {   
         ArrayList<ProductVO> prdList = service.ctgListProduct(sub);
+        var categoryList = service.getSubCategory(sub);
         model.addAttribute("prdList", prdList);
+        model.addAttribute("subCategory",categoryList);
         return "html/product";
     }
 	

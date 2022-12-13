@@ -14,6 +14,11 @@
   		<result property="orderCount"  column="orderCount"  />
   		<result property="ctgId"  column="ctgId"  />
     </resultMap>
+    
+    <!-- 카테고리 조회 -->
+    <select id="getSubCategory">
+    	SELECT 
+    </select>
 
     <!-- 카테고리별 상품 조회 -->
     <select id="ctgListProduct" parameterType="string" resultMap="prdResult">
