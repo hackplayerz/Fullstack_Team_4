@@ -85,8 +85,12 @@ public class MemberController {
 	public String insert(memberVO vo,
 									  @RequestParam("memHp1") String memHp1,
 									  @RequestParam("memHp2") String memHp2,
-									  @RequestParam("memHp3") String memHp3) {
+									  @RequestParam("memHp3") String memHp3,
+									  @RequestParam("mbBirthY") String mbBirthY,
+									  @RequestParam("mbBirthM") String mbBirthM,
+									  @RequestParam("mbBirthD") String mbBirthD) {
 		vo.setMbHp(memHp1 + "-" + memHp2 + "-" + memHp3);
+		vo.setMbBirth(mbBirthY + "-" + mbBirthM + '-' + mbBirthD);
 		System.out.println(vo.toString());
 		
 		service.insertMember(vo);
