@@ -7,9 +7,8 @@
 <meta charset="UTF-8">
 <title>Login</title>
 <link rel="stylesheet" type="text/css" href="<c:url value='/css/sign/Login.css' />">
-
-<script src="../js/jquery-3.6.1.min.js"></script>
-<script src="../js/index/index.js"></script>
+<script src="<c:url value='/js/jquery-3.6.1.min.js'/>"></script>
+<script src="<c:url value='/js/sign/login.js'/>"></script>
 <c:import url="/WEB-INF/views/layout/toplink.jsp"/>
 </head>
 <body>
@@ -17,8 +16,10 @@
 		<h2>로그인</h2>
 		<div class="container">
 			<form id="Login" name="Login">
-				<p class=""><input type="text" name="id" placeholder="아이디"></p>
-				<p class=""><input type="password" name="password" placeholder="비밀번호"></p>
+				<input type="text" id="id" name="id" placeholder="아이디">
+				<input type="password" id="pw" name="pw" placeholder="비밀번호"><br>
+                <input type="submit" value="로그인">
+
 			</form>
 		</div>
 		<ul id="help">
@@ -28,7 +29,6 @@
               <li>/</li>
               <li><a href="<c:url value='/member/hwForm' />">회원가입</a></li>
         </ul>
-        <button type="submit">로그인</button>
         <c:import url="/WEB-INF/views/layout/footer.jsp" />
 </body>
 </html>

@@ -34,7 +34,7 @@ public class MemberService implements IMemberService {
 		
 		String result = "fail";
 		// 암호화된 비밀번호와 입력해서 전달된 비밀번호와 일치하는지 확인
-		if(encodedPw != null && passwordEncoder.matches((String)map.get("pwd"), encodedPw)) {
+		if(encodedPw != null && passwordEncoder.matches((String)map.get("pw"), encodedPw)) {
 			result = "success";
 		}
 		// matches() : 평문과 암호화된 문장 비교
@@ -48,6 +48,7 @@ public class MemberService implements IMemberService {
 		// 입력한 비밀번호를 암호화해서 저장
 		// vo에서 비밀번호 가져와서 암호화한 후
 		String encodedPassword = passwordEncoder.encode(vo.getMbPw());
+		
 		// 암호화된 비밀번호로 vo에 저장한 후 vo를 mapper에 보내서 db에 저장
 		vo.setMbPw(encodedPassword); // vo에 암호화된 비밀번호 저장
 		dao.insertMember(vo);
