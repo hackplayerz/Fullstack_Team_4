@@ -8,7 +8,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.spring_boot.projectEx.dao.IMemberDAO;
-import com.spring_boot.projectEx.model.memberVO;
+import com.spring_boot.projectEx.model.MemberVO;
 
 
 @Service
@@ -44,7 +44,7 @@ public class MemberService implements IMemberService {
 	
 
 	@Override
-	public void insertMember(memberVO vo) {
+	public void insertMember(MemberVO vo) {
 		// 입력한 비밀번호를 암호화해서 저장
 		// vo에서 비밀번호 가져와서 암호화한 후
 		String encodedPassword = passwordEncoder.encode(vo.getMbPw());
