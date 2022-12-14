@@ -5,6 +5,7 @@ import java.util.Date;
 import org.springframework.format.annotation.DateTimeFormat;
 
 public class MemberVO {
+	
 	private String mbId;
 	private String mbPw;
 	private String mbName;
@@ -85,6 +86,24 @@ public class MemberVO {
 		this.mbAddress2 = mbAddress2;
 	}
 
+	@Override
+	public String toString() {
+		return "{" +
+			" mbId='" + getMbId() + "'" +
+			", mbPw='" + getMbPw() + "'" +
+			", mbName='" + getMbName() + "'" +
+			", mbBirth='" + getMbBirth() + "'" +
+			", mbDate='" + getMbDate() + "'" +
+			", mbEmail='" + getMbEmail() + "'" +
+			", mbGen='" + getMbGen() + "'" +
+			", mbHp='" + getMbHp() + "'" +
+			", mbZipcode='" + getMbZipcode() + "'" +
+			", mbAddress1='" + getMbAddress1() + "'" +
+			", mbAddress2='" + getMbAddress2() + "'" +
+			"}";
+	}
+	
+	
 	
 	
 	
