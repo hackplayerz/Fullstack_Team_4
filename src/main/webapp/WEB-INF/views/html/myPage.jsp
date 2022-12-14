@@ -76,14 +76,15 @@
         </thead>
         <tbody>
           <tr>
-          	<!-- 0으로 되어있는 부분에 변수명 넣어야함. 어떤 변수명일지 모르겠음 ..  -->
-            <td class="o_num">0</td>
-            <td>></td>
-            <td class="o_num">0</td>
-            <td>></td>
-            <td class="o_num">0</td>
-            <td>></td>
-            <td class="o_num">0</td>
+          	<c:forEach var="prd" items="${cartList }"> 
+              <td class="o_num"> ${prd.orderCount }</td>
+              <td>></td>
+              <td class="o_num">0</td>
+              <td>></td>
+              <td class="o_num">0</td>
+              <td>></td>
+              <td class="o_num">0</td>
+            </c:forEach>
           </tr>
         </tbody>
       </table>

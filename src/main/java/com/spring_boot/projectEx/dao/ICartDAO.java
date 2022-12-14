@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import com.spring_boot.projectEx.model.CartVO;
-import com.spring_boot.projectEx.model.memberVO;
 import com.spring_boot.projectEx.model.OrderInfoVO;
+import com.spring_boot.projectEx.model.MemberVO;
 
 public interface ICartDAO {
 	public void insertCart(CartVO vo);	// 장바구니에 추가

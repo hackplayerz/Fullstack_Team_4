@@ -1,9 +1,5 @@
 package com.spring_boot.projectEx.model;
 
-import java.util.Date;
-
-import org.springframework.format.annotation.DateTimeFormat;
-
 public class OrderInfoVO {
 	private String ordNo;
 	//@DateTimeFormat(pattern="yyyy-MM-dd")

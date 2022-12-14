@@ -1,8 +1,5 @@
 package com.spring_boot.projectEx.model;
 
-import lombok.Getter;
-import lombok.Setter;
-
 public class ProductVO {
 
     private String prdNo;       // 상품번호
