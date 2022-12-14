@@ -17,6 +17,7 @@ public class MemberVO {
 	private String mbZipcode;
 	private String mbAddress1;
 	private String mbAddress2;
+
 	public String getMbId() {
 		return mbId;
 	}
@@ -83,7 +84,6 @@ public class MemberVO {
 	public void setMbAddress2(String mbAddress2) {
 		this.mbAddress2 = mbAddress2;
 	}
-
 	
 	
 	
