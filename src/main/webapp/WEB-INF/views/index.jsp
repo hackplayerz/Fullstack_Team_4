@@ -13,12 +13,11 @@
     <link rel="stylesheet" type="text/css" href="<c:url value='css/index/product.css' />">
     <script src="<c:url value='js/jquery-3.6.1.min.js' />"></script>
     <script src="<c:url value='js/index/slideShow.js' />"></script>
-    <script src="<c:url value='js/index/index.js' />"></script>
-    <c:import url="<c:url value='/WEB-INF/views/layout/toplink.jsp'/>"/>
+    <c:import url="/WEB-INF/views/layout/toplink.jsp"/>
     
 </head>
 <body>
-    <c:import url="<c:url value='/WEB-INF/views/layout/header.jsp' />" />
+    <c:import url="/WEB-INF/views/layout/header.jsp" />
     <section id="section">
         <article  id="slideShow"> <!-- 슬라이드 쇼 -->  
             <!--  (1) prevNext 버튼 박스 -->
@@ -54,11 +53,11 @@
             <div id="productBox" >
                 <div class="prdRecommend">신규 상품</div>
                 <div class="Mainproduct">
-                    <div><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood1.jpg">네츄럴코어 헬로쿠키<P>4000원</P></a></div>
-                    <div><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood2.jpg">네츄럴코어 헬로쿠키 <P>4000원</P></a></div>
-                    <div><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood3.jpg">네츄럴코어 헬로쿠키 <P>4000원</P></a></div>
-                    <div><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood4.jpg">네츄럴코어 헬로쿠키 <P>4000원</P></a></div>
-                    <div><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood1.jpg">네츄럴코어 헬로쿠키 <P>4000원</P></a></div>
+                    <div class="prdIndexItemBox"><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood1.jpg">네츄럴코어 헬로쿠키<P>4000원</P></a></div>
+                    <div class="prdIndexItemBox"><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood2.jpg">네츄럴코어 헬로쿠키 <P>4000원</P></a></div>
+                    <div class="prdIndexItemBox"><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood3.jpg">네츄럴코어 헬로쿠키 <P>4000원</P></a></div>
+                    <div class="prdIndexItemBox"><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood4.jpg">네츄럴코어 헬로쿠키 <P>4000원</P></a></div>
+                    <div class="prdIndexItemBox"><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood1.jpg">네츄럴코어 헬로쿠키 <P>4000원</P></a></div>
                 </div>
                 <div class="prdRecommend">많이 보는 상품</div>
                 <div class="Mainproduct">
@@ -82,6 +81,6 @@
         
     </section>
     
-    <c:import url="<c:url value='/WEB-INF/views/layout/footer.jsp' />" />
+    <c:import url="/WEB-INF/views/layout/footer.jsp" />
 </body>
 </html>
