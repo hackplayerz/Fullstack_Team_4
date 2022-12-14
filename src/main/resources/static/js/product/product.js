@@ -1,10 +1,6 @@
 $(document).ready(function () {
     SubCategoryBold();
     InitCategoryCount();
-    // 상품 이미지 설정
-    SetProduct(prd1);
-    // 메인 카테고리 타이틀 변경
-    BindingOnclickEvent();
 });
 
 function item(name, img, price, category) {
@@ -14,38 +10,10 @@ function item(name, img, price, category) {
     this.category = category;
 }
 
-let prd1 = new item("asd", "../img/product/헤드셋.png", "100000", "간식");
-
-function SetProduct(item) {
-    if (localStorage.getItem("mainMenubl")) {
-        localStorage.removeItem("subName");
-    }
-    var img = document.createElement("img");
-    img.src = item.img;
-
-    var prdSource = document.querySelectorAll(".productSource");    
-
-    prdSource[0].getElementsByClassName("image")[0].src = item.img;
-    prdSource[1].getElementsByClassName("image")[0].src = item.img;
-}
-
 function SendData(img, name, price) {
     localStorage.setItem("name", name);
     localStorage.setItem("img", img);
     localStorage.setItem("price", price);
-}
-
-function BindingOnclickEvent()
-{
-    // 이미지 클릭 이벤트 바인딩
-    $(".productSource").on('click',function()
-    {
-        // 이미지, 이름, 가격을 보낸다
-        var img = this.getElementsByClassName("image")[0].src;
-        var name = this.getElementsByClassName("name")[0].innerHTML;
-        var price = this.getElementsByClassName("price")[0].innerHTML;
-        SendData(img,name,price);
-    })   
 }
 
 function InitCategoryCount() {
