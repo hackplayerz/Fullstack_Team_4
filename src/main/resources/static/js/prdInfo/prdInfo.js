@@ -6,13 +6,6 @@
 
 $(document).ready(function() {
 	
-	var getPrdAmount=0;
-    $('#shoppingCart').on('click',function(){
-		getPrdAmount = $('#prdAmount').val();
-		
-		location.href="myPage.html?" + getPrdAmount;
-    });
-  
     $('#buy').mouseover(function(){
 		$('#buy').css('background-color', 'white');
 		$('#buy').css('color', 'red');
@@ -31,6 +24,7 @@ $(document).ready(function() {
 	});
 	
 	getPrdInfo();
+	
 });
 
 function getPrdInfo() {
