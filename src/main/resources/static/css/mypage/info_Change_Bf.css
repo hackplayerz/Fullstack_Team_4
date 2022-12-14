@@ -7,7 +7,9 @@ body{
 .side_menu {
   display : inline-block;
 }
-nav {
+
+/* nav */
+.side {
 	width : 280px;
 	background-color : white;
 	border-right : 1px solid #ddd;
