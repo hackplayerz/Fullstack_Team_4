@@ -9,8 +9,8 @@ import org.springframework.stereotype.Service;
 
 import com.spring_boot.projectEx.dao.ICartDAO;
 import com.spring_boot.projectEx.model.CartVO;
-import com.spring_boot.projectEx.model.memberVO;
 import com.spring_boot.projectEx.model.OrderInfoVO;
+import com.spring_boot.projectEx.model.MemberVO;
 
 @Service
 public class CartService implements ICartService {
