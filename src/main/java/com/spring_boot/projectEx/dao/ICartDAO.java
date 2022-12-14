@@ -14,6 +14,7 @@ public interface ICartDAO {
 	public ArrayList<CartVO> cartList(String memId);	// 현재 회원의 장바구니 목록을 반환해줌
 	public void deleteCart(String cartNo);	// 장바구니 삭제
 	
+	
 	//주문 처리 작업에 필요한 메소드
 	public MemberVO getMemberInfo(String memId);	// 회원 정보 알아오기
 	public void updateCart(CartVO vo); //변경된 주문 수량 업데이트
