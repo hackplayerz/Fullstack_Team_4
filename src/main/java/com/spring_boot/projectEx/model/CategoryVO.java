@@ -7,7 +7,8 @@ public class CategoryVO {
     private String ctgId;
     private String ctgName;
     private String subName;
-    
+
+	// region Getter and setter
     public String getCtgId() {
 		return ctgId;
 	}
@@ -25,5 +26,18 @@ public class CategoryVO {
 	}
 	public void setSubName(String subName) {
 		this.subName = subName;
+	}
+
+	// endregion
+
+	public CategoryVO Clone()
+	{
+		CategoryVO clone = new CategoryVO();
+
+		clone.setCtgId(ctgId);
+		clone.setCtgName(ctgName);
+		clone.setSubName(subName);
+
+		return clone;
 	}
 }

@@ -47,12 +47,6 @@ public class ProductService implements IProductService{
     }
 
     @Override
-    public ProductVO detailViewProduct(String prdNo) {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
-    @Override
     public String prdNoCheck(String prdNo) {
         // TODO Auto-generated method stub
         return null;
