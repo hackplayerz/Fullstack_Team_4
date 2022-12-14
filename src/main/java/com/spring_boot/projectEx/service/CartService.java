@@ -75,13 +75,13 @@ public class CartService implements ICartService {
 		//	따라서 mapper에게 memId와 주문 번호를 2개의 데이터를 전달해야함(HashMap)
 		HashMap<String, Object> map = new HashMap<String, Object>();
 		map.put("ordNo", ordInfoVo.getOrdNo());
-		map.put("memId", ordInfoVo.getMemId());
+		map.put("memId", ordInfoVo.getMbId());
 		
 		//mapper에게 전달
 		dao.insertOrderProduct(map);
 		
 		// 3. 주문 완료 후 장바구니 삭제
-		dao.deleteCartAfterOrder(ordInfoVo.getMemId());
+		dao.deleteCartAfterOrder(ordInfoVo.getMbId());
 	}
 
 }

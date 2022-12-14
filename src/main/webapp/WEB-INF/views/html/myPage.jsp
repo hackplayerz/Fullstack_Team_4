@@ -11,11 +11,14 @@
   <link rel="stylesheet" type="text/css" href="<c:url value='/css/mypage/myPage.css' />">
   <link rel="stylesheet" type="text/css" href="<c:url value='/css/index/headerMenu.css' />">
   <link rel="stylesheet" type="text/css" href="<c:url value='/css/index/menu.css' />">
+  <!-- <link rel="stylesheet" type="text/css" href="<c:url value='/css/index/footer.css'/>">  -->
+  
   <script src="<c:url value='/js/jquery-3.6.1.min.js' />"></script>
   <script src="<c:url value='/js/index/menu.js' />"></script>
   <script src="<c:url value='/js/index/index.js' />"></script>
   <script src="<c:url value='/js/mypage/receiveMypage.js' />"></script>
   <script src="<c:url value='/js/mypage/myPage.js' />"></script>
+
   <script type="text/javascript">
 	var qty=1;
 	// 주문 수량을 변경하는 함수
@@ -40,11 +43,7 @@
 		cartQty.value = qty;
 		amount.innerHTML = total.toLocaleString(); //천단위 구분
 		}
-  </script>
-  
-  <!-- Header 메인창 -->
-  <c:import url="/WEB-INF/views/layout/toplink.jsp"/>
-    
+  </script>  
 </head>
 <body>
   <!-- Header 카테고리 메뉴 -->
@@ -55,8 +54,8 @@
     <nav id="nav2">
       <h4>&nbsp;&nbsp;마이 페이지</h4>
       <ul>
-        <li><a href="<c:url value='/html/myPage.jsp' />">장바구니</a>
-        <li><a href="<c:url value='/html/info_Change_Bf.jsp' />">개인정보변경</a>
+        <li><a href="<c:url value='/html/Insert_myPage' />">장바구니</a>
+        <li><a href="<c:url value='/html/info_Change_Bf' />">개인정보변경</a>
       </ul>
     </nav>
   </section>
@@ -77,14 +76,14 @@
         <tbody>
           <tr>
           	<c:forEach var="prd" items="${cartList }"> 
-              <td class="o_num"> ${prd.orderCount }</td>
-              <td>></td>
-              <td class="o_num">0</td>
-              <td>></td>
-              <td class="o_num">0</td>
-              <td>></td>
-              <td class="o_num">0</td>
+              <td class="o_num" value="0"> ${prd.orderCount }</td>
             </c:forEach>
+            <td>></td>
+            <td class="o_num">0</td>
+            <td>></td>
+            <td class="o_num">0</td>
+            <td>></td>
+            <td class="o_num">0</td>
           </tr>
         </tbody>
       </table>
