@@ -3,6 +3,7 @@ package com.spring_boot.projectEx.controller;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Objects;
 
 import com.spring_boot.projectEx.model.CategoryVO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,27 +32,34 @@ public class ProductController {
         ArrayList<CategoryVO> category = service.getSubCategory(sub); // 자르지않은 데이터, 인덱스는 0뿐
         String[] split = category.get(0).getSubName().split(","); // ,로 자른 서브 카테고리 문자열
         ArrayList<CategoryVO> subCategory = new ArrayList<CategoryVO>();
-        
-        System.out.print("서브 카테고리 : ");
+               
         for(var s : split)
-        {
-        	System.out.print(s + " ");
-            CategoryVO vo = category.get(0);
+        {        	
+            CategoryVO vo = category.get(0).Clone();
             vo.setSubName(s);
             subCategory.add(vo);
         }
-        System.out.println();
+        
 
         model.addAttribute("subCategory", subCategory);
-
         return "html/product";
     }
 
-    /*@ResponseBody
-    @RequestMapping("/product/OnSubCategoryChange/${subName}")
-    public String OnSubCategoryMenuClick(@PathVariable String subName, Model model)
+    @RequestMapping("/product/OnSubCategoryChange/{subCategory}")
+    public String OnSubCategoryMenuClick(@PathVariable String subCategory, Model model)
     {
-        return "";
-    }*/
+    	System.out.println(subCategory + " 들어옴");
+        ArrayList<ProductVO> prdList = service.getSubCategoryProduct(subCategory);
+        
+        for(var prd : prdList)
+        {
+        	System.out.print(prd.getPrdName() + " ");
+        }
+        System.out.println();
+        
+        model.addAttribute("prdList", prdList);
+
+        return "html/product";
+    }
 	
 }

@@ -1,6 +1,7 @@
 package com.spring_boot.projectEx.model;
 
 public class ProductVO {
+	private String prdNo;       // 상품번호
 	private String prdName;     // 상품이름
     private int prdPrice;       // 상품가격
     private String prdCompany;  // 제조회사
@@ -10,7 +11,7 @@ public class ProductVO {
     private int visit;          // 방문횟수
     private int orderCount;     // 주문횟수
     private String ctgId;       // 카테고리 ID
-    private String prdNo;       // 상품번호
+    private String subCategory; // 서브 카테고리 이름
     
 //region Getter and setter
     
@@ -74,6 +75,12 @@ public class ProductVO {
 	public void setCtgId(String ctgId) {
 		this.ctgId = ctgId;
 	}
+	public String getSubCategory() {
+		return subCategory;
+	}
+	public void setSubCategory(String subCategory) {
+		this.subCategory = subCategory;
+	}
 	
 //endregion 
 
@@ -93,4 +100,5 @@ public class ProductVO {
 
 		return clone;
 	}
+	
 }
