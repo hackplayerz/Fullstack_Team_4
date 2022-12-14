@@ -75,6 +75,11 @@
     DELETE FROM cart
     WHERE mbId=#{mbId}
   </delete>
+  
+  <!--  암호화한 후 로그인 확인-->
+  	<select id="loginCheck" parameterType="string" resultType="string">
+  		SELECT mbPw FROM member WHERE mbId=#{id}
+  	</select>
 </mapper>
 
 

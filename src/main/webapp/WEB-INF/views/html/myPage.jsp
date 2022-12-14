@@ -15,8 +15,8 @@
   
   <script src="<c:url value='/js/jquery-3.6.1.min.js' />"></script>
   <script src="<c:url value='/js/index/menu.js' />"></script>
-  <script src="<c:url value='/js/index/index.js' />"></script>
   <script src="<c:url value='/js/mypage/receiveMypage.js' />"></script>
+  <script src="<c:url value='/js/mypage/myPage.js' />"></script>
   <script src="<c:url value='/js/mypage/myPage.js' />"></script>
 
   <script type="text/javascript">
