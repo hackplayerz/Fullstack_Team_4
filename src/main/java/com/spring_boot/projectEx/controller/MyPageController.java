@@ -22,6 +22,13 @@ public class MyPageController {
 		return "/html/myPage";
 	}
 	
+	//인포체인지 Bf 페이지 열기
+	@RequestMapping("/html/info_Change_Bf")	//
+	public String Info_Change_Bf() {
+		return "/html/info_Change_Bf";
+	}
+	 
+	
 	//서비스 만들어지면 장바구니에 상품 추가하기, 목록 출력하기, 삭제하기 등 코드 삽입해야함. 
 	
 	//장바구니 목록 삭제하기 : 배열로 만들어진 cartNo
