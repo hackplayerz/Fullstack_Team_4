@@ -31,16 +31,22 @@
         <!-- 카테고리 이름 -->
         <section id="category">
             <div id="categoryName">
-                <h2>간식</h2>
+                <h2>${subCategory[0].ctgName}</h2>
             </div>
             <section id="subCategory">
                 <!-- 서브 카테고리 메뉴 -->
                     <div id="subCategoryContent">
-                        <ul id="subCategoryMenu"> 
-                            
+                        <ul id="subCategoryMenu">
+                        
+                            <!-- 전체 카테고리 선택 -->
+                                                        
+                            <li id="menu"><a href="#">ALL</a></li>
                             <c:forEach var='category' items="${subCategory}">
-                            	'${category.subName}'
-                            	<!-- TODO 카테고리 구현 -->
+                                <li>|</li>
+                                <!-- 서브카테고리 선택 -->
+                                <li id="menu" class="menu">
+                                	<a href="">${category.subName}</a>
+                                </li>
                             </c:forEach>
                             
                         </ul>

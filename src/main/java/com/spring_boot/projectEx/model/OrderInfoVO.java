@@ -6,15 +6,24 @@ public class OrderInfoVO {
 	//private Date ordDate;
 	//날짜를 DB에서 보내주기 때문에 편하게 스트링으로 선언함
 	private String ordDate;
-	private String memId;
+	private String mbId;
 	private String ordReceiver;
 	private String ordRcvZipcode;
 	private String ordRcvAddress1;
 	private String ordRcvAddress2;
+	private String ordRcvPhone;
+	private String ordRcvMsg;
+	private String ordPay;
 	
 	//게터 & 세터 구현
 	public String getOrdNo() {
 		return ordNo;
+	}
+	public String getMbId() {
+		return mbId;
+	}
+	public void setMbId(String mbId) {
+		this.mbId = mbId;
 	}
 	public void setOrdNo(String ordNo) {
 		this.ordNo = ordNo;
@@ -25,12 +34,7 @@ public class OrderInfoVO {
 	public void setOrdDate(String ordDate) {
 		this.ordDate = ordDate;
 	}
-	public String getMemId() {
-		return memId;
-	}
-	public void setMemId(String memId) {
-		this.memId = memId;
-	}
+
 	public String getOrdReceiver() {
 		return ordReceiver;
 	}
@@ -73,9 +77,6 @@ public class OrderInfoVO {
 	public void setOrdPay(String ordPay) {
 		this.ordPay = ordPay;
 	}
-	private String ordRcvPhone;
-	private String ordRcvMsg;
-	private String ordPay;
 	
 }
 

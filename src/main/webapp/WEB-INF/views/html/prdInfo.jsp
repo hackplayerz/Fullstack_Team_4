@@ -22,7 +22,7 @@
 				<div id="prdInfoFrame">
 					<input type="text" id="prdName" disabled>
 					<br>
-					<form id="prdInfo">
+					<form id="prdInfo" method="post">   <%-- action="<c:url value='/product/insertCart' />" --%>
 						<!-- 상품 판매 정보 -->
 						<dl>
 							<dt>판매가</dt>
@@ -30,7 +30,7 @@
 						</dl>
 						<dl>
 							<dt>제조사</dt>
-							<dd>제조사 명</dd>
+							<dd>${prdCompany }</dd>
 						</dl>
 						<dl>
 							<dt>원산지</dt>
@@ -43,9 +43,9 @@
 						<!-- 상품 판매 정보 끝 -->
 						<div id="buttonFrame">
 							<!-- 장바구니 샘플 구매 버튼 -->
-							<button id="shoppingCart"><a href="<c:url value='/member/insert_Mypage'/>">장바구니 담기</a></button>
-							<button type="submit" id="sample">샘플받기</button>
-							<button type="submit" id="buy"><a href="<c:url value='/member/insert_Mypage'/>">구매</button>
+								<button id="shoppingCart" onclick="location.href='<c:url value='/html/insert_Mypage'/>'">장바구니 담기</button>
+								<button type="submit" id="sample">샘플받기</button>
+								<button id="buy" onclick="location.href='<c:url value='/html/insert_Mypage'/>'">구매 하기</button>
 							<!-- 장바구니 샘플 구매 버튼 끝 -->
 						</div>
 					</form>	
