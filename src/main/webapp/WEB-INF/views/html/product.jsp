@@ -37,14 +37,16 @@
                 <!-- 서브 카테고리 메뉴 -->
                     <div id="subCategoryContent">
                         <ul id="subCategoryMenu">
-
-                            <li id="menu0" class="menu"><a href="#">ALL</a></li>
+                        
+                            <!-- 전체 카테고리 선택 -->
+                                                        
+                            <li id="menu"><a href="#">ALL</a></li>
                             <c:forEach var='category' items="${subCategory}">
-
                                 <li>|</li>
-                                <li id="menu" class="menu"><a href="#">'${category.subName}'</li>
-
-                            	<!-- TODO 카테고리 구현 -->
+                                <!-- 서브카테고리 선택 -->
+                                <li id="menu" class="menu">
+                                	<a href="">${category.subName}</a>
+                                </li>
                             </c:forEach>
                             
                         </ul>

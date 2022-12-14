@@ -4,7 +4,6 @@ $(document).ready(function () {
     // 상품 이미지 설정
     SetProduct(prd1);
     // 메인 카테고리 타이틀 변경
-    InitMenu();
     BindingOnclickEvent();
 });
 
@@ -47,23 +46,6 @@ function BindingOnclickEvent()
         var price = this.getElementsByClassName("price")[0].innerHTML;
         SendData(img,name,price);
     })   
-}
-
-function InitMenu() {
-    // 메인 카테고리 메뉴 설정
-    var categoryName = document.querySelector("#categoryName h2");
-    categoryName.innerHTML = localStorage.getItem("menuName");
-
-    // 서브 카테고리 메뉴 설정
-    var subElements = localStorage.getItem("submenu").split(","); // index.html에서 가져온 배열값
-
-    var subCategory = document.querySelectorAll("#subCategory .menu"); // HTML로 넣을 것
-
-    for (let i = 0; i < subElements.length; i++) {
-        subCategory[i].innerHTML = subElements[i];
-        if (i - 1 < subElements.length) {
-        }
-    }
 }
 
 function InitCategoryCount() {
