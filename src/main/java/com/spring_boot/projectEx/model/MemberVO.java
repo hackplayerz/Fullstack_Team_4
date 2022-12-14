@@ -5,70 +5,87 @@ import java.util.Date;
 import org.springframework.format.annotation.DateTimeFormat;
 
 public class MemberVO {
-	private String memId;
-	private String memPw;
-	private String memName;
-	private String memEmail;
+	private String mbId;
+	private String mbPw;
+	private String mbName;
+	private String mbBirth;
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
-	private Date memJoinDate;
-	private String memHP;
-	private String memZipcode;
-	private String memAddress1;
-	private String memAddress2;
-	public String getMemId() {
-		return memId;
+	private Date mbDate;
+	private String mbEmail;
+	private String mbGen;
+	private String mbHp;
+	private String mbZipcode;
+	private String mbAddress1;
+	private String mbAddress2;
+	
+	public String getMbId() {
+		return mbId;
 	}
-	public void setMemId(String memId) {
-		this.memId = memId;
+	public void setMbId(String mbId) {
+		this.mbId = mbId;
 	}
-	public String getMemPw() {
-		return memPw;
+	public String getMbPw() {
+		return mbPw;
 	}
-	public void setMemPw(String memPw) {
-		this.memPw = memPw;
+	public void setMbPw(String mbPw) {
+		this.mbPw = mbPw;
 	}
-	public String getMemName() {
-		return memName;
+	public String getMbName() {
+		return mbName;
 	}
-	public void setMemName(String memName) {
-		this.memName = memName;
+	public void setMbName(String mbName) {
+		this.mbName = mbName;
 	}
-	public String getMemEmail() {
-		return memEmail;
+	public String getMbBirth() {
+		return mbBirth;
 	}
-	public void setMemEmail(String memEmail) {
-		this.memEmail = memEmail;
+	public void setMbBirth(String mbBirth) {
+		this.mbBirth = mbBirth;
 	}
-	public Date getMemJoinDate() {
-		return memJoinDate;
+	public Date getMbDate() {
+		return mbDate;
 	}
-	public void setMemJoinDate(Date memJoinDate) {
-		this.memJoinDate = memJoinDate;
+	public void setMbDate(Date mbDate) {
+		this.mbDate = mbDate;
 	}
-	public String getMemHP() {
-		return memHP;
+	public String getMbEmail() {
+		return mbEmail;
 	}
-	public void setMemHP(String memHP) {
-		this.memHP = memHP;
+	public void setMbEmail(String mbEmail) {
+		this.mbEmail = mbEmail;
 	}
-	public String getMemZipcode() {
-		return memZipcode;
+	public String getMbGen() {
+		return mbGen;
 	}
-	public void setMemZipcode(String memZipcode) {
-		this.memZipcode = memZipcode;
+	public void setMbGen(String mbGen) {
+		this.mbGen = mbGen;
 	}
-	public String getMemAddress1() {
-		return memAddress1;
+	public String getMbHp() {
+		return mbHp;
 	}
-	public void setMemAddress1(String memAddress1) {
-		this.memAddress1 = memAddress1;
+	public void setMbHp(String mbHp) {
+		this.mbHp = mbHp;
 	}
-	public String getMemAddress2() {
-		return memAddress2;
+	public String getMbZipcode() {
+		return mbZipcode;
 	}
-	public void setMemAddress2(String memAddress2) {
-		this.memAddress2 = memAddress2;
+	public void setMbZipcode(String mbZipcode) {
+		this.mbZipcode = mbZipcode;
 	}
+	public String getMbAddress1() {
+		return mbAddress1;
+	}
+	public void setMbAddress1(String mbAddress1) {
+		this.mbAddress1 = mbAddress1;
+	}
+	public String getMbAddress2() {
+		return mbAddress2;
+	}
+	public void setMbAddress2(String mbAddress2) {
+		this.mbAddress2 = mbAddress2;
+	}
+
+	
 	
 	
 }
