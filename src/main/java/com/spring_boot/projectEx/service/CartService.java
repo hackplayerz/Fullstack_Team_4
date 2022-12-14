@@ -54,7 +54,7 @@ public class CartService implements ICartService {
 	}
 
 	@Override
-	public memberVO getMemberInfo(String memId) {
+	public MemberVO getMemberInfo(String memId) {
 		return dao.getMemberInfo(memId);
 	}
 
