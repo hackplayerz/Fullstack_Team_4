@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -17,24 +18,24 @@
 		<div id="bigFrame">
 			<div id="highFrame">
 				<div id="imageFrame">
-					<img src="<c:url value='/img/prdlnfo/dogFood01.jpg' />" id="prdImage">
+					<img id="prdImage" src="<c:url value='/img/prdInfo/${prd.prdImg }' />" >
 				</div>
 				<div id="prdInfoFrame">
-					<input type="text" id="prdName" disabled>
+					<p id="prdName">${prd.prdName }</p>
 					<br>
-					<form id="prdInfo" method="post">   <%-- action="<c:url value='/product/insertCart' />" --%>
+					<form id="prdInfo" method="post" action="<c:url value='/html/Insert_myPage' />">
 						<!-- 상품 판매 정보 -->
 						<dl>
 							<dt>판매가</dt>
-							<dd><input type="text" id="prdPrice" disabled></dd>
+							<dd id="prdPrice"><fmt:formatNumber value = "${prd.prdPrice }" pattern="#,###" />원</dd>
 						</dl>
 						<dl>
 							<dt>제조사</dt>
-							<dd>${prdCompany }</dd>
+							<dd>${prd.prdCompany }</dd>
 						</dl>
 						<dl>
 							<dt>원산지</dt>
-							<dd>한국</dd>
+							<dd>국산</dd>
 						</dl>
 						<dl>
 							<dt>주문수량</dt>
@@ -43,9 +44,9 @@
 						<!-- 상품 판매 정보 끝 -->
 						<div id="buttonFrame">
 							<!-- 장바구니 샘플 구매 버튼 -->
-								<button id="shoppingCart" onclick="location.href='<c:url value='/html/insert_Mypage'/>'">장바구니 담기</button>
-								<button type="submit" id="sample">샘플받기</button>
-								<button id="buy" onclick="location.href='<c:url value='/html/insert_Mypage'/>'">구매 하기</button>
+								<button id="shoppingCart">장바구니 담기</button>
+								<button type="button" id="sample">샘플받기</button>
+								<button id="buy">구매 하기</button>
 							<!-- 장바구니 샘플 구매 버튼 끝 -->
 						</div>
 					</form>	
@@ -53,7 +54,7 @@
 			</div>			
 				<div id="prdInfoImageFrame">
 					<!-- 상품 상세 사진 -->
-					<img src="<c:url value='/img/prdlnfo/tempImage01.jpg' />">
+					<img src="<c:url value='/img/prdInfo/tempImage01.jpg' />">
 					<!-- 상품 상세 사진 끝 -->
 				</div>	
 			<div id="reviewTableFrame">
