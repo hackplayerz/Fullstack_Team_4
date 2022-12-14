@@ -2,7 +2,7 @@ package com.spring_boot.projectEx.model;
 
 public class CartVO {
 	private int cartNo;
-	private String memId;
+	private String mbId;
 	private String prdNo;
 	private int cartQty;
 	
@@ -19,11 +19,11 @@ public class CartVO {
 	public void setCartNo(int cartNo) {
 		this.cartNo = cartNo;
 	}
-	public String getMemId() {
-		return memId;
+	public String getMbId() {
+		return mbId;
 	}
-	public void setMemId(String memId) {
-		this.memId = memId;
+	public void setMbId(String mbId) {
+		this.mbId = mbId;
 	}
 	public String getPrdNo() {
 		return prdNo;
