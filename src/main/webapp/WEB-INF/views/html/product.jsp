@@ -31,7 +31,7 @@
         <!-- 카테고리 이름 -->
         <section id="category">
             <div id="categoryName">
-                <h2>${subCategory[0].ctgName}</h2>
+                <h2>${subCategory[0].ctgName}</h2> <!-- TODO : 수정 -->
             </div>
             <section id="subCategory">
                 <!-- 서브 카테고리 메뉴 -->
@@ -48,7 +48,7 @@
                                 	<a href="<c:url value = '/product/OnSubCategoryChange/${category.subName}'/> ">${category.subName}</a>
                                 </li>
                             </c:forEach>
-                            
+
                         </ul>
                     </div>                             
             </section>    
@@ -65,7 +65,7 @@
 
             <div id="content">
                 <div id="product">
-
+	
                     <!-- 상품 컨텐츠 -->
                     <c:forEach var="prd" items="${prdList}">
                         <div class="productSource">
@@ -79,8 +79,7 @@
                             </p>
                         </div>
                     </c:forEach>
-
-                    
+          
                 </div>  	
             </div> 
         </section>

@@ -87,6 +87,7 @@ public class ProductVO {
 	public ProductVO Clone()
 	{
 		ProductVO clone = new ProductVO();
+		clone.setPrdNo(prdNo);
 		clone.setPrdName(prdName);
 		clone.setPrdPrice(prdPrice);
 		clone.setPrdCompany(prdCompany);
@@ -96,8 +97,8 @@ public class ProductVO {
 		clone.setVisit(visit);
 		clone.setOrderCount(orderCount);
 		clone.setCtgId(ctgId);
-		clone.setPrdNo(prdNo);
-
+		clone.setSubCategory(subCategory);
+		
 		return clone;
 	}
 	
