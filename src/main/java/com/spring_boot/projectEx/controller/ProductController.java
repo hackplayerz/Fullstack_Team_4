@@ -22,9 +22,12 @@ public class ProductController {
     public String OnProductFormView(@PathVariable String sub, Model model)
     {   
         ArrayList<ProductVO> prdList = service.ctgListProduct(sub);
-        var categoryList = service.getSubCategory(sub);
+        var rawCategory = service.getSubCategory(sub); // 자르지않은 데이터, 인덱스는 0뿐
+        //var split = categoryList.get(0).getSubName().split(","); // ,로 자른 서브 카테고리 문자열
+        //var redesignedCategory = 
+        
         model.addAttribute("prdList", prdList);
-        model.addAttribute("subCategory",categoryList);
+        model.addAttribute("subCategory",rawCategory);
         //TODO: 문자열 자르기
         return "html/product";
     }
