@@ -23,10 +23,8 @@
 			</form>
 		</div>
 		<ul id="help">
-              <li><a href="#">아이디찾기</a></li>
-              <li>/</li>
-              <li><a href="#">비밀번호찾기</a></li>
-              <li>/</li>
+              
+              <li><a href="#">아이디/비밀번호찾기</a></li>
               <li><a href="<c:url value='/member/hwForm' />">회원가입</a></li>
         </ul>
         <c:import url="/WEB-INF/views/layout/footer.jsp" />

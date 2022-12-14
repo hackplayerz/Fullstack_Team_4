@@ -23,7 +23,7 @@
     <div id="headerBox">
         <div id="logoBox">
             
-            <a href="index.html"><img src="<c:url value='/img/logo.png' />"/><h1>비전공 애견샵</h1></a>
+            <a href="<c:url value='/'/>"><img src="<c:url value='/img/logo.png' />"/><h1>비전공 애견샵</h1></a>
         </div>
         <div id ="headerMenuBox">
             <!-- 로그인 하기 전에 보여줄 메뉴 항목 -->

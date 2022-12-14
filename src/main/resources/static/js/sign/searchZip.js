@@ -18,11 +18,11 @@
  				}
  				
  				// 입력란에 검색한 우편번호, 주소1 출력
- 				document.getElementById('memZipcode').value = data.zonecode;
- 				document.getElementById('memAddress1').value = address1;
+ 				document.getElementById('mbZipcode').value = data.zonecode;
+ 				document.getElementById('mbAddress1').value = address1;
  				
  				// 상세 주소 입력란에 입력한 값은 삭제하고 포커스 주기
- 				var address2 = document.getElementById('memAddress2');
+ 				var address2 = document.getElementById('mbAddress2');
  				address2.value = "";
  				address2.focus();
  			}
