@@ -53,27 +53,46 @@
             <div id="productBox" >
                 <div class="prdRecommend">신규 상품</div>
                 <div class="Mainproduct">
-                    <div class="prdIndexItemBox"><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood1.jpg">네츄럴코어 헬로쿠키<P>4000원</P></a></div>
-                    <div class="prdIndexItemBox"><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood2.jpg">네츄럴코어 헬로쿠키 <P>4000원</P></a></div>
-                    <div class="prdIndexItemBox"><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood3.jpg">네츄럴코어 헬로쿠키 <P>4000원</P></a></div>
-                    <div class="prdIndexItemBox"><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood4.jpg">네츄럴코어 헬로쿠키 <P>4000원</P></a></div>
-                    <div class="prdIndexItemBox"><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood1.jpg">네츄럴코어 헬로쿠키 <P>4000원</P></a></div>
+                    
+                    <c:forEach var="prdDate" items="${prdListDate}">
+                        <div>
+                            <a href="<c:url value = '/html/prdInfo/${prdDate.prdNo}' />">
+                                <img src="<c:url value='/img/product/${prdDate.prdImg}' />">
+                                    ${prdDate.prdName}
+                                <p>
+                                    ${prdDate.prdPrice}
+                                </p>
+                            </a>
+                        </div>
+                    </c:forEach>
                 </div>
                 <div class="prdRecommend">많이 보는 상품</div>
                 <div class="Mainproduct">
-                    <div><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood1.jpg">네츄럴코어 헬로쿠키<P>4000원</P></a></div>
-                    <div><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood2.jpg">네츄럴코어 헬로쿠키 <P>4000원</P></a></div>
-                    <div><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood3.jpg">네츄럴코어 헬로쿠키 <P>4000원</P></a></div>
-                    <div><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood4.jpg">네츄럴코어 헬로쿠키 <P>4000원</P></a></div>
-                    <div><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood1.jpg">네츄럴코어 헬로쿠키 <P>4000원</P></a></div>
+                    <c:forEach var="prdVisit" items="${prdListVisit}">
+                        <div>
+                            <a href="<c:url value = '/html/prdInfo/${prdVisit.prdNo}' />">
+                                <img src="<c:url value='/img/product/${prdVisit.prdImg}' />">
+                                    ${prdVisit.prdName}
+                                <p>
+                                    ${prdVisit.prdPrice}
+                                </p>
+                            </a>
+                        </div>
+                    </c:forEach>
                 </div>
                 <div class="prdRecommend">주문량이 많은 상품</div>
                 <div class="Mainproduct">
-                    <div><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood1.jpg">네츄럴코어 헬로쿠키<P>4000원</P></a></div>
-                    <div><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood2.jpg">네츄럴코어 헬로쿠키 <P>4000원</P></a></div>
-                    <div><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood3.jpg">네츄럴코어 헬로쿠키 <P>4000원</P></a></div>
-                    <div><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood4.jpg">네츄럴코어 헬로쿠키 <P>4000원</P></a></div>
-                    <div><a href="../webapp/html/prdInfo.html"><img src="img/index/dogfood1.jpg">네츄럴코어 헬로쿠키 <P>4000원</P></a></div>
+                    <c:forEach var="prdOrder" items="${prdListOrder}">
+                        <div>
+                            <a href="<c:url value = '/html/prdInfo/${prdOrder.prdNo}' />">
+                                <img src="<c:url value='/img/product/${prdOrder.prdImg}' />">
+                                    ${prdOrder.prdName}
+                                <p>
+                                    ${prdOrder.prdPrice}
+                                </p>
+                            </a>
+                        </div>
+                    </c:forEach>
                 </div>
                
             </div>     	
