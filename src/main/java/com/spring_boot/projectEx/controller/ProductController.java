@@ -2,6 +2,7 @@ package com.spring_boot.projectEx.controller;
 
 import java.util.ArrayList;
 
+import com.spring_boot.projectEx.model.CategoryVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -23,12 +24,17 @@ public class ProductController {
     {   
         ArrayList<ProductVO> prdList = service.ctgListProduct(sub);
         var rawCategory = service.getSubCategory(sub); // 자르지않은 데이터, 인덱스는 0뿐
-        //var split = categoryList.get(0).getSubName().split(","); // ,로 자른 서브 카테고리 문자열
-        //var redesignedCategory = 
+        var split = rawCategory.get(0).getSubName().split(","); // ,로 자른 서브 카테고리 문자열
+        var redesignedCategory = new ArrayList<CategoryVO>();
+        for(int i=0;i<split.length;i++)
+        {
+            CategoryVO vo = rawCategory.get(0).Clone();
+            vo.setSubName(split[i]);
+        	redesignedCategory.add(vo);
+        }
         
         model.addAttribute("prdList", prdList);
-        model.addAttribute("subCategory",rawCategory);
-        //TODO: 문자열 자르기
+        model.addAttribute("subCategory",redesignedCategory);
         return "html/product";
     }
 	
