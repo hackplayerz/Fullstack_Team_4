@@ -1,13 +1,16 @@
 package com.spring_boot.projectEx.controller;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
+import com.fasterxml.jackson.databind.util.JSONPObject;
 import com.spring_boot.projectEx.model.CategoryVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.spring_boot.projectEx.model.ProductVO;
@@ -44,22 +47,12 @@ public class ProductController {
 	
 	// TODO : ajax로 변경
 	@ResponseBody // 서브카테고리 그 화면에 출력
-    @RequestMapping("/product/OnSubCategoryChange/{subCategory}")
-    public String OnSubCategoryMenuClick(@PathVariable String subCategory, Model model)
+    @RequestMapping("/product/OnSubCategoryChange")
+    public ArrayList<ProductVO> OnSubCategoryMenuClick(@RequestParam String subCategory)
     {
-    	System.out.println(subCategory + " 들어옴");
         ArrayList<ProductVO> prdList = service.getSubCategoryProduct(subCategory);
-        
-        System.out.print("product : ");
-        for(var prd : prdList)
-        {
-        	System.out.print(prd.getPrdName() + " ");
-        }
-        System.out.println();
-        
-        model.addAttribute("prdList", prdList);
 
-        return "html/product";
+        return prdList;
     }
 	
 }
