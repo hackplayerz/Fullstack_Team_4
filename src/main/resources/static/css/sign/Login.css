@@ -33,7 +33,7 @@ input{
 	width: 100px;
 	height: 40px;
 }
-#id {
+input {
     width: 200px;
     height: 40px;
     font-size: 30px;
@@ -47,7 +47,7 @@ input{
     border-style: groove;
     border-color: rgb(230, 230, 230); 
     }
-#password {
+/* #password {
     width: 200px;
     height: 40px;
     font-size: 30px;
@@ -59,7 +59,8 @@ input{
     border-radius: 3px;
     border-style: groove;
     border-color: rgb(230, 230, 230);  
-}
+} */
+
 #login {
     width: 100px;
     height : 30px;
