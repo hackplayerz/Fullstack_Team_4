@@ -39,7 +39,8 @@
                         <ul id="subCategoryMenu"> 
                             
                             <c:forEach var='category' items="${subCategory}">
-                            	'${category}'
+                            	'${category.subName}'
+                            	<!-- TODO 카테고리 구현 -->
                             </c:forEach>
                             
                         </ul>

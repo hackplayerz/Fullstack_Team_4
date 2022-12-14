@@ -5,24 +5,20 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<<<<<<< HEAD
-<title>회원가입폼</title>
 <title>hw</title>
-
 <link rel="stylesheet" type="text/css" href="<c:url value='/css/sign/hw.css' />">
 <link rel="stylesheet" type="text/css" href="<c:url value='/css/index/headerMenu.css' />">
     <script src="<c:url value='/js/jquery-3.6.1.min.js' />"></script>
     <script src="<c:url value='/js/sign/hw.js' />"></script>
-    <script src="<c:url value='/js/index/index.js' />"></script>
     
     <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
-    <script src="<c:url value='/js/searchZip.js' />"></script>	
+    <script src="<c:url value='/js/sign/searchZip.js' />"></script>	
 
-    <c:import url="/WEB-INF/views/layout/toplink.jsp"/>
+    <c:import url="<c:url value='/WEB-INF/views/layout/toplink.jsp' />"/>
 
 </head>
 <body>
-    <c:import url="/WEB-INF/views/layout/header.jsp" />
+    <c:import url="<c:url value='/WEB-INF/views/layout/header.jsp' />" />
 	<div class="member">
 	<form id="hwform" name="hwform" method="post"  action="<c:url value='/member/insert'/>">
         <!-- 1. 필드 -->
@@ -114,6 +110,6 @@
         <!-- 7. 푸터 -->
         
     </div>
-    <c:import url="/WEB-INF/views/layout/footer.jsp" />
+    <c:import url="<c:url value='/WEB-INF/views/layout/footer.jsp' />" />
 </body>
 </html>

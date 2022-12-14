@@ -14,10 +14,11 @@
     <script src="<c:url value='js/jquery-3.6.1.min.js' />"></script>
     <script src="<c:url value='js/index/slideShow.js' />"></script>
     <script src="<c:url value='js/index/index.js' />"></script>
-    <c:import url="/WEB-INF/views/layout/toplink.jsp"/>
+    <c:import url="<c:url value='/WEB-INF/views/layout/toplink.jsp'/>"/>
+    
 </head>
 <body>
-    <c:import url="/WEB-INF/views/layout/header.jsp" />
+    <c:import url="<c:url value='/WEB-INF/views/layout/header.jsp' />" />
     <section id="section">
         <article  id="slideShow"> <!-- 슬라이드 쇼 -->  
             <!--  (1) prevNext 버튼 박스 -->
@@ -80,6 +81,7 @@
         </article>
         
     </section>
-    <c:import url="/WEB-INF/views/layout/footer.jsp" />
+    
+    <c:import url="<c:url value='/WEB-INF/views/layout/footer.jsp' />" />
 </body>
 </html>
