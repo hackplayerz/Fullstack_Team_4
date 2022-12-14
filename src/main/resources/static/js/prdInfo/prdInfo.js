@@ -23,19 +23,4 @@ $(document).ready(function() {
 		$('#shoppingCart').css('background-color', '#E0E0E0');
 	});
 	
-	getPrdInfo();
-	
 });
-
-function getPrdInfo() {
-	$(document).ready(function(){
-		
-		var getPrdName = localStorage.getItem("name").replace(/ /g,"");
-		var getPrdPrice = localStorage.getItem("price").replace(/ /g,"");
-		console.log(getPrdName);
-		console.log(getPrdPrice);
-		
-		$("#prdName").val(getPrdName);
-		$("#prdPrice").val(getPrdPrice);
-});
-}
