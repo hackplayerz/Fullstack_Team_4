@@ -1,16 +1,24 @@
 @charset "UTF-8";
-
+body{
+	background-color: #fffff2;
+}
 #topHeader{
 	width: 1600px;
 	margin: auto;
+	border-left: 1px solid rgb(138, 138, 138);
+	border-right: 1px solid rgb(138, 138, 138);
 }
 #topNav{
 	width: 1600px;
 	margin: auto;
+	border-left: 1px solid rgb(138, 138, 138);
+	border-right: 1px solid rgb(138, 138, 138);
 }
 #section{
 	width: 1600px;
-	height: 2900px;
+	height: 2820px;
 	margin: auto;
-	
+	border-left: 1px solid rgb(138, 138, 138);
+	border-right: 1px solid rgb(138, 138, 138);
+	margin-bottom: 250px;
 }

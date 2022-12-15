@@ -5,20 +5,20 @@
 #slideShow {
 	position:relative;
 	background-color:#fff;
-	width: 1200px;
+	width: 800px;
 	height:520px;
 	line-height:520px;
 	margin: auto;
 }
 
 #slideShowBox {
-	width:1200px;
+	width:800px;
 	height:100%;
 	text-align:center;
 	overflow:hidden;  /* 영역 벗어나면 숨김 */
 }
 #slideShowBox img{
-	width: 1200px;
+	width: 800px;
 }
 #slidePanel {
 	position:relative;
@@ -28,7 +28,7 @@
 
 .slideImage {
 	float:left;
-	width:1200px;
+	width:800px;
 	height:480px;
 }
 

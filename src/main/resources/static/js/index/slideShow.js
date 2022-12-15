@@ -10,7 +10,7 @@ $(document).ready(function(){
 	function moveSlide(index){
 			movedIndex = index;
 		// 슬라이드 이동
-		var moveLeft = -(index * 1200); // 왼쪽으로 이동 거리
+		var moveLeft = -(index * 800); // 왼쪽으로 이동 거리
 		$('#slidePanel').animate({'left': moveLeft}, 'slow');
 	}
 	function moveCount(){
