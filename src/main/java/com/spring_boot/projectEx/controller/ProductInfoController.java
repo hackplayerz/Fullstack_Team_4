@@ -18,13 +18,14 @@ import com.spring_boot.projectEx.service.ProductInfoService;
 @Controller
 public class ProductInfoController {
 	@Autowired
-	private ProductInfoService service;
+	private ProductInfoService productService;
 	@Autowired
 	private CartService cartService;
 	
 	@RequestMapping("/html/prdInfo/{prdNo}")
 	public String prdInfo(@PathVariable String prdNo, Model model) {
-		ProductVO prd = service.detailInfoProduct(prdNo);
+		ProductVO prd = productService.detailInfoProduct(prdNo);
+		productService.visitIncrese(prdNo);
 		model.addAttribute("prd", prd);
 		return "/html/prdInfo";
 	}
