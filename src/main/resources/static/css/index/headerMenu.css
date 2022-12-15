@@ -1,17 +1,18 @@
 @charset "UTF-8";
-#header{
+#topHeader{
 	width: 1600px;
+	height: 130px;
+	margin-top: -10px;
 	background-color: #ece6cc;
 	
 }
-ul {
+#topHeader ul {
 	margin-top:0;
 	padding:0;
 	list-style:none;  /* type 없음 */
 }
-a{
+#topHeader a{
     text-decoration:none; /* <a> 태그 밑줄 없애기 */
-	color:black;
 	font-size:14px;
 	font-weight:bold;
 }
@@ -22,31 +23,34 @@ a{
 }
 
 #logoBox {
-	margin-top: 10px;
 	float: left;
 	height:100px;
-	margin-left: 700px;
-    width: 250px;
+	margin-left: 650px;
+	margin-top: -10px;
+    width: 350px;
 }
 #logoBox a{
     text-decoration: none;
-	font-size:14px;
+	font-size:20px;
     color:black;
 }
 #logoBox a img{
 	margin-top: 20px;
+	margin-right: 20px;
 	float: left;
-	width: 50px;
-	height: 50px;
+	width: 70px;
+	height: 70px;
 }
 #logoBox a h1{
 	margin-left: 60px;
 }
 
 #headerMenuBox{
-	margin-left: 1200px;
-	padding:20px;
-	text-align:center;
+	margin-top: -10px;
+	margin-left: 800px;
+	text-align:right;
+	padding-right: 30px;
+	padding-bottom: 50px;
 }
 
 
@@ -54,4 +58,41 @@ a{
 	display: inline-block;
 	font-weight:bold;
 	padding-right:10px;
+}
+
+#headerMenuA{
+	
+	padding: 10px;
+	margin-left: 15px;
+	font-size:15px;
+	border-radius: 30px;
+}
+
+.signIn{
+	background-color: #3dd28d;
+	color: aliceblue;
+}
+
+.signUn{
+	background-color: #161616;
+	color: aliceblue;
+}
+
+.logOut{
+	background-color: #f32c52;
+	color: aliceblue;
+}
+
+.myPage{
+	background-color: #161616;
+	color: aliceblue;
+}
+
+#headerUserId {
+	width: 100px;
+	text-align:center;
+	font-weight:bold;
+	font-size:20px;
+	border: none;
+	/*border-radius: 30px;*/
 }
