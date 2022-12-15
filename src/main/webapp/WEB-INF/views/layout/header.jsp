@@ -53,7 +53,7 @@
                     <li value="0"><a href="#">시니어사료</a></li>
                 </ul>
             </li>
-            <li class="submenuli"><a  class="submenuClick" href="#" value="1">간식/저키</a>
+            <li class="submenuli"><a  class="submenuClick" href="#" value="1">간식/져키</a>
               <ul id = "submenu2" class="submenuItem">
                 <li value="1"><a href="#">간식</a></li>
                 <li value="1"><a href="#">저키</a></li>

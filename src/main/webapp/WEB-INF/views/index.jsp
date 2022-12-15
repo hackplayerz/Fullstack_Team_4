@@ -19,6 +19,7 @@
 <body>
     <c:import url="/WEB-INF/views/layout/header.jsp" />
     <section id="section">
+        <div id="slideShowDiv">
         <article  id="slideShow"> <!-- 슬라이드 쇼 -->  
             <!--  (1) prevNext 버튼 박스 -->
             <div id="prevNextButtonBox">
@@ -42,6 +43,7 @@
                 <img src="img/index/button1.png" class="controlButton3">
             </div>
         </article>
+        </div>
         <div id="Event">
             <div id="dogEvent1"> <img src="img/index/dog3.jpg"></div>
             <div id="dogEvent2"> <img src="img/index/dogimg1.jpg"></div>
