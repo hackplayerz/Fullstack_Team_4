@@ -15,7 +15,6 @@ public class ProductInfoService implements IProductInfoService {
 	
 	@Override
 	public ProductVO detailInfoProduct(String prdNo) {
-		// TODO Auto-generated method stub
 		return dao.detailInfoProduct(prdNo);
 	}
 
