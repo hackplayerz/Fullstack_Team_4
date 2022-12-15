@@ -85,13 +85,36 @@ public class MyPageController {
 		return result;
 	}
 	
-	//오더폼 . .
+	// 오더 폼 열기
 	@RequestMapping("/html/orderForm")	
 	public String orderForm(@RequestParam String[] memId,
 			@RequestParam int[] cartNo,
 			@RequestParam int[] cartQty,
 			Model model) {	// 변수 더 가져와야 함
-		return "/html/myPage";
+		// 1. [주문하기] 버튼 누르면 변경된 주문수량을 적용하기 위해 먼저 update 수행
+		for(int i=0; i<cartNo.length;i++) {
+			// Mapper에게 vo로 전달하기 위해 받아온 값으로 vo 값 설정
+			CartVO vo = new CartVO();
+			vo.setCartNo(cartNo[i]);
+			vo.setCartQty(cartQty[i]);
+			service.updateCart(vo);
+		}
+		
+		MemberVO memVo = service.getMemberInfo(memId[0]);
+		// 전화번호 반환 값 : 010-1111-1111
+		// 주문서에는 <input> 3개에 출력하기 위해서 전화번호를 split 해준다
+		String[] hp = (memVo.getMbHp()).split("-");
+		//주문서에 주문자 정보를 출력하기 위해 model에 저장한다
+		model.addAttribute("memVo", memVo);
+		model.addAttribute("hp1", hp[0]);
+		model.addAttribute("hp2", hp[1]);
+		model.addAttribute("hp3", hp[2]);
+		
+		// 3.장바구니 목록 가져오기
+		ArrayList<CartVO> cartList = service.cartList(memId[0]);
+		model.addAttribute("cartList", cartList);
+		
+		return "/html/orderForm";
 	}
 	
 	//인포체인지(개인정보변경) 페이지 열기
