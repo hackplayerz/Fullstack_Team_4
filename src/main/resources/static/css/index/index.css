@@ -16,9 +16,10 @@ body{
 }
 #section{
 	width: 1600px;
-	height: 2820px;
+	height: 2870px;
 	margin: auto;
 	border-left: 1px solid rgb(138, 138, 138);
 	border-right: 1px solid rgb(138, 138, 138);
+	border-bottom: 1px solid rgb(138, 138, 138);
 	margin-bottom: 250px;
 }
