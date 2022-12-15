@@ -20,7 +20,7 @@
     });
 })
 </script>
-<header id="header">
+<header id="topHeader">
     <div id="headerBox">
         <div id="logoBox">
             
@@ -29,101 +29,76 @@
         <div id ="headerMenuBox">
             <!-- 로그인 하기 전에 보여줄 메뉴 항목 -->
 						<c:if test="${empty sessionScope.sid }">
-                            <a href="<c:url value='/member/loginForm'/>" class="signIn">로그인</a>
-                            <a href="<c:url value='/member/hwForm'/>" class="signUn">회원가입</a>
+                            <a href="<c:url value='/member/loginForm'/>" id="headerMenuA" class="signIn">로그인</a>
+                            <a href="<c:url value='/member/hwForm'/>" id="headerMenuA" class="signUn">회원가입</a>
 						</c:if>		
 						
 						<!-- 로그인 성공 후 보여줄 메뉴 항목 -->
 						<c:if test="${not empty sessionScope.sid }">
-							<p>${sessionScope.sid}님 환영합니다!</p>
-                            <a href="<c:url value='/member/logout'/>" class="logOut">로그아웃</a>
-                            <a href="<c:url value='/html/Insert_myPage'/>" class="myPage">마이페이지</a>
+							<a id="headerUserId">${sessionScope.sid}님 환영합니다.</a>
+                            <a href="<c:url value='/member/logout'/>" id="headerMenuA" class="logOut">로그아웃</a>
+                            <a href="<c:url value='/html/Insert_myPage'/>" id="headerMenuA" class="myPage">마이페이지</a>
 						</c:if>	
         </div>
     </div>
 </header>
-<nav id="nav">
-    <ul class="submenu">
-        <li class="submenuli">
-            <div class="submenuClick" value="0">
-                강아지 사료
-            </div>
-          <ul id = "submenu1" class="submenuItem">
-            <li value="0">퍼피사료</li>
-            <li value="0">어덜트사료</li>
-            <li value="0">시니어사료</li>
-        </ul>
-        </li>
-        <li class="submenuli">
-            <div class="submenuClick" value="1">
-                간식/저키
-            </div>
-          <ul id = "submenu2" class="submenuItem">
-            <li value="1">간식</li>
-            <li value="1">저키</li>
-            <li class="submenuItemNull"><br></li>
-        </ul>
-        </li>
-        <li class="submenuli">
-            <div class="submenuClick" value="2">
-                미용/목욕용품
-            </div>
-            <ul id = "submenu3" class="submenuItem">
-                <li value="2">샴푸</li>
-                <li value="2">린스</li>
-                <li value="2">클리퍼</li>
+
+<nav id="topNav">
+    <div id="container">
+        <ul id="navMenu">
+            <li class="submenuli"><a  class="submenuClick" href="#" value="0">강아지 사료</a>
+                <ul id = "submenu1" class="submenuItem">
+                    <li value="0"><a href="#">퍼피사료</a></li>
+                    <li value="0"><a href="#">어덜트사료</a></li>
+                    <li value="0"><a href="#">시니어사료</a></li>
+                </ul>
+            </li>
+            <li class="submenuli"><a  class="submenuClick" href="#" value="1">간식/저키</a>
+              <ul id = "submenu2" class="submenuItem">
+                <li value="1"><a href="#">간식</a></li>
+                <li value="1"><a href="#">저키</a></li>
             </ul>
-          </li>
-        <li class="submenuli">
-            <div class="submenuClick" value="3">
-                위생/배변용품
-            </div>
-          <ul id = "submenu4" class="submenuItem">
-            <li value="3">미용가위</li>
-            <li value="3">배변패드</li>
-            <li class="submenuItemNull"><br></li>
+            </li>
+            <li class="submenuli"><a  class="submenuClick" href="#" value="2">미용/목욕용품</a>
+                <ul id = "submenu3" class="submenuItem">
+                    <li value="2"><a href="#">샴푸</a></li>
+                    <li value="2"><a href="#">린스</a></li>
+                    <li value="2"><a href="#">클리퍼</a></li>
+                </ul>
+            </li>
+            <li class="submenuli"><a  class="submenuClick" href="#" value="3">위생/배변용품</a>
+                <ul id = "submenu4" class="submenuItem">
+                    <li value="3"><a href="#">미용가위</a></li>
+                    <li value="3"><a href="#">배변패드</a></li>
+                </ul>
+            </li>
+            <li class="submenuli"><a  class="submenuClick" href="#" value="4">장난감/훈련용품</a>
+                <ul id = "submenu5" class="submenuItem">
+                    <li value="4"><a href="#">짖음제어</a></li>
+                    <li value="4"><a href="#">봉제,치칠,고무</a></li>
+                    <li value="4"><a href="#">행동제어</a></li>
+                </ul>
+            </li>
+            <li class="submenuli"><a  class="submenuClick" href="#" value="5">식기/물병</a>
+                <ul id = "submenu6" class="submenuItem">
+                    <li value="5"><a href="#">자동급식기</a></li>
+                    <li value="5"><a href="#">사료보관통</a></li>
+                    <li value="5"><a href="#">젖병</a></li>
+                </ul>
+            </li>
+            <li class="submenuli"><a  class="submenuClick" href="#" value="6">의류/악세사리</a>
+                <ul id = "submenu7" class="submenuItem">
+                    <li value="6"><a href="#">의류</a></li>
+                    <li value="6"><a href="#">신발/양말</a></li>
+                    <li value="6"><a href="#">머리핀/고무줄</a></li>
+                </ul>
+            </li>
+            <li class="submenuli"><a  class="submenuClick" href="#" value="7">샘플</a>
+                <ul id = "submenu8" class="submenuItem">
+                    <li value="7"><a href="#">프로모션 샘플</a></li>
+                    <li value="7"><a href="#">이벤트</a></li>
+                </ul>
+            </li>
         </ul>
-        </li>
-        <li class="submenuli">
-            <div class="submenuClick" value="4">
-                장난감/훈련용품
-            </div>
-          <ul id = "submenu5" class="submenuItem">
-            <li value="4">짖음제어</li>
-            <li value="4">봉제,치칠,고무</a></li>
-            <li value="4">행동제어</a></li>
-        </ul>
-        </li>
-        <li class="submenuli">
-            <div class="submenuClick" value="5">
-                식기/물병
-            </div>
-          <ul id = "submenu6" class="submenuItem">
-            <li value="5">자동급식기</li>
-            <li value="5">사료보관통</li>
-            <li value="5">젖병</li>
-        </ul>
-        </li>
-        <li class="submenuli">
-            <div class="submenuClick" value="6">
-                의류/악세사리
-            </div>
-            <ul id = "submenu7" class="submenuItem">
-                <li value="6">의류</li>
-                <li value="6">신발/양말</li>
-                <li value="6">머리핀/고무줄</li>
-            </ul>
-          </li>
-          <li class="submenuli">
-            <div class="submenuClick" value="7">
-                샘플
-            </div>
-            <ul id = "submenu8" class="submenuItem">
-                <li value="7">프로모션 샘플</li>
-                <li value="7">이벤트</li>
-                <li class="submenuItemNull"><a ><br></a></li>
-            </ul>
-          </li>
-          
-      </ul>
+    </div>
 </nav>

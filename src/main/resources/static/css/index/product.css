@@ -8,6 +8,14 @@
 	font-size: 30px;
 	color:antiquewhite
 }
+#productBox a{
+    text-decoration:none; /* <a> 태그 밑줄 없애기 */
+	font-size:14px;
+	font-weight:bold;
+	margin-top:0;
+	padding:0;
+	list-style:none;
+}
 
 #productBox {
 	height:700px;
@@ -16,7 +24,6 @@
 	padding-top:20px;
     
 }
-
 .Mainproduct {
 	width: 100%;
 	height: 430px;
@@ -53,4 +60,22 @@
 	opacity:0.7;
 	
 }
-
+#Event{
+	margin-top: 70px;
+	width: 100%;
+	height: 800px;
+}
+#dogEvent1 img{
+	float: left;
+	width: 800px;
+}
+#dogEvent2 img{
+	float: left;
+	width: 800px;
+	height: 430px;
+}
+#dogEvent3 img{
+	float: left;
+	width: 800px;
+	height: 370px;
+}

@@ -1,0 +1,9 @@
+diff a/src/main/resources/static/css/index/product.css b/src/main/resources/static/css/index/product.css	(rejected hunks)
+@@ -52,4 +52,5 @@
+ .Mainproduct div:hover {
+ 	opacity:0.7;
+ 	
+-}
+\ No newline at end of file
++}
++

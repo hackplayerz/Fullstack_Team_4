@@ -1,15 +1,16 @@
 @charset "UTF-8";
 
-#header{
+#topHeader{
 	width: 1600px;
 	margin: auto;
 }
-#nav{
+#topNav{
 	width: 1600px;
 	margin: auto;
 }
 #section{
 	width: 1600px;
-	height: 2750px;
+	height: 2900px;
 	margin: auto;
+	
 }

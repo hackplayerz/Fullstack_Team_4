@@ -42,10 +42,10 @@
                 <img src="img/index/button1.png" class="controlButton3">
             </div>
         </article>
-        <div id="Avent">
-            <div id="dogAvent1"> <img src="img/index/dog3.jpg"></div>
-            <div id="dogAvent2"> <img src="img/index/dogimg1.jpg"></div>
-            <div id="dogAvent3"> <img src="img/index/dog2.jpg"></div>
+        <div id="Event">
+            <div id="dogEvent1"> <img src="img/index/dog3.jpg"></div>
+            <div id="dogEvent2"> <img src="img/index/dogimg1.jpg"></div>
+            <div id="dogEvent3"> <img src="img/index/dog2.jpg"></div>
         </div>
         
         
