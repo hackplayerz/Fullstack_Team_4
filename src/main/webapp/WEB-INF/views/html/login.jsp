@@ -7,6 +7,7 @@
 <meta charset="UTF-8">
 <title>Login</title>
 <link rel="stylesheet" type="text/css" href="<c:url value='/css/sign/Login.css' />">
+<link rel="stylesheet" type="text/css" href="<c:url value='/css/index/headerMenu.css' />">
 <script src="<c:url value='/js/jquery-3.6.1.min.js'/>"></script>
 <script src="<c:url value='/js/sign/login.js'/>"></script>
 <c:import url="/WEB-INF/views/layout/toplink.jsp"/>
