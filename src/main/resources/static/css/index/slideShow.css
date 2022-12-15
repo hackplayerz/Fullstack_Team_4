@@ -4,21 +4,23 @@
 
 #slideShow {
 	position:relative;
-	background-color:#fff;
-	width: 800px;
+	width: 850px;
 	height:520px;
 	line-height:520px;
 	margin: auto;
 }
 
 #slideShowBox {
-	width:800px;
+	width:850px;
 	height:100%;
 	text-align:center;
 	overflow:hidden;  /* 영역 벗어나면 숨김 */
 }
 #slideShowBox img{
 	width: 800px;
+	margin-right: 50px;
+	border-radius: 50px;
+	box-shadow: 10px 10px 2px 1px #868e96;
 }
 #slidePanel {
 	position:relative;
@@ -34,19 +36,20 @@
 
 /* prev / next 버튼 */
 
-#prevNextButtonBox { position:relative; z-index:10;}
+#prevNextButtonBox { 
+	position:relative; z-index:10;}
 #prevButton {
 	position:absolute;
-	top:210px;
-	left:4%;
+	top: 515px;
+	left:100px;
 	opacity:0.8;
 	cursor:pointer;
 }
 
 #nextButton {
 	position:absolute;
-	top:210px;
-	right:4%;
+	top: 515px;
+	right:100px;
 	opacity:0.8;
 	cursor:pointer;
 }
@@ -58,12 +61,21 @@
 /* 컨트롤 버트 */
 #controlButtonBox { 
 	margin:auto;
-	width:130px;
+	margin-top: 10px;
+	width:200px;
 }
 
 #controlButtonBox img{
-	width: 10px;
-	height: 10px;
+	width: 30px;
+	height: 25px;
 	float:left;
 	margin:10px;
+}
+
+#prevNextButtonBox img{
+	width: 80px;
+}
+
+#slideShowDiv{
+	padding-top: 50px;
 }
