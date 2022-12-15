@@ -6,89 +6,57 @@
       <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
         <path class="footer-wave-path" d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"></path>
       </svg>
+
+      <!--<div id="compamy">
+        <div>COMPAMY : 비전공같은 전공 / CALL CENTER : 영업부 031-0000-0000</div>
+        <div>ADRESS : 서울 어딘가</div>
+        <div>개인정보책임자 : 누군가 / 사업자 등록번호 100-23-00000 / 통신판매업 신고번호 : 2022-경기성남-0000호[사업자정보확인]</div>
+        <div>Copyright by 비전공같은 전공. All rights reserved</div>
+    </div>-->
       <div class="footer-content">
         <div class="footer-content-column">
           <div class="footer-logo">
             <a class="footer-logo-link" href="#">
               <span class="hidden-link-text">LOGO</span>
-              <h1>LOGO</h1>
+              <h1><img src="<c:url value='/img/logo.png' />"/></h1>
             </a>
           </div>
-          <div class="footer-menu">
-            <h2 class="footer-menu-name"> Get Started</h2>
-            <ul id="menu-get-started" class="footer-menu-list">
-              <li class="menu-item menu-item-type-post_type menu-item-object-product">
-                <a href="#">Start</a>
-              </li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-product">
-                <a href="#">Documentation</a>
-              </li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-product">
-                <a href="#">Installation</a>
-              </li>
-            </ul>
-          </div>
+          
         </div>
         <div class="footer-content-column">
           <div class="footer-menu">
             <h2 class="footer-menu-name"> Company</h2>
             <ul id="menu-company" class="footer-menu-list">
               <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Contact</a>
-              </li>
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category">
-                <a href="#">News</a>
-              </li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Careers</a>
+                <a href="#">비전공같은 전공</a>
               </li>
             </ul>
           </div>
           <div class="footer-menu">
-            <h2 class="footer-menu-name"> Legal</h2>
-            <ul id="menu-legal" class="footer-menu-list">
-              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434">
-                <a href="#">Privacy Notice</a>
+            <h2 class="footer-menu-name"> 개인정보책임자</h2>
+            <ul id="menu-get-started" class="footer-menu-list">
+              <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                <a href="#">누군가</a>
               </li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Terms of Use</a>
+              <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                <a href="#">사업자 등록번호 100-23-00000</a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                <a href="#">통신판매업 신고번호 : 2022-경기성남-0000호[사업자정보확인]</a>
               </li>
             </ul>
           </div>
         </div>
         <div class="footer-content-column">
           <div class="footer-menu">
-            <h2 class="footer-menu-name"> Quick Links</h2>
-            <ul id="menu-quick-links" class="footer-menu-list">
-              <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                <a target="_blank" rel="noopener noreferrer" href="#">Support Center</a>
-              </li>
-              <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                <a target="_blank" rel="noopener noreferrer" href="#">Service Status</a>
-              </li>
+            <h2 class="footer-menu-name">CALL CENTER</h2>
+            <ul id="menu-company" class="footer-menu-list">
               <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Security</a>
+                <a href="#">영업부</a>
+                <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link" href="tel:031-0000-0000" target="_self">031-0000-0000</a></p>
               </li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Blog</a>
-              </li>
-              <li class="menu-item menu-item-type-post_type_archive menu-item-object-customer">
-                <a href="#">Customers</a></li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Reviews</a>
-              </li>
+              <a class="footer-call-to-action-button button" href="#" target="_self"> Get in Touch </a>
             </ul>
-          </div>
-        </div>
-        <div class="footer-content-column">
-          <div class="footer-call-to-action">
-            <h2 class="footer-call-to-action-title"> Let's Chat</h2>
-            <p class="footer-call-to-action-description"> Have a support question?</p>
-            <a class="footer-call-to-action-button button" href="#" target="_self"> Get in Touch </a>
-          </div>
-          <div class="footer-call-to-action">
-            <h2 class="footer-call-to-action-title"> You Call Us</h2>
-            <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link" href="tel:0124-64XXXX" target="_self"> 0124-64XXXX </a></p>
           </div>
         </div>
         <div class="footer-social-links"> <svg class="footer-social-amoeba-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 54">
@@ -114,8 +82,8 @@
             </svg>
           </a>
           <a class="footer-social-link github" href="#" target="_blank">
-            <span class="hidden-link-text">Github</span>
-            <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+            <span class="hidden-link-text">Naver</span>
+            <img class="footer-social-icon-img" src="<c:url value='/img/index/pngegg.png'/>"/>
               <path class="footer-social-icon-path" d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z "></path>
             </svg>
           </a>
@@ -124,7 +92,7 @@
       <div class="footer-copyright">
         <div class="footer-copyright-wrapper">
           <p class="footer-copyright-text">
-            <a class="footer-copyright-link" href="#" target="_self"> ©2020. | Designed By: Pooja Nahelia. | All rights reserved. </a>
+            <a class="footer-copyright-link" href="#" target="_self"> ©2022. | Copyright by 비전공같은 전공. | All rights reserved. </a>
           </p>
         </div>
       </div>
