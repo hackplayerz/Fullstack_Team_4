@@ -4,10 +4,7 @@ body{
     width: 1600px;
     margin: auto;
 }
-a {
-	text-decoration: none;
-	color:black;
-}
+
 .pageName{
 	font-size: 40px;
     margin-top: 50px;
@@ -18,91 +15,72 @@ h2{
 	font-size: 20px;
 	margin-top: 80px;
 	justify-content: center;
-	line-height: 1%;
+	
 }
-input{
-	width: 300px;
-	height: 40px;
-}
+
 .container, h2{
     position: relative;
     display: flex;
     justify-content: center;
 }
-.container > sub input{
-	width: 100px;
+
+#id {
+    width: 300px;
 	height: 40px;
-}
-input {
-    width: 200px;
-    height: 40px;
-    font-size: 30px;
-    font-weight: 500px;
     padding-left: 10px;
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     background-color: white;
-    border: 0;
-    border-radius: 3px;
+    border-radius: 30px;
     border-style: groove;
     border-color: rgb(230, 230, 230); 
-    }
-/* #password {
-    width: 200px;
-    height: 40px;
-    font-size: 30px;
-    font-weight: 500;
+}
+    
+#pw {
+    width: 300px;
+	height: 40px;
     padding-left: 10px;
     margin-bottom: 20px;
     background-color: white;
-    border: 0;
-    border-radius: 3px;
+    border-radius: 30px;
     border-style: groove;
     border-color: rgb(230, 230, 230);  
-} */
+}
 
 #login {
-    width: 100px;
+    width: 200px;
     height : 30px;
-    margin: 0 auto;
-    background-color: rgb(54, 154, 254);
+    margin-bottom: 10px;
+    background-color: #ece6cc;
     color:white;
-    font-weight: 500;
     border: 0px;
-    border-color: rgb(54, 154, 254);
-    border-radius: 3px;
-    margin-left: 25%;
-}
-.find a{
-	font-size: 20px;
+    border-radius: 30px;
+    margin-left: 20%;
 }
 
-button{
-    display: block;
-    width: 220px; height: 50px;
-    margin: 0 auto; 
-    border: none;
-    background-color: #c0c0c0;
-    color: #fff; font-size: 14px; font-weight: bold;
+#help {
+	height: 100px;
+    margin-left: 700px;
+    margin-right: 690px;
+    font-size: small;
+    font-weight: 100;
+    margin-bottom: 20px;   
+    justify-content: center;
 }
+
 ul{
     height: 70px;
-	font-size: 10px;
-    justify-content: center;
-    margin-bottom: 20px;
 }
+
 li{
-    display: inline-block;
+	display: inline-block;
     height: 12px; line-height: 12px;
 }
+
 li:last-child{
     border-left: 1px solid #333;
     padding-left: 10px;
     margin-left: 4px;
-}
-#help {
-    margin-left: 670px;
-    margin-right: 690px;
 }
 
 #footer{
