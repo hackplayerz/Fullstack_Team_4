@@ -40,12 +40,12 @@
                         
                             <!-- 전체 카테고리 선택 -->
                                                        
-                            <li id="menu"><a href="<c:url value = '/html/product/${subCategory[0].ctgId}'/> ">ALL</a></li>
+                            <li id="menu" class="menuAll"><a href="<c:url value = '/html/product/${subCategory[0].ctgId}'/> ">ALL</a></li>
                             <c:forEach var='category' items="${subCategory}">
                                 <li>|</li>
                                 <!-- 서브카테고리 선택 -->
                                 <li id="menu" class="menu">
-                                	<a href="<c:url value = '/product/OnSubCategoryChange/${category.subName}'/> ">${category.subName}</a>
+                                	<a id ="subName" class="subName ">${category.subName}</a>
                                 </li>
                             </c:forEach>
 

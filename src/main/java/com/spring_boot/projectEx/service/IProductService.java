@@ -17,6 +17,6 @@ public interface IProductService
     public String prdNoCheck(String prdNo); // 상품번호 중복 확인
     public ArrayList<ProductVO> productSearch(HashMap<String, Object> map);// 상품 검색
 
-    public ArrayList<ProductVO> getSubCategoryProduct(String subName); // 카테고리 전체 상품 조회
+    public ArrayList<ProductVO> getSubCategoryProduct(String subCategory); // 카테고리 전체 상품 조회
 
 }
