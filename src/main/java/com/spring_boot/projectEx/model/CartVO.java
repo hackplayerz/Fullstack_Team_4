@@ -8,10 +8,17 @@ public class CartVO {
 	
 	// DB에는 없지만, Mapper에서 조인해서 결과를 반환할 경우
 	// 해당 데이터를 받아 view 페이지에 출력할 때 필요한 필드
+	private String prdCompany;
 	private String prdName;
 	private int prdPrice;
 	private String prdImg;
 	
+	public String getPrdCompany() {
+		return prdCompany;
+	}
+	public void setPrdCompany(String prdCompany) {
+		this.prdCompany = prdCompany;
+	}
 	
 	public int getCartNo() {
 		return cartNo;

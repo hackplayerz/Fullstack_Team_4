@@ -6,15 +6,15 @@
  	let resPwd ="";	//비밀 번호를 저장하는 변수 
 	/* 비밀번호 확인 버튼 클릭 시 2개의 비밀번호 확인하는 이벤트 */
 	$('#check_Pwd').on('click',function(){
+		event.preventDefault();
+
 	    var reg = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{4,12}$/;
 	    var pwd1 = $('#pwd1').val();
         var pwd2 = $('#pwd2').val();
 	    /*버튼 클릭 시 조건 맞는지 검산하는 if문 필요*/    
 	    if(reg.test(pwd1) == false){
-	      console.log("테스트 1 들어온 것 확인 확인");
-		  alert(pwd1);
 		  alert('비밀번호 양식을 확인해주세요');
-		  return -1;
+		  //return -1;
 	    }
 	    /*비밀번호 일치 여부 확인하는 조건문*/
 	    else {
