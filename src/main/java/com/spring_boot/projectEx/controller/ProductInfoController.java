@@ -20,7 +20,7 @@ public class ProductInfoController {
 	@Autowired
 	private ProductInfoService service;
 	@Autowired
-	private CartService service2;
+	private CartService cartService;
 	
 	@RequestMapping("/html/prdInfo/{prdNo}")
 	public String prdInfo(@PathVariable String prdNo, Model model) {
@@ -33,15 +33,11 @@ public class ProductInfoController {
 	public String insertCart(CartVO vo, HttpSession session) {
 		String mbId = (String)session.getAttribute("sid");
 		vo.setMbId(mbId);
-		
-		int cnt = service2.checkPrdInCart(vo.getPrdNo(), mbId);	
-		
+		int cnt = cartService.checkPrdInCart(vo.getPrdNo(), mbId);	
 		if(cnt == 0) {
-			service2.insertCart(vo);
-			System.out.println(cnt + " x");
+			cartService.insertCart(vo);
 		} else {
-			service2.updateQtyInCart(vo);
-			System.out.println(cnt + " o");
+			cartService.updateQtyInCart(vo);
 		}
 		
 		return "redirect:/product/cartList";
@@ -50,7 +46,7 @@ public class ProductInfoController {
 	@RequestMapping("/product/cartList")
 	public String cartList(Model model, HttpSession session) {
 		String mbId = (String)session.getAttribute("sid");
-		ArrayList<CartVO> cartList = service2.cartList(mbId);
+		ArrayList<CartVO> cartList = cartService.cartList(mbId);
 		model.addAttribute("cartList2", cartList);
 
 		return "/html/myPage";

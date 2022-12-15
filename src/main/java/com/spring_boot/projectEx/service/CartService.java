@@ -24,7 +24,7 @@ public class CartService implements ICartService {
 	}
 
 	@Override
-	public int checkPrdInCart(String prdNo, String memId) {
+	public int checkPrdInCart(String prdNo, String mbId) {
 		// 장바구니에 동일 상품이 존재하는지 안하는지 확인해줌
 		// 존재하면 mapper로부터 동일 상품 갯수를 반환 받아서
 		// 컨트롤러에게 전달(반환)한다.
@@ -33,7 +33,7 @@ public class CartService implements ICartService {
 		//매개변수가 2개 이상인 경우에는 HashMap으로 전달해야 한다.
 		HashMap<String, Object> map = new HashMap<String, Object>();
 		map.put("prdNo", prdNo);
-		map.put("memId", memId);
+		map.put("mbId", mbId);
 		return dao.checkPrdInCart(map);
 	}
 
@@ -44,8 +44,8 @@ public class CartService implements ICartService {
 	}
 
 	@Override
-	public ArrayList<CartVO> cartList(String memId) {
-		return dao.cartList(memId);
+	public ArrayList<CartVO> cartList(String mbId) {
+		return dao.cartList(mbId);
 	}
 
 	@Override
@@ -54,8 +54,8 @@ public class CartService implements ICartService {
 	}
 
 	@Override
-	public MemberVO getMemberInfo(String memId) {
-		return dao.getMemberInfo(memId);
+	public MemberVO getMemberInfo(String mbId) {
+		return dao.getMemberInfo(mbId);
 	}
 
 	@Override
@@ -75,7 +75,7 @@ public class CartService implements ICartService {
 		//	따라서 mapper에게 memId와 주문 번호를 2개의 데이터를 전달해야함(HashMap)
 		HashMap<String, Object> map = new HashMap<String, Object>();
 		map.put("ordNo", ordInfoVo.getOrdNo());
-		map.put("memId", ordInfoVo.getMbId());
+		map.put("mbId", ordInfoVo.getMbId());
 		
 		//mapper에게 전달
 		dao.insertOrderProduct(map);

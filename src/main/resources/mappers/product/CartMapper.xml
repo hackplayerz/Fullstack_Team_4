@@ -23,7 +23,7 @@
   <update id="updateQtyInCart" parameterType="com.spring_boot.projectEx.model.CartVO">
     UPDATE cart
     SET cartQty = cartQty + #{cartQty}
-    WHERE memId=#{mbId} AND prdNo=#{prdNo}
+    WHERE mbId=#{mbId} AND prdNo=#{prdNo}
   </update>
   
   <!-- 장바구니 목록 출력 : product와 cart 테이블을 조인해서 필요한 필드 반환 -->
