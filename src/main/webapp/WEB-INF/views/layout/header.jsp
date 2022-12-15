@@ -13,9 +13,10 @@
     $('.submenuItem li').on('click', function(){
         
         var sub = $(this).attr('value');
-        location.href = '/html/product/${"'+sub+'"}';
         
-        
+        var subLi = $(this).text();
+        location.href = '/html/liProduct/${"'+sub+'"}/${"'+subLi+'"}';
+
     });
 })
 </script>
@@ -35,7 +36,7 @@
 						<!-- 로그인 성공 후 보여줄 메뉴 항목 -->
 						<c:if test="${not empty sessionScope.sid }">
 							<p>${sessionScope.sid}님 환영합니다!</p>
-                            <a href="<c:url value='/member/logOut'/>" class="logOut">로그아웃</a>
+                            <a href="<c:url value='/member/logout'/>" class="logOut">로그아웃</a>
                             <a href="<c:url value='/html/Insert_myPage'/>" class="myPage">마이페이지</a>
 						</c:if>	
         </div>

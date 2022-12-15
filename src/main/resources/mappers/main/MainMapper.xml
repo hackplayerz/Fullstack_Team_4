@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.spring_boot.projectEx.dao.IMainDAO">
+
+    <resultMap id="MprdResult" type="com.spring_boot.projectEx.model.ProductVO">
+        <result property="prdNo"  column="prdNo"  />
+  		<result property="prdName"  column="prdName"  />
+  		<result property="prdPrice"  column="prdPrice"  />
+  		<result property="prdCompany"  column="prdCompany"  />
+  		<result property="prdStock"  column="prdStock"  />
+  		<result property="prdDescript"  column="prdDescript"  />
+  		<result property="prdImg"  column="prdImg"  />
+  		<result property="visit"  column="visit"  />
+  		<result property="orderCount"  column="orderCount"  />
+  		<result property="ctgId"  column="ctgId"  />
+    </resultMap>
+
+    <!-- prdNo로 최신 데이터 상품 조회 -->
+    <select id="newDataProduct" resultMap="MprdResult">
+        select * from product order by prdNo desc limit 5
+    </select>
+
+	<select id="visitProduct" resultMap="MprdResult">
+        select * from product order by visit desc limit 5
+    </select>
+
+	<select id="orderProduct" resultMap="MprdResult">
+        select * from product order by orderCount desc limit 5
+    </select>
+
+</mapper>

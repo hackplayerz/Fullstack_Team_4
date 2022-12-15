@@ -58,7 +58,12 @@ public class ProductService implements IProductService{
         return null;
     }
 
-	@Override
+    @Override
+    public ArrayList<ProductVO> getSubCategoryProduct(String subCategory) {
+        return dao.getSubCategoryProduct(subCategory);
+    }
+
+    @Override
 	public ArrayList<CategoryVO> getSubCategory(String ctgId) {
 		return dao.getSubCategory(ctgId);
 	}

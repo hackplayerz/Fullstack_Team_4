@@ -4,37 +4,39 @@ CREATE DATABASE animal_shop_db DEFAULT CHARACTER SET utf8mb4;
 USE animal_shop_db;
 
 CREATE TABLE category(
-    ctgId VARCHAR(2) NOT NULL PRIMARY KEY,
-    ctgName VARCHAR(30)
+    ctgId VARCHAR(2) NOT NULL PRIMARY KEY, -- 카테고리 ID
+    ctgName VARCHAR(30) -- 메인카테고리 이름
 );
+ALTER TABLE category ADD subName VARCHAR(100); -- 서브카테고리, 모든 서브카테고리를 가지고 있어 ,로 split하여 사용
 
 CREATE TABLE member(
-    mbId VARCHAR(30) NOT NULL PRIMARY KEY,
-    mbPw VARCHAR(50),
-    mbName VARCHAR(30),
-    mbBirth VARCHAR(12),
-    mbGen VARCHAR(2),
-    mbEmail VARCHAR(30),
-    mbDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    mbHp VARCHAR(13),
-    mbZipcode VARCHAR(6),
-    mbAddress1 VARCHAR(100),
-    mbAddress2 VARCHAR(100)
+    mbId VARCHAR(30) NOT NULL PRIMARY KEY, -- 사용자 ID
+    mbPw VARCHAR(50), -- 사용자 비밀번호
+    mbName VARCHAR(30), -- 사용자 이름
+    mbBirth VARCHAR(12), -- 사용자 생년월일
+    mbGen VARCHAR(2), --  사용자 성별
+    mbEmail VARCHAR(30), -- 사용자 이메일
+    mbDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- 사용자 생성일
+    mbHp VARCHAR(13), -- 사용자 핸드폰 번호
+    mbZipcode VARCHAR(6), -- 사용자 주소 집코드
+    mbAddress1 VARCHAR(100), -- 사용자 주소1
+    mbAddress2 VARCHAR(100) -- 사용자 주소2
 );
 
 CREATE TABLE product (
-		prdNo VARCHAR(10) NOT NULL PRIMARY KEY,
-		prdName VARCHAR(100),
-        prdPrice INT,
-        prdCompany VARCHAR(50),
-        prdStock INT,
-        prdDescript VARCHAR(500),
-        prdImg VARCHAR(50),
-        visit INT,
-        orderCount INT,
-        ctgId VARCHAR(2) NOT NULL,
+		prdNo VARCHAR(10) NOT NULL PRIMARY KEY, -- 상품 번호
+		prdName VARCHAR(100), -- 상품명
+        prdPrice INT, -- 상품 가격
+        prdCompany VARCHAR(50), -- 제조회사
+        prdStock INT, -- 재고
+        prdDescript VARCHAR(500), -- 상품 상세 설명
+        prdImg VARCHAR(50), -- 상품 이미지
+        visit INT, -- 상품 방문횟수
+        orderCount INT, -- 상품 구매 횟수
+        ctgId VARCHAR(2) NOT NULL, -- 카테고리 ID
         CONSTRAINT FK_product_category FOREIGN KEY (ctgId) REFERENCES category (ctgId)
 );
+ALTER TABLE product ADD subCategory VARCHAR(10); -- 상품 세부 카테고리
 
 
 CREATE TABLE cart (
@@ -67,7 +69,6 @@ CREATE TABLE order_product (
     CONSTRAINT FK_order_prd_info FOREIGN KEY (ordNo) REFERENCES order_info (ordNo),
     CONSTRAINT FK_order_product FOREIGN KEY (prdNo) REFERENCES product (prdNo)
 );
-ALTER TABLE category ADD subName VARCHAR(100);
 
 INSERT INTO category VALUES("0","강아지사료","퍼피사료,어덜트사료,시니어사료");
 INSERT INTO category VALUES("1","간식/저키","간식,저키");
@@ -78,4 +79,7 @@ INSERT INTO category VALUES("5","식기/물병","자동급식기,사료보관통
 INSERT INTO category VALUES("6","의류/악세사리","의류,신발/양말,머리핀/고무줄");
 INSERT INTO category VALUES("7","샘플","프로모션 샘플,이벤트");
 
-INSERT INTO product VALUES("001","개밥",10000,"개밥조아",120,"맛있는개밥","001.jpg",0,0,"0");
+INSERT INTO product VALUES("001","개밥",10000,"개밥조아",120,"맛있는개밥","001.jpg",0,0,"0","퍼피사료");
+INSERT INTO product VALUES("002","퍼피개밥",20000,"개밥조아",120,"맛있는개밥","002.jpg",0,0,"0","퍼피사료");
+INSERT INTO product VALUES("003","어덜트 개밥",30000,"개밥조아",1200,"늙은이 개밥","003.jpg",0,0,"0","어덜트사료");
+INSERT INTO product VALUES("004","시니어 개밥",40000,"개밥조아",20,"맛없는 개밥","004.jpg",0,0,"0","시니어사료");

@@ -30,16 +30,17 @@
 
   <!-- 정보 출력 영역 -->
   <section class="my_Info">
-    <h5>| 000님의 기본 정보</h5>
+    <h5>| ${mbList.mbName}님의 기본 정보</h5>
     <div class="status_box">
+    <form id="change_info" name="change_info" method="post">
       <table class="info_table">
           <tr>
             <th class="my_sub">이름</th>
-            <td><input type="text" class="my_name" id="my_name" placeholder='이름을 입력하세요'></td>
+            <td><input type="text" class="my_name" id="my_name" placeholder='${mbList.mbName }'></td>
           </tr>
           <tr>
             <th class="my_sub">아이디</th>
-            <td><input type="text" class="id_def" id="id_def" name="id_def" value="" disabled></td>
+            <td><input type="text" class="id_def" id="id_def" name="id_def" value="${memList.mbName }" disabled></td>
           </tr>
           <tr>
             <th class="my_sub">비밀번호</th>
@@ -92,16 +93,24 @@
             <th class="my_sub">연락처</th>
             <td>
               <input type="text" class="my_Pnum" id="my_Pnum" placeholder='010-0000-0000'>
+              <button id="hp_Chk" name="hp_Chk" style="cursor:pointer">휴대폰 인증</button>
             </td>
           </tr>
           <tr>
-            <th rowspan="2" class="my_sub"> 주소</th>
-            <td><input type="text" class="my_Addr" id="my_Addr" placeholder='도로명주소 입력'></td>
+            <th rowspan="3" class="my_sub"> 주소</th>
+            <td>
+              <input type="text" class="my_Addr" id="zipCode" name="zipCode" placeholder='우편번호' readonly>
+              <input type="button" id="searchAddr" name="searchAddr" value="우편번호 찾기" style="cursor:pointer">
+            </td>
           </tr>
           <tr>
-            <td><input type="text" class="my_Addr_detail" id="my_Addr_detail" placeholder='상세주소 입력'></td>
+            <td><input type="text"  id="my_Addr" name="my_Addr" placeholder='도로명주소' readonly></td>
+          </tr>
+          <tr>
+            <td><input type="text"  id="my_Addr_detail" name="my_Addr_detail" placeholder='상세주소 입력'></td>
           </tr>
       </table>
+      </form>
     </div>
   </section>
   

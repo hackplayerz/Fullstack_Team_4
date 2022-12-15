@@ -19,6 +19,7 @@
   		<result property="visit"  column="visit"  />
   		<result property="orderCount"  column="orderCount"  />
   		<result property="ctgId"  column="ctgId"  />
+  		<result property="subCategory" column="subCategory" />
     </resultMap>
 
     <!-- 카테고리별 상품 조회 -->
@@ -38,4 +39,9 @@
     	WHERE ctgId=#{ctgId}
     	ORDER BY ctgId
     </select>
+
+	<!-- 카테고리별 상품 조회 -->
+	<select id="getSubCategoryProduct" parameterType="string" resultMap="prdResult">
+		SELECT * FROM product WHERE subCategory=#{subCategory} ORDER BY prdNo
+	</select>
 </mapper>
