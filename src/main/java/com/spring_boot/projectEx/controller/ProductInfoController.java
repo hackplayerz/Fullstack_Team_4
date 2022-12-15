@@ -33,7 +33,10 @@ public class ProductInfoController {
 	public String insertCart(CartVO vo, HttpSession session) {
 		String mbId = (String)session.getAttribute("sid");
 		vo.setMbId(mbId);
-		int cnt = cartService.checkPrdInCart(vo.getPrdNo(), mbId);	
+		int cnt = cartService.checkPrdInCart(vo.getPrdNo(), mbId);
+		if(mbId == null) {
+			return "/html/login";
+		}
 		if(cnt == 0) {
 			cartService.insertCart(vo);
 		} else {
