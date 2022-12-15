@@ -10,7 +10,6 @@
 		<!-- toplink -->
 		<c:import url="/WEB-INF/views/layout/toplink.jsp"/>
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/prdInfo/prdInfo.css'/>">
-		<script src="<c:url value='/js/prdInfo/prdInfo.js'/>"></script>
 	</head>
 	<body>
 		<div id="bigFrame">

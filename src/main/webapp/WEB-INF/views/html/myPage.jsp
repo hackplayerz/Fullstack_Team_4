@@ -36,8 +36,10 @@
 		//현재 주문수량과 예정 금액 가져오기
 		var cartQty = document.getElementById('cartQty');
 		var amount = document.getElementById('amount');
-				
-		var total = qty * ${prd.prdPrice};
+		
+		//3대신 ${prd.prdPrice} / 3은 테스트로 넣은 것 .
+		var total = qty * 3;
+		
 				
 		//결과 값 반영
 		cartQty.value = qty;
@@ -76,7 +78,7 @@
         <tbody>
           <tr>
           	<c:forEach var="prd" items="${cartList }"> 
-              <td class="o_num" value="0"> ${prd.orderCount }</td>
+              <td class="o_num"> ${prd.orderCount }</td>
             </c:forEach>
             <td>></td>
             <td class="o_num">0</td>
