@@ -48,9 +48,12 @@
 	color: #fff;
 	text-decoration: none;
   }
-  
   .footer-logo-link {
 	  display: inline-block;
+  }
+  .footer-logo-link h1 img{
+	width: 200px;
+	height: 200px;
   }
   .footer-menu {
 	  margin-top: 30px;
@@ -306,4 +309,9 @@
 	/* .footer-content-column {
 		width: 49.99%;
 	} */
+  }
+
+  .footer-social-icon-img{
+width: 30px;
+height: 30px;
   }

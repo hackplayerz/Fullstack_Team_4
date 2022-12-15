@@ -28,7 +28,7 @@
   padding: 0 20px;
   border-radius: 3px;
   box-shadow: inset 0 1px 1px rgba(255,255,255,.5), inset 0 -1px 0 rgba(0,0,0,.15), 0 1px 3px rgba(0,0,0,.15);
-  background: #ccc; 
+  background: #BC9E80; 
 }
 
 #navMenu, #navMenu ul {
@@ -68,8 +68,8 @@
 }
 
 #navMenu > li:hover > a {
-  background: #333;
-  color: rgba(0,223,252,1);
+  background: #90604c; /*메뉴list*/
+  color: #f4eee3;
   text-shadow: none;
 }
 
@@ -92,7 +92,7 @@
 #navMenu li:hover ul {
   
   padding: 15px 0;
-  background: #333;
+  background: #885e43;
   opacity: 1;
   visibility: visible;
   box-shadow: 1px 1px 7px rgba(0,0,0,.5);
@@ -136,10 +136,10 @@
 }
 
 #navMenu li li a:hover {
-  color: rgba(0,223,252,1);
+  color: rgba(255,255,255,.5);
   border-top: dotted 1px rgba(255,255,255,.15);
   border-bottom: dotted 1px rgba(255,255,255,.15);
-  background: rgba(0,223,252,.02);
+  background: #885e43;
   cursor : pointer;
   z-index:10;
 }
