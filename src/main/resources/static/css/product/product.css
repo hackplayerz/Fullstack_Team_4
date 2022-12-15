@@ -1,13 +1,5 @@
 @charset "UTF-8";
 
-/*
-*
-{
-    margin: 0px auto;
-}
-*/
-
-/*아 주석 모르겠다 너무 힘들다 지금 시간 23:50*/
 body{
 	width: 1600px;
 	margin: auto;
@@ -18,10 +10,6 @@ body{
 #mainBody
 {
 	height: 1120px;
-	/*
-    width: 1600px;
-    position: inherit;
-    justify-content: center;*/
 }
 
 #content 
@@ -47,11 +35,7 @@ body{
 #product div 
 {
     display: inline-table;
-	width: 300px; /*수정*/
-	/**width:280px;*/
-    /*width: 22%;
-    height: 53.5%;*/
-	/*height:240px;*/
+	width: 300px;
 	border:solid 1px #ccc;
 	margin-left:10px;
     margin-bottom: 15px;

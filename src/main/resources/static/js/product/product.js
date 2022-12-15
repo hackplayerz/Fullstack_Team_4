@@ -4,19 +4,6 @@ $(document).ready(function () {
     test1();
 });
 
-function item(name, img, price, category) {
-    this.name = name;
-    this.img = img;
-    this.price = price;
-    this.category = category;
-}
-
-function SendData(img, name, price) {
-    localStorage.setItem("name", name);
-    localStorage.setItem("img", img);
-    localStorage.setItem("price", price);
-}
-
 function InitCategoryCount() {
     var count = $("#product").children().length;
     // 상품들의 개수 설정
