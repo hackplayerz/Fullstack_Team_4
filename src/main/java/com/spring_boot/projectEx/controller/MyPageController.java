@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.spring_boot.projectEx.model.MemberVO;
 import com.spring_boot.projectEx.service.CartService;
 import com.spring_boot.projectEx.service.MemberService;
 
@@ -53,12 +54,6 @@ public class MyPageController {
 		return result;
 	}
 	
-	//인포체인지(개인정보변경) 페이지 열기
-	@RequestMapping("/html/info_Change")	//
-	public String info_Change() {
-		return "/html/info_Change";
-	}
-	
 	//서비스 만들어지면 장바구니에 상품 추가하기, 목록 출력하기, 삭제하기 등 코드 삽입해야함. 
 	
 	//장바구니 목록 삭제하기 : 배열로 만들어진 cartNo
@@ -84,6 +79,19 @@ public class MyPageController {
 			@RequestParam int[] cartQty,
 			Model model) {	// 변수 더 가져와야 함
 		return "/html/myPage";
+	}
+	
+	//인포체인지(개인정보변경) 페이지 열기
+	@RequestMapping("/html/info_Change")	
+	public String info_Change(HttpSession session, Model model) {
+		String mbId = (String)session.getAttribute("sid");
+		
+		MemberVO vo = new MemberVO();
+		
+		vo = memservice.memberRcv(mbId);
+		model.addAttribute("vo", vo);
+		
+		return "/html/info_Change";
 	}
 	
 	

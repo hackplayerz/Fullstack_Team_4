@@ -56,4 +56,11 @@ public class MemberService implements IMemberService {
 
 
 
+	@Override
+	public MemberVO memberRcv(String mbId) {
+		return dao.memberRcv(mbId);
+	}
+
+
+
 }

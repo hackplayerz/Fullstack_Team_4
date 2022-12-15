@@ -22,4 +22,25 @@
   		VALUES (#{mbId},  #{mbPw}, #{mbName}, #{mbBirth}, #{mbGen}, #{mbEmail}, #{mbHp}, #{mbZipcode}, #{mbAddress1}, #{mbAddress2})
   	</insert>
   	
+  	<!-- mbId를 매개로 멤버vo 데이터 가져오기 -->
+  	<resultMap type="com.spring_boot.projectEx.model.MemberVO" id="mbResult">
+		<result property="mbId" column='mbId'/>
+		<result property="mbPw" column='mbPw'/>
+		<result property="mbName" column='mbName'/>
+		<result property="mbBirth" column='mbBirth'/>
+		<result property="mbEmail" column='mbEmail'/>
+		<result property="mbGen" column='mbGen'/>
+		<result property="mbHp" column='mbHp'/>
+		<result property="mbZipcode" column='mbZipcode'/>
+		<result property="mbAddress1" column='mbAddress1'/>
+		<result property="mbAddress2" column='mbAddress2'/>
+	</resultMap>
+  	
+  	<select id="memberRcv" parameterType="string" resultMap="mbResult">
+  	  SELECT * FROM member WHERE mbId=#{mbId}
+  	</select>
+  	
+  	
+  	
+  	
   </mapper>
