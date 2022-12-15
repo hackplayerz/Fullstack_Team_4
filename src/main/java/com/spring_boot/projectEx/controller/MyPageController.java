@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.spring_boot.projectEx.model.CartVO;
 import com.spring_boot.projectEx.model.MemberVO;
 import com.spring_boot.projectEx.service.CartService;
 import com.spring_boot.projectEx.service.MemberService;
@@ -23,6 +24,8 @@ public class MyPageController {
 	
 	@Autowired
 	private MemberService memservice;	// 서비스 아직 안만들어짐 
+	
+	//===================================== 사이드바 =======================================
 	
 	//마이페이지 열기
 	@RequestMapping("/html/Insert_myPage")	//
@@ -38,6 +41,9 @@ public class MyPageController {
 		return "/html/info_Change_Bf";
 	}
 	
+	//===================================================================================
+	
+	//===================================== 인포 체인지 Bf 화면 ============================= 
 	@ResponseBody
 	@RequestMapping("/member/info_Chainge_Login")
 	public String info_Chainge_Login(@RequestParam HashMap<String, Object> param,
@@ -54,7 +60,13 @@ public class MyPageController {
 		return result;
 	}
 	
+	//===================================================================================
+	
 	//서비스 만들어지면 장바구니에 상품 추가하기, 목록 출력하기, 삭제하기 등 코드 삽입해야함. 
+	
+	//장바구니에 데이터 추가하기 : 프로덕트 인포 컨트롤러 33 ~ 48라인에 존재
+	//장바구니 목록 출력 : 프로덕트 인포 컨트롤러 50 ~ 57 라인에 존재 
+	
 	
 	//장바구니 목록 삭제하기 : 배열로 만들어진 cartNo
 	@ResponseBody
@@ -73,6 +85,7 @@ public class MyPageController {
 		return result;
 	}
 	
+	//오더폼 . .
 	@RequestMapping("/html/orderForm")	
 	public String orderForm(@RequestParam String[] memId,
 			@RequestParam int[] cartNo,

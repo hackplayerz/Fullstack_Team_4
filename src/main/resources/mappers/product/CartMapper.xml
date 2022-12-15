@@ -29,7 +29,7 @@
   <!-- 장바구니 목록 출력 : product와 cart 테이블을 조인해서 필요한 필드 반환 -->
   <select id="cartList" parameterType="string"
   						resultType="com.spring_boot.projectEx.model.CartVO">
-    SELECT c.cartNo, p.prdNo, p.prdName, p.prdPrice, p.prdImg, c.cartQty, c.mbId
+    SELECT c.cartNo, p.prdNo, p.prdName, p.prdPrice, p.prdImg, c.cartQty, c.mbId, p.prdCompany
     FROM product p, cart c
     WHERE p.prdNo = c.prdNo AND c.mbId=#{mbId}
     ORDER BY c.cartNo
