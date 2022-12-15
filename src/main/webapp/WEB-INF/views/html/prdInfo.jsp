@@ -13,9 +13,9 @@
 		<script src="<c:url value='/js/prdInfo/prdInfo.js'/>"></script>
 	</head>
 	<body>
+		<div id="bigFrame">
 		<!-- header -->
 		<c:import url="/WEB-INF/views/layout/header.jsp" />
-		<div id="bigFrame">
 			<div id="highFrame">
 				<div id="imageFrame">
 					<img id="prdImage" src="<c:url value='/img/product/${prd.prdImg }' />" >
