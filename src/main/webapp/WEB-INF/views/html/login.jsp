@@ -16,9 +16,9 @@
 		<h2>로그인</h2>
 		<div class="container">
 			<form id="Login" name="Login">
-				<input type="text" id="id" name="id" placeholder="아이디">
+				<input type="text" id="id" name="id" placeholder="아이디"><br>
 				<input type="password" id="pw" name="pw" placeholder="비밀번호"><br>
-                <input type="submit" value="로그인">
+                <input type="submit" id="login" value="로그인">
 
 			</form>
 		</div>
