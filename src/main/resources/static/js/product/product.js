@@ -1,10 +1,7 @@
 $(document).ready(function () {
     SubCategoryBold();
     InitCategoryCount();
-    // 상품 이미지 설정
-    SetProduct(prd1);
-    // 메인 카테고리 타이틀 변경
-    BindingOnclickEvent();
+    test1();
 });
 
 function item(name, img, price, category) {
@@ -14,38 +11,10 @@ function item(name, img, price, category) {
     this.category = category;
 }
 
-let prd1 = new item("asd", "../img/product/헤드셋.png", "100000", "간식");
-
-function SetProduct(item) {
-    if (localStorage.getItem("mainMenubl")) {
-        localStorage.removeItem("subName");
-    }
-    var img = document.createElement("img");
-    img.src = item.img;
-
-    var prdSource = document.querySelectorAll(".productSource");    
-
-    prdSource[0].getElementsByClassName("image")[0].src = item.img;
-    prdSource[1].getElementsByClassName("image")[0].src = item.img;
-}
-
 function SendData(img, name, price) {
     localStorage.setItem("name", name);
     localStorage.setItem("img", img);
     localStorage.setItem("price", price);
-}
-
-function BindingOnclickEvent()
-{
-    // 이미지 클릭 이벤트 바인딩
-    $(".productSource").on('click',function()
-    {
-        // 이미지, 이름, 가격을 보낸다
-        var img = this.getElementsByClassName("image")[0].src;
-        var name = this.getElementsByClassName("name")[0].innerHTML;
-        var price = this.getElementsByClassName("price")[0].innerHTML;
-        SendData(img,name,price);
-    })   
 }
 
 function InitCategoryCount() {
@@ -63,4 +32,60 @@ function SubCategoryBold() {
 
         $(this).css("font-weight", "bold");
     });
+}
+
+function test1() {
+    $(document).on('click','.subName', function(){
+        //폼이 submit 되지 않도록 기본 기능 중단
+            event.preventDefault();
+            $('.menuAll a').css("color","black");
+            $('.subName').css("color","black");
+            $(this).css("color","red");
+            var subCategory = $(this).text();
+            console.log(subCategory);
+            // 서버에 전송하고 결과 받아서 처리
+            $.ajax({
+                type:"post",
+                url:"/product/OnSubCategoryChange",
+                data: {"subCategory":subCategory},
+                dataType:'json',
+                success:function(result){
+
+                    
+                    //mainBody 크기 조절
+                    var height = 700;
+                    if(result.length > 5){
+                        height = 700 + Math.floor((3 - 1)/5) * 420; //갯수에 따라 크기 변경
+                    }
+                    $('#mainBody').css("height",height);
+                    //총 갯수 생성
+                    $('#elementCount').empty();
+                    $('#elementCount').append( '총 '+result.length+'개');
+                    
+                    // 여기부터 상품컨텐츠 생성란
+                    $('#product').empty(); //이전 내용 제거
+                    for(var i=0; i < result.length; i++) {
+                     // div product 안에 생성
+                    $('#product').append( // append로 생성
+                        '<div class="productSource">'+
+                            '<a href="/html/prdInfo/' + result[i].prdNo + '">' +
+                                '<img src="'+'/img/product/'+ result[i].prdImg + '.png"' + 'class="image"></a>'+
+                            '<p class="name">'+
+                                result[i].prdName +
+                            '</p>'+
+                            '<p class="price">'+
+                                result[i].prdPrice +
+                            '</p>'+
+                        '</div>'); // 여기까지 생성
+                    };
+                },
+                error:function(){
+                    alert("실패");
+                },
+                complete:function(){
+                    //alert("작업 완료");
+                }
+            }); // ajax 종료 	
+            
+        });
 }

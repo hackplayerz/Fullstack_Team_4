@@ -22,6 +22,14 @@
     <c:import url="/WEB-INF/views/layout/toplink.jsp"/>
 
     <title>상품</title>
+
+    <script type="text/javascript">
+            if("${subLi}" != ""){
+                console.log("${subLi}");
+                console.log($('[name="${subLi}"]').html);
+                $('.subName')[0].css("color","red");
+            }
+    </script>
 </head>
 <body>
     <!-- Header 카테고리 메뉴 -->
@@ -31,7 +39,7 @@
         <!-- 카테고리 이름 -->
         <section id="category">
             <div id="categoryName">
-                <h2>${subCategory[0].ctgName}</h2>
+                <h2>${subCategory[0].ctgName}</h2> <!-- TODO : 수정 -->
             </div>
             <section id="subCategory">
                 <!-- 서브 카테고리 메뉴 -->
@@ -39,16 +47,16 @@
                         <ul id="subCategoryMenu">
                         
                             <!-- 전체 카테고리 선택 -->
-                                                        
-                            <li id="menu"><a href="#">ALL</a></li>
+                                                       
+                            <li id="menu" class="menuAll"><a href="<c:url value = '/html/product/${subCategory[0].ctgId}'/> ">ALL</a></li>
                             <c:forEach var='category' items="${subCategory}">
                                 <li>|</li>
                                 <!-- 서브카테고리 선택 -->
                                 <li id="menu" class="menu">
-                                	<a href="">${category.subName}</a>
+                                	<a id ="subName" class="subName " name="${category.subName}">${category.subName}</a>
                                 </li>
                             </c:forEach>
-                            
+
                         </ul>
                     </div>                             
             </section>    
@@ -65,11 +73,11 @@
 
             <div id="content">
                 <div id="product">
-
+	
                     <!-- 상품 컨텐츠 -->
                     <c:forEach var="prd" items="${prdList}">
                         <div class="productSource">
-                            <a href="<c:url value = '/html/prdInfo/${prd.prdNo}' />"><img src="<c:url value='/img/product/${prd.prdImg}' />" class="image"></a>                       
+                            <a href="<c:url value = '/html/prdInfo/${prd.prdNo}' />"><img src="<c:url value='/img/product/${prd.prdImg}.png' />" class="image"></a>                       
                             
                             <p class="name">
                                 ${prd.prdName}
@@ -79,8 +87,7 @@
                             </p>
                         </div>
                     </c:forEach>
-
-                    
+          
                 </div>  	
             </div> 
         </section>
