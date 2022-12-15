@@ -50,14 +50,10 @@
 }
 #subCategoryContent
 {
-    font-size: 16px;
-    margin: 15px;
-    margin-left: 15px;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-top: 3px;
     text-align: left;
-}
-#subCategoryContent ul li:first-child
-{
-    font-weight: bold;
 }
 
 #subCategoryContent ul li
