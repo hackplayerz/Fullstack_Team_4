@@ -18,19 +18,19 @@ import com.spring_boot.projectEx.service.ProductInfoService;
 @Controller
 public class ProductInfoController {
 	@Autowired
-	private ProductInfoService productService;
-	@Autowired
 	private CartService cartService;
+	@Autowired
+	private ProductInfoService	productInfoService;
 	
 	@RequestMapping("/html/prdInfo/{prdNo}")
 	public String prdInfo(@PathVariable String prdNo, Model model) {
-		ProductVO prd = productService.detailInfoProduct(prdNo);
-		productService.visitIncrese(prdNo);
+		ProductVO prd = productInfoService.detailInfoProduct(prdNo);
+		productInfoService.visitIncrese(prdNo);
 		model.addAttribute("prd", prd);
 		return "/html/prdInfo";
 	}
 	
-	@RequestMapping("/html/Insert_myPage_test")
+	@RequestMapping("/Product/CartInCheck")
 	public String insertCart(CartVO vo, HttpSession session) {
 		String mbId = (String)session.getAttribute("sid");
 		vo.setMbId(mbId);

@@ -23,7 +23,7 @@
 				<div id="prdInfoFrame">
 					<p id="prdName">${prd.prdName }</p>
 					<br>
-					<form id="prdInfo" method="post" action="<c:url value='/html/Insert_myPage_test' />">
+					<form id="prdInfo" method="post" action="<c:url value='/Product/CartInCheck' />">
 						<!-- 상품 판매 정보 -->
 						<dl>
 							<dt>판매가</dt>
