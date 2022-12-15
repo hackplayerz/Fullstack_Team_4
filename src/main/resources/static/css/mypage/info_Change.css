@@ -71,19 +71,21 @@ nav {
 
 .info_table .my_name {
   left : 100px;
-  width: 300px;
+  width: 150px;
   height : 30px;
+  text-align: center;
   border-radius: 5px;
 }
 
 .info_table .id_def {
   width: 150px;
   height : 25px;
+  text-align: center;
   border-radius: 5px;
   background-color : lightgrey;
-  color : white;
+  color : black;
   font-weight : bold;
-  font-size: 11px;
+  font-size: 15px;
 }
 
 .info_table .pwd1 {
@@ -95,7 +97,7 @@ nav {
 .info_table .pwd_txt{
 	color : grey;
 	font-weight : bord;
-	font-size : 11px;
+	font-size : 12px;
 	margin-left : 10px; 
 }
 
@@ -126,13 +128,13 @@ nav {
 	margin-left : 10px; 
 }
 
-.pwd2_contents .pwd_Nequal{
+ .pwd2_contents .pwd_Nequal{
 	display : none;
 	color : red;
 	font-weight : bold;
 	font-size : 11px;
 	margin-left : 10px; 
-}
+} 
 
 .info_table .year {
   width: 50px;
@@ -167,11 +169,25 @@ nav {
   border-radius: 5px;
 }
 
-.info_table .my_Addr_detail{
+.info_table .my_Addr_Detail{
   left : 100px;
-  width: 300px;
+  width: 445px;
   height : 30px;
   border-radius: 5px;
+}
+
+/* 안쪽 버튼 스타일 */
+ .inner_Btn {
+  width: 130px;
+  height: 28px;
+  font-weight : bord;
+  font-size: 13px;
+  margin-left : 10px; 
+  margin-right : 15px;
+  border-radius: 5px;
+  background-color: black;
+  color : white;
+  border : none;
 }
 
 /* 버튼 영역 */
