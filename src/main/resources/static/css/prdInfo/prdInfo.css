@@ -36,6 +36,7 @@
 	border:1px solid #DCDCDC;
 	width:520px;
 	height:500px;
+	margin-left:23px;
 }
 
 #prdName {
@@ -59,7 +60,7 @@
 #prdInfoFrame {
 	float:left;
 	width:500px;
-	margin-left:100px;
+	margin-left:185px;
 }
 
 #prdInfo {
@@ -103,44 +104,71 @@
 }
 
 #shoppingCart {
-	background-color:#E0E0E0;
-	border:none;
+	background: #00E1FF;
+	color: #fff;
+	text-decoration: none;
+	font-size:19px;
 	height:85px;
 	width:160px;
-	border-top-left-radius:5px;
-	border-bottom-left-radius:5px;
-	border-top-right-radius:5px;
-	border-bottom-right-radius:5px;
-	color:#8A0808;
-	font-weight:bold;
+	border-radius: 5px; 
+	box-shadow: 0px 5px 0px #1e56f1;
+	transition: .3s ease;
+	border: none;
+	font-family: 'Poppins';
+}
+
+#shoppingCart:hover { 
+	background: #3c7ad8;
+	box-shadow: 0px 3px 0px #1e56f1;
+	cursor: pointer;
+	transform: scale(0.95);
 }
 
 #sample {
+	text-decoration: none;
 	background-color:#FFEC99;
-	border:none;
 	height:85px;
 	width:100px;
-	border-top-left-radius:5px;
-	border-bottom-left-radius:5px;
-	border-top-right-radius:5px;
-	border-bottom-right-radius:5px;
 	color:#8A0808;
 	font-weight:bold;
+	font-size:19px;
+	border-radius: 5px; 
+	box-shadow: 0px 5px 0px #FFA500;
+	transition: .3s ease;
+	border: none;
+	font-family: 'Poppins';
+}
+
+#sample:hover { 
+	background: white;
+	box-shadow: 0px 3px 0px #FFF064;
+	cursor: pointer;
+	transform: scale(0.95);
+	color:#8B4513;
 }
 
 #buy {
-	background-color:#5E5E5E;
-	border:none;
+	background-color:#FF98A3;
+	text-decoration: none;
 	height:85px;
 	color:white;
 	width:160px;
-	border-top-left-radius:5px;
-	border-bottom-left-radius:5px;
-	border-top-right-radius:5px;
-	border-bottom-right-radius:5px;
 	font-weight:bold;
+	font-size:19px;
+	border-radius: 5px; 
+	box-shadow: 0px 5px 0px #FF1E9D;
+	transition: .3s ease;
+	border: none;
+	font-family: 'Poppins';
 }
 
+#buy:hover { 
+	background: #FFF; 
+	box-shadow: 0px 3px 0px pink; 
+	cursor: pointer; 
+	transform: scale(0.95); 
+	color:red;
+}
 
 #reviewTableFrame {
 	margin-top:150px;
