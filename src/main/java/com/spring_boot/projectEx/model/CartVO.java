@@ -5,7 +5,15 @@ public class CartVO {
 	private String mbId;
 	private String prdNo;
 	private int cartQty;
+	// 8 ~ 16 추가됨
+	private String orderCount;
 	
+	public String getOrderCount() {
+		return orderCount;
+	}
+	public void setOrderCount(String orderCount) {
+		this.orderCount = orderCount;
+	}
 	// DB에는 없지만, Mapper에서 조인해서 결과를 반환할 경우
 	// 해당 데이터를 받아 view 페이지에 출력할 때 필요한 필드
 	private String prdCompany;
