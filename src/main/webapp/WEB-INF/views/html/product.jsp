@@ -77,7 +77,7 @@
                     <!-- 상품 컨텐츠 -->
                     <c:forEach var="prd" items="${prdList}">
                         <div class="productSource">
-                            <a href="<c:url value = '/html/prdInfo/${prd.prdNo}' />"><img src="<c:url value='/img/product/${prd.prdImg}.png' />" class="image"></a>                       
+                            <a href="<c:url value = '/html/prdInfo/${prd.prdNo}' />"><img src="<c:url value='/img/product/${prd.prdImg}' />" class="image"></a>                       
                             
                             <p class="name">
                                 ${prd.prdName}

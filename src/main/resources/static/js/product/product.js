@@ -69,7 +69,7 @@ function test1() {
                     $('#product').append( // append로 생성
                         '<div class="productSource">'+
                             '<a href="/html/prdInfo/' + result[i].prdNo + '">' +
-                                '<img src="'+'/img/product/'+ result[i].prdImg + '.png"' + 'class="image"></a>'+
+                                '<img src="'+'/img/product/'+ result[i].prdImg + '"' + 'class="image"></a>'+
                             '<p class="name">'+
                                 result[i].prdName +
                             '</p>'+
