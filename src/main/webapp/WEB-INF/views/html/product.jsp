@@ -41,7 +41,7 @@
             <div id="categoryName">
                 <h2>${subCategory[0].ctgName}</h2> <!-- TODO : 수정 -->
             </div>
-            <section id="subCategory">
+            <section id="subCategory" class="gradient-border">
                 <!-- 서브 카테고리 메뉴 -->
                     <div id="subCategoryContent">
                         <ul id="subCategoryMenu">

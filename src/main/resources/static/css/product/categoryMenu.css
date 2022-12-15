@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
 
 #category
 {
@@ -11,11 +12,41 @@
 }
 
 #subCategory
-{    
-    left: 50px;
-    width: 1600px;
+{
+	border-radius : 5px;
+    width: 100%;
     height: 90px;
-    background-color: grey;
+}
+.gradient-border {
+    --borderWidth: 3px;
+    background: #fffdf7;
+    position: relative;
+    border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #ffccff, #fad1ff, #f6d5ff, #f1daff, #ecdfff, #e8e3ff, #e3e8ff, #dfecff, #daf1ff, #d5f6ff, #d1faff, #ccffff);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+}
+
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 #subCategoryContent
 {
@@ -43,3 +74,7 @@
 {
     cursor: pointer;
 }
+
+
+
+
