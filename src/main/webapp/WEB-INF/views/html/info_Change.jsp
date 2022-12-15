@@ -93,21 +93,21 @@
             <th class="my_sub">연락처</th>
             <td>
               <input type="text" class="my_Pnum" id="my_Pnum" placeholder='010-0000-0000'>
-              <button id="hp_Chk" name="hp_Chk" style="cursor:pointer">휴대폰 인증</button>
+              <button class="inner_Btn" id="hp_Chk" name="hp_Chk" style="cursor:pointer">휴대폰 인증</button>
             </td>
           </tr>
           <tr>
             <th rowspan="3" class="my_sub"> 주소</th>
             <td>
               <input type="text" class="my_Addr" id="zipCode" name="zipCode" placeholder='우편번호' readonly>
-              <input type="button" id="searchAddr" name="searchAddr" value="우편번호 찾기" style="cursor:pointer">
+              <input type="button" class="inner_Btn"  id="searchAddr" name="searchAddr" value="우편번호 찾기" style="cursor:pointer">
             </td>
           </tr>
           <tr>
-            <td><input type="text"  id="my_Addr" name="my_Addr" placeholder='도로명주소' readonly></td>
+            <td><input type="text" class="my_Addr_Detail" id="my_Addr" name="my_Addr" placeholder='도로명주소' readonly></td>
           </tr>
           <tr>
-            <td><input type="text"  id="my_Addr_detail" name="my_Addr_detail" placeholder='상세주소 입력'></td>
+            <td><input type="text" class="my_Addr_Detail" id="my_Addr_detail" name="my_Addr_detail" placeholder='상세주소 입력'></td>
           </tr>
       </table>
       </form>
