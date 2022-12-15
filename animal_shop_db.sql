@@ -71,7 +71,7 @@ CREATE TABLE order_product (
 );
 
 INSERT INTO category VALUES("0","강아지사료","퍼피사료,어덜트사료,시니어사료");
-INSERT INTO category VALUES("1","간식/저키","간식,저키");
+INSERT INTO category VALUES("1","간식/져키","간식,져키");
 INSERT INTO category VALUES("2","미용/목욕용품","샴푸,린스,클리퍼");
 INSERT INTO category VALUES("3","위생/배변용품","미용가위,배변패드");
 INSERT INTO category VALUES("4","장난감/훈련용품","짖음제어,봉제/치칠/고무,행동제어");

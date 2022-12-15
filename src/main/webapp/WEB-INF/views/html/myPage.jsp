@@ -24,6 +24,7 @@
 	// 주문 수량을 변경하는 함수
 			
 	function qtyChange(num){
+		event.preventDefault();
 		qty = qty + num;
 		if(qty < 1)
 			qty = 1;
@@ -37,8 +38,8 @@
 		var cartQty = document.getElementById('cartQty');
 		var amount = document.getElementById('amount');
 		
-		//3대신 ${prd.prdPrice} / 3은 테스트로 넣은 것 .
-		var total = qty * 3;
+		//3대신  / 3은 테스트로 넣은 것 .
+		var total = qty * ${prd.prdPrice};
 		
 				
 		//결과 값 반영
@@ -104,7 +105,8 @@
     </div>
     <!-- 장바구니 테이블 -->
     <table class="cart_list">
-      <form method="post" action="<c:url value='/html/orderForm'/> ">
+      <form>
+      <!--  <form method="post" action="<c:url value='/html/orderForm'/> "> -->
         <thead>
           <tr>
             <td><input type="checkbox" id="allCheck" name="allCheck"> </td>
@@ -121,7 +123,7 @@
           <tr class = "cart_list_item">
           	<!-- 사용자 속성 삽입 완료-->
             <td><input type="checkbox" class="chkDelete" data-cartNo="${prd.cartNo }"> </td>
-            <td><img src="<c:url value='/img/${prd.prdImg }' />" alt ="상품 사진"></td>
+            <td><img src="<c:url value='/img/product/${prd.prdImg }' />" alt ="상품 사진"></td>
             <!-- 해당 브랜드에 대한 페이지 있으면 주소 삽입 없으면 현행 유지 -->
             <td><a href="#"> ${prd.prdCompany }</a>
               <p> ${prd.prdName } </p>
@@ -129,9 +131,9 @@
             </td>
             <td class="etc" >
               <div class="amount">
-                <button style="cursor:pointer" onClick="qtyChange(-1)">━</button>
-                <input type="text" id="cartQty" name="cartQty" size="1" value="1" maxlength="2" readonly>
-                <button style="cursor:pointer" onClick="qtyChange(1)">╊</button>
+                <button style="cursor:pointer" onClick="qtyChange(-1)">▼</button>
+                <input type="text" id="cartQty" name="cartQty" size="1" value="${prd.cartQty }" maxlength="2" readonly>
+                <button style="cursor:pointer" onClick="qtyChange(1)">▲</button>
               </div>
             </td>
             <td class="etc"> 

@@ -31,11 +31,12 @@ img {
 .side_menu {
   float: left;
 }
+
 #bodypage {
   float: left;
   width: 70%;
-
 }
+
 #nav2 {
 	float: left;
 	width : 280px;
@@ -159,6 +160,10 @@ img {
   text-align : center;
   display : inline-block;
 }
+
+#cartQty {
+  text-align : center;
+} 
 
 .cart_list .change {
   background-color: white;
