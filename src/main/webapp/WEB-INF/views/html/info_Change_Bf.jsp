@@ -41,7 +41,7 @@
     <input type="hidden" class="E_id" id="E_id"  value="${MbId }"/>
     <br><br>
     <input type="submit" class="Check_pwd" id="Check_pwd" style="cursor:pointer" value="확인" />
-    </form>
+   </form>
   </section>
   
   <!-- Footer : 라이선스 : 아직 완성 아니라 화면이 겹쳐짐 -->

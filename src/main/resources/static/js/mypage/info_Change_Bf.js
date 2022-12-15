@@ -4,7 +4,7 @@
  
 $(document).ready(function(){  
   //Check_pwd이 클릭되었을 경우
-  $('#Check_pwd').on('submit',function(){
+  $('#pwd_chk').on('submit',function(){
 	//폼이 submit 되지 않도록 기본 기능 중단
     event.preventDefault();	//submit이 아니라 onclick이라 해당 문장 주석 처리
     // 서버에 전송하고 결과 받아서 처리

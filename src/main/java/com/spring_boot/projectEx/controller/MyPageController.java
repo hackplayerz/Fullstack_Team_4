@@ -19,6 +19,8 @@ import com.spring_boot.projectEx.service.MemberService;
 public class MyPageController {
 	@Autowired
 	private CartService service;	// 서비스 아직 안만들어짐 
+	
+	@Autowired
 	private MemberService memservice;	// 서비스 아직 안만들어짐 
 	
 	//마이페이지 열기
@@ -39,17 +41,14 @@ public class MyPageController {
 	@RequestMapping("/member/info_Chainge_Login")
 	public String info_Chainge_Login(@RequestParam HashMap<String, Object> param,
 												HttpSession session) {
-		// 로그인 체크 결과 
+		// 로그인 체크 결과 기능이 같아서 가져옴
 		String result = memservice.loginCheck(param); // result : "success" 또는 "fail"
-		System.out.println(param.values());
 		// 아이디와 비밀번호 일치하면 (로그인 성공하면)
 		// 서비스에서 "success" 반환받았으면
 		if(result.equals("success")) {
 			//로그인 성공하면 세션 변수 지정
 			session.setAttribute("sid", param.get("id"));			
 		}
-		System.out.println(param.get("id"));
-		System.out.println(param.get("pw"));
 		
 		return result;
 	}
