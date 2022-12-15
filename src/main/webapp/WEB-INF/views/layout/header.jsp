@@ -13,9 +13,10 @@
     $('.submenuItem li').on('click', function(){
         
         var sub = $(this).attr('value');
-        location.href = '/html/product/${"'+sub+'"}';
         
-        
+        var subLi = $(this).text();
+        location.href = '/html/liProduct/${"'+sub+'"}/${"'+subLi+'"}';
+
     });
 })
 </script>
