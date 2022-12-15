@@ -17,5 +17,8 @@ public class ProductInfoService implements IProductInfoService {
 	public ProductVO detailInfoProduct(String prdNo) {
 		return dao.detailInfoProduct(prdNo);
 	}
-
+	
+	public void visitIncrese(String prdNo) {
+		dao.visitIncrese(prdNo);
+	}
 }

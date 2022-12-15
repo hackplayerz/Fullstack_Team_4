@@ -21,4 +21,11 @@
 		SELECT * FROM product WHERE prdNo = #{prdNo}
 	</select>
 	
+
+	<update id="visitIncrese" parameterType="com.spring_boot.projectEx.model.ProductVO">
+	    UPDATE product
+	    SET visit = visit + 1
+	    WHERE prdNo=#{prdNo}
+	</update>
+
 </mapper>

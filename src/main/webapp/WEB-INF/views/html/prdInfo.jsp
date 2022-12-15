@@ -18,7 +18,7 @@
 		<div id="bigFrame">
 			<div id="highFrame">
 				<div id="imageFrame">
-					<img id="prdImage" src="<c:url value='/img/prdInfo/${prd.prdImg }' />" >
+					<img id="prdImage" src="<c:url value='/img/product/${prd.prdImg }' />" >
 				</div>
 				<div id="prdInfoFrame">
 					<p id="prdName">${prd.prdName }</p>
@@ -57,7 +57,7 @@
 			</div>			
 				<div id="prdInfoImageFrame">
 					<!-- 상품 상세 사진 -->
-					<img src="<c:url value='/img/prdInfo/tempImage01.jpg' />">
+					<img src="<c:url value='/img/prdInfo/${prd.prdImg }' />">
 					<!-- 상품 상세 사진 끝 -->
 				</div>	
 			<div id="reviewTableFrame">

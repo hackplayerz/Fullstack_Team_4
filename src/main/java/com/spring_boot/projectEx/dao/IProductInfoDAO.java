@@ -4,4 +4,6 @@ import com.spring_boot.projectEx.model.ProductVO;
 
 public interface IProductInfoDAO {
 	public ProductVO detailInfoProduct(String prdNo);
+	
+	public void visitIncrese(String prdNo);
 }
