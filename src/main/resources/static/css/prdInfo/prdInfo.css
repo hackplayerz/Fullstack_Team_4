@@ -19,12 +19,12 @@
 	margin: auto;
 }
 #highFrame {
-	margin-left: 300px;
+	margin-left: 100px;
 	position:absolute;
 	background-color:#FAFAFA;
 	padding:10px 20px 10px 10px;
-	width:850px;
-	height:461px;
+	width:1380px;
+	height:525px;
 }
 
 #imageFrame {
@@ -34,53 +34,57 @@
 
 #prdImage {
 	border:1px solid #DCDCDC;
-	width:500px;
-	height:435px;
+	width:520px;
+	height:500px;
 }
 
 #prdName {
 	margin-left:50px;
-	margin-bottom:19px;
-	font-size:22px;
+	margin-bottom:11px;
+	font-size:29px;
 	font-weight:bold;
 	border:none;
-	background-color:#FAFAFA
+	background-color:#FAFAFA;
 }
 
 #prdPrice {
 	margin-bottom:19px;
-	font-size:18px;
+	font-size:25px;
 	font-weight:bold;
-	width:90px;
+
 	border:none;
 	background-color:#FAFAFA
 }
 
 #prdInfoFrame {
 	float:left;
-	padding-top:18px;
+	width:500px;
+	margin-left:100px;
 }
 
 #prdInfo {
-	padding-top:27px;
+	padding-top:12px;
 	margin-left:50px;
 	border-top:1px solid #DCDCDC;
 }
 
 #prdInfo dl {
-	height:32px;
+	height:40px;
+	font-size:23px;
 }
 
 #prdInfo dl dt {
 	float:left;
-	width:80px;
+	width:100px;
 	font-family:Corbel;
+	margin-left:5px;
 }
 
 #prdInfo dl dd {
 	float:left;
-	width:120px;
-	font-family:Corbel;
+	margin-left:178px;
+	text-align:right;
+	width:145px;
 }
 
 #CartQty {
@@ -102,6 +106,7 @@
 	background-color:#E0E0E0;
 	border:none;
 	height:85px;
+	width:160px;
 	border-top-left-radius:5px;
 	border-bottom-left-radius:5px;
 	border-top-right-radius:5px;
@@ -114,7 +119,7 @@
 	background-color:#FFEC99;
 	border:none;
 	height:85px;
-	width:70px;
+	width:100px;
 	border-top-left-radius:5px;
 	border-bottom-left-radius:5px;
 	border-top-right-radius:5px;
@@ -128,7 +133,7 @@
 	border:none;
 	height:85px;
 	color:white;
-	width:71px;
+	width:160px;
 	border-top-left-radius:5px;
 	border-bottom-left-radius:5px;
 	border-top-right-radius:5px;
