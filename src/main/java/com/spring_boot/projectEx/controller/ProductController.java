@@ -44,6 +44,31 @@ public class ProductController {
         model.addAttribute("subCategory", subCategory);
         return "html/product";
     }
+
+    //index에서 product로 SubCategory를 통해 넘어갈때
+    @RequestMapping("/html/liProduct/{sub}/{subLi}")
+    public String OnProductFormView(@PathVariable String sub,
+                                    @PathVariable String subLi,
+                                    Model model)
+    {   
+        model.addAttribute("subLi", subLi);
+        ArrayList<ProductVO> prdList = service.getSubCategoryProduct(subLi);
+        model.addAttribute("prdList", prdList);
+
+        ArrayList<CategoryVO> category = service.getSubCategory(sub); // 자르지않은 데이터, 인덱스는 0뿐
+        String[] split = category.get(0).getSubName().split(","); // ,로 자른 서브 카테고리 문자열
+        ArrayList<CategoryVO> subCategory = new ArrayList<CategoryVO>();
+               
+        for(var s : split)
+        {        	
+            CategoryVO vo = category.get(0).Clone();
+            vo.setSubName(s);
+            subCategory.add(vo);
+        }
+        model.addAttribute("subCategory", subCategory);
+
+        return "html/product";
+    }
 	
 	// TODO : ajax로 변경
 	@ResponseBody // 서브카테고리 그 화면에 출력

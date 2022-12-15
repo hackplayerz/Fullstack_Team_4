@@ -22,6 +22,14 @@
     <c:import url="/WEB-INF/views/layout/toplink.jsp"/>
 
     <title>상품</title>
+
+    <script type="text/javascript">
+            if("${subLi}" != ""){
+                console.log("${subLi}");
+                console.log($('[name="${subLi}"]').html);
+                $('.subName')[0].css("color","red");
+            }
+    </script>
 </head>
 <body>
     <!-- Header 카테고리 메뉴 -->
@@ -45,7 +53,7 @@
                                 <li>|</li>
                                 <!-- 서브카테고리 선택 -->
                                 <li id="menu" class="menu">
-                                	<a id ="subName" class="subName ">${category.subName}</a>
+                                	<a id ="subName" class="subName " name="${category.subName}">${category.subName}</a>
                                 </li>
                             </c:forEach>
 
@@ -69,7 +77,7 @@
                     <!-- 상품 컨텐츠 -->
                     <c:forEach var="prd" items="${prdList}">
                         <div class="productSource">
-                            <a href="<c:url value = '/html/prdInfo/${prd.prdNo}' />"><img src="<c:url value='/img/product/${prd.prdImg}' />" class="image"></a>                       
+                            <a href="<c:url value = '/html/prdInfo/${prd.prdNo}' />"><img src="<c:url value='/img/product/${prd.prdImg}.png' />" class="image"></a>                       
                             
                             <p class="name">
                                 ${prd.prdName}
