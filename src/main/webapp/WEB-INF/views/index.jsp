@@ -62,7 +62,7 @@
                                 <img src="<c:url value='/img/product/${prdDate.prdImg}' />">
                                     ${prdDate.prdName}
                                 <p>
-                                    ${prdDate.prdPrice}
+                                    ${prdDate.prdPrice}원
                                 </p>
                             </a>
                         </div>
@@ -76,7 +76,7 @@
                                 <img src="<c:url value='/img/product/${prdVisit.prdImg}' />">
                                     ${prdVisit.prdName}
                                 <p>
-                                    ${prdVisit.prdPrice}
+                                    ${prdVisit.prdPrice}원
                                 </p>
                             </a>
                         </div>
@@ -90,7 +90,7 @@
                                 <img src="<c:url value='/img/product/${prdOrder.prdImg}' />">
                                     ${prdOrder.prdName}
                                 <p>
-                                    ${prdOrder.prdPrice}
+                                    ${prdOrder.prdPrice}원
                                 </p>
                             </a>
                         </div>
