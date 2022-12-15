@@ -42,8 +42,8 @@
 	      <table border="1" width="800">
 	        <tr>
 	          <th>주문자</th>
-	          <td width="200">${memVo.memName }
-	            <input type="hidden" name="memId" value="${memVo.memId }">
+	          <td width="200">${memVo.mbName }
+	            <input type="hidden" name="mbId" value="${memVo.mbId }">
 	          </td>
 	          <th>연락처</th>
 	          <td>${hp1 } - ${hp2 } - ${hp3 }</td>
@@ -54,7 +54,7 @@
 	      <table border="1" width="800">
 	        <tr>
 	          <th>수령인</th>
-	          <td width="200"><input type="text" name="ordReceiver" value="${memVo.memName }"></td>
+	          <td width="200"><input type="text" name="ordReceiver" value="${memVo.mbName }"></td>
 	          <th>연락처</th>
 	          <td>
 	            <input type="text" name="hp1" value="${hp1}" size="3"> - 
@@ -66,12 +66,12 @@
 	          <th>배송지 주소</th>
 	          <td colspan="3">
 	            <input type="text" id="ordRcvZipcode" name="ordRcvZipcode" size="5" 
-	            	   value="${memVo.memZipcode }" readonly>
+	            	   value="${memVo.mbZipcode }" readonly>
 		        <input type="button" id="searchZipBtn" name="searchZipBtn" value="우편번호 찾기"><br>
 		        <input type="text" id="ordRcvAddress1" name="ordRcvAddress1" placeholder="주소 입력" size="70" 
-		               value="${memVo.memAddress1 }" readonly> <br>
+		               value="${memVo.mbAddress1 }" readonly> <br>
 		        <input type="text" id="ordRcvAddress2" name="ordRcvAddress2" placeholder="상세 주소 입력" size="70" 
-		        	   value="${memVo.memAddress2 }">
+		        	   value="${memVo.mbAddress2 }">
 	          </td>
 	        </tr>
 	        <tr>

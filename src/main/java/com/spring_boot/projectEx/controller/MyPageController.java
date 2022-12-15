@@ -85,7 +85,6 @@ public class MyPageController {
 		return result;
 	}
 	
-	//오더폼 . .
 	@RequestMapping("/html/orderForm")	
 	public String orderForm(@RequestParam String[] memId,
 			@RequestParam int[] cartNo,
