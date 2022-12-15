@@ -23,7 +23,7 @@
 				<div id="prdInfoFrame">
 					<p id="prdName">${prd.prdName }</p>
 					<br>
-					<form id="prdInfo" method="post" action="<c:url value='/html/Insert_myPage' />">
+					<form id="prdInfo" method="post" action="<c:url value='/html/Insert_myPage_test' />">
 						<!-- 상품 판매 정보 -->
 						<dl>
 							<dt>판매가</dt>
@@ -39,8 +39,11 @@
 						</dl>
 						<dl>
 							<dt>주문수량</dt>
-							<dd><input type="number" min="1" value="1" id="prdAmount"></dd>
+							<dd><input type="number" min="1" value="1" id="CartQty" name="CartQty"></dd>
 						</dl>
+						<div>
+							<input type="hidden" name="prdNo" value="${prd.prdNo }">
+						</div>
 						<!-- 상품 판매 정보 끝 -->
 						<div id="buttonFrame">
 							<!-- 장바구니 샘플 구매 버튼 -->
