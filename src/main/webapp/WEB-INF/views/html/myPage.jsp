@@ -25,6 +25,8 @@
 			
 	function qtyChange(num){
 		event.preventDefault();
+		e.stopPropagation();
+		
 		qty = qty + num;
 		if(qty < 1)
 			qty = 1;
@@ -104,9 +106,8 @@
       </ul>
     </div>
     <!-- 장바구니 테이블 -->
+    <form method="post" action="<c:url value='/html/orderForm'/> ">
     <table class="cart_list">
-      <form>
-      <!--  <form method="post" action="<c:url value='/html/orderForm'/> "> -->
         <thead>
           <tr>
             <td><input type="checkbox" id="allCheck" name="allCheck"> </td>
@@ -131,7 +132,7 @@
             </td>
             <td class="etc" >
               <div class="amount">
-                <button style="cursor:pointer" onClick="qtyChange(-1)">▼</button>
+                <button  style="cursor:pointer" onClick="qtyChange(-1)">▼</button>
                 <input type="text" id="cartQty" name="cartQty" size="1" value="${prd.cartQty }" maxlength="2" readonly>
                 <button style="cursor:pointer" onClick="qtyChange(1)">▲</button>
               </div>
@@ -159,8 +160,9 @@
             </td>
           </tr>
         </tfoot>
-      </form>
+     
     </table>
+    </form>
   </section>
   <br>
   <!-- 결제 예정금액 구역 구현하기 -->
