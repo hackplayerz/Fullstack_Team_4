@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -83,7 +84,7 @@
                                 ${prd.prdName}
                             </p>
                             <p class="price">
-                                ${prd.prdPrice}
+                                <fmt:formatNumber value = "${prd.prdPrice }" pattern="#,###" />원
                             </p>
                         </div>
                     </c:forEach>
