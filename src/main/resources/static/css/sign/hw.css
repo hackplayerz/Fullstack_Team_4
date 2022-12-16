@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 
-#header{
+#topHeader{
 	width: 1600px;
-	/* margin: auto; */
+	margin: auto;
 }
 
 
@@ -86,11 +86,12 @@
     margin-left: 100px;
     padding-bottom: 30px;
 }
-
+.memberBigBox{
+    background-color: #fffff2;
+}
 
 .member{
 	outline: none;
-    background-color: #ece6cc;
     width: 1600px;
    /*  margin-top: 50px; */
    /*  margin-left: 580px; */

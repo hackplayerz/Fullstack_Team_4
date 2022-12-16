@@ -14,6 +14,7 @@
 </head>
 <body>
 	<c:import url="/WEB-INF/views/layout/header.jsp" />
+	<div class="loginSection">
 		<h2>로그인</h2>
 		<div class="container">
 			<form id="Login" name="Login">
@@ -28,6 +29,7 @@
               <li><a href="#">아이디/비밀번호찾기</a></li>
               <li><a href="<c:url value='/member/hwForm' />">회원가입</a></li>
         </ul>
+	</div>
         <c:import url="/WEB-INF/views/layout/footer.jsp" />
 </body>
 </html>
