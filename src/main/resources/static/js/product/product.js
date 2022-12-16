@@ -39,12 +39,7 @@ function test1() {
                 success:function(result){
 
                     
-                    //mainBody 크기 조절
-                    var height = 700;
-                    if(result.length > 5){
-                        height = 700 + Math.floor((3 - 1)/5) * 420; //갯수에 따라 크기 변경
-                    }
-                    $('#mainBody').css("height",height);
+                    
                     //총 갯수 생성
                     $('#elementCount').empty();
                     $('#elementCount').append( '총 '+result.length+'개');

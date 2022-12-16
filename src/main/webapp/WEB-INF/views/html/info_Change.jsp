@@ -16,10 +16,12 @@
   <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
   <script src="<c:url value='/js/mypage/info_Change.js' />"></script>
   
-  <!-- Header 메인창 
-  <c:import url="/WEB-INF/views/layout/toplink.jsp"/> -->
+  <!-- Header 메인창  -->
+  <c:import url="/WEB-INF/views/layout/toplink.jsp"/>
 </head>
 <body>
+  
+  <div class="infoChBigBody">
   <!-- Header 카테고리 메뉴 -->
   <c:import url="/WEB-INF/views/layout/header.jsp" />
 
@@ -28,7 +30,7 @@
     <nav>
       <h4>&nbsp;마이 페이지</h4>
       <ul>
-        <li><a href="<c:url value='/html/Insert_myPage' />">마이페이지</a>
+        <li><a href="<c:url value='/product/cartList' />">마이페이지</a>
         <li><a href="<c:url value='/html/info_Change_Bf' />">개인정보변경</a>
       </ul>
     </nav>
@@ -107,7 +109,7 @@
     <button class="change" id="info_Cng" style="cursor:pointer">변경</button> 
     <button class="cancel" id="info_Cancel" style="cursor:pointer">취소</button>
   </section>
-  
+</div>
   <!-- Footer : 라이선스 -->
   <c:import url="/WEB-INF/views/layout/footer.jsp" />
 </body>

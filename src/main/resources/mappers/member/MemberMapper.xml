@@ -5,12 +5,6 @@
   
   <mapper namespace="com.spring_boot.projectEx.dao.IMemberDAO">
   	
-  	<!-- 로그인 체크 : id/pwd 여러 개를 파라미터로 받아올 때는 hashmap 사용해야 함 -->
-  	<!-- 암호화 이전에 사용  -->
- <!--  	<select id="loginCheck" parameterType="hashmap" resultType="string">
-  		SELECT memId FROM member WHERE memId=#{id} AND memPw=#{pwd}
-  	</select> -->
-  	
   	<!--  암호화한 후 로그인 확인-->
   	<select id="loginCheck" parameterType="string" resultType="string">
   		SELECT mbPw FROM member WHERE mbId=#{id}

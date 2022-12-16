@@ -1,19 +1,21 @@
 @charset "UTF-8";
 
-/* 사이드 메뉴 부분 */
 body{
+  background-color: #fffff2;
+}
+/* 사이드 메뉴 부분 */
+.infoChBigBody{
   width: 1600px;
+  height: 1000px;
+  margin: auto;
   
+}
+.infoChBigBody a{
+	color: black;
 }
 .side_menu {
   display : inline-block;
-}
-nav {
-	width : 280px;
-	background-color : white;
-	border-right : 1px solid #ddd;
-	position:fixed;
-	height:100%;
+  margin-top: 50px;
 }
 
 .side_menu h4{

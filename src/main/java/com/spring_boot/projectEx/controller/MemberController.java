@@ -25,26 +25,6 @@ public class MemberController {
 		return "html/login";
 	}
 	
-	// 비밀번호 암호화하기 이전 로그인 처리 방식
-	// 로그인 처리 : id와 pwd 전달 받아서 로그인 인증 완료 후 세션 설정
-//	@ResponseBody
-//	@RequestMapping("/member/login")
-//	public String loginCheck(@RequestParam HashMap<String, Object> param,
-//												HttpSession session) {
-//		// 로그인 체크 결과 
-//		String memId = service.loginCheck(param);
-//		String result = "fail";
-//		
-//		// 아이디와 비밀번호 일치하면 (로그인 성공하면)
-//		if(memId != null) {
-//			//로그인 성공하면 세션 변수 지정
-//			session.setAttribute("sid", memId);
-//			result = "success";
-//		}
-//		
-//		return result;
-//	}
-	
 	// 비밀번호 암호화한 경우의 로그인 처리 방식
 	@ResponseBody
 	@RequestMapping("/member/login")

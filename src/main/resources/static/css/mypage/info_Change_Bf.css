@@ -2,21 +2,22 @@
 
 /* 사이드 메뉴 부분 */
 body{
+	background-color: #fffff2;
+  }
+.infoBigBody{
 	width: 1600px;
+  height: 1200px;
+  margin: auto;
 }
 .side_menu {
-  display : inline-block;
+	float: left;
+	margin-top: 50px;
+	
 }
-
+.infoBigBody a{
+	color: black;
+}
 /* nav */
-.side {
-	width : 280px;
-	background-color : white;
-	border-right : 1px solid #ddd;
-	position:fixed;
-	height:100%;
-}
-
 .side_menu h4{
 	text-align : center;
 }
@@ -47,6 +48,7 @@ body{
 	margin-left : 280px;
 	padding-left : 60px;
 	text-align : center;
+	margin-top: 150px;
 }
 
 .Enter h4 {
