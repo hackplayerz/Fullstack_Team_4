@@ -5,6 +5,10 @@ body{
     margin: auto;
 }
 
+a{
+	text-decoration : none;
+}
+
 .pageName{
 	font-size: 40px;
     margin-top: 50px;
@@ -70,7 +74,6 @@ body{
     margin-left: 670px;
     margin-right: 690px;
     font-size: small;
-    font-weight: 100;
     margin-bottom: 20px;   
     justify-content: center;
 }
