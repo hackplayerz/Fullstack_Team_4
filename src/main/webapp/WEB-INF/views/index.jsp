@@ -59,7 +59,7 @@
                     <c:forEach var="prdDate" items="${prdListDate}">
                         <div>
                             <a href="<c:url value = '/html/prdInfo/${prdDate.prdNo}' />">
-                                <img src="<c:url value='/img/product/${prdDate.prdImg}' />">
+                                <img src="<c:url value='/img/product/${prdDate.prdImg}' />"><br>
                                     ${prdDate.prdName}
                                 <p>
                                     ${prdDate.prdPrice}원
@@ -73,7 +73,7 @@
                     <c:forEach var="prdVisit" items="${prdListVisit}">
                         <div>
                             <a href="<c:url value = '/html/prdInfo/${prdVisit.prdNo}' />">
-                                <img src="<c:url value='/img/product/${prdVisit.prdImg}' />">
+                                <img src="<c:url value='/img/product/${prdVisit.prdImg}' />"><br>
                                     ${prdVisit.prdName}
                                 <p>
                                     ${prdVisit.prdPrice}원
@@ -87,7 +87,7 @@
                     <c:forEach var="prdOrder" items="${prdListOrder}">
                         <div>
                             <a href="<c:url value = '/html/prdInfo/${prdOrder.prdNo}' />">
-                                <img src="<c:url value='/img/product/${prdOrder.prdImg}' />">
+                                <img src="<c:url value='/img/product/${prdOrder.prdImg}' />"><br>
                                     ${prdOrder.prdName}
                                 <p>
                                     ${prdOrder.prdPrice}원

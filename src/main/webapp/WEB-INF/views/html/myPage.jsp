@@ -41,7 +41,8 @@
 		var amount = document.getElementById('amount');
 		
 		//3대신  / 3은 테스트로 넣은 것 .
-		var total = qty * ${prd.prdPrice};
+		var total = qty * $("#prdPrice").val();
+
 		
 				
 		//결과 값 반영
@@ -81,9 +82,7 @@
         </thead>
         <tbody>
           <tr>
-          	<c:forEach var="prd" items="${cartList }"> 
-              <td class="o_num"> ${prd.orderCount }</td>
-            </c:forEach>
+          	<td class="o_num">0</td>
             <td>></td>
             <td class="o_num">0</td>
             <td>></td>
@@ -107,7 +106,7 @@
       </ul>
     </div>
     <!-- 장바구니 테이블 -->
-    <form method="post" action="<c:url value='/html/orderForm'/> ">
+    <form>
     <table class="cart_list">
         <thead>
           <tr>
@@ -129,7 +128,9 @@
             <!-- 해당 브랜드에 대한 페이지 있으면 주소 삽입 없으면 현행 유지 -->
             <td><a href="#"> ${prd.prdCompany }</a>
               <p> ${prd.prdName } </p>
-              <span class="price"><fmt:formatNumber value="${prd.prdPrice }" pattern="#,###" /> 원 </span>
+              <span class="price"><input type="hidden" id="prdPrice" value ="${prd.prdPrice }">
+                <fmt:formatNumber value="${prd.prdPrice }" pattern="#,###" /> 원 </span>
+  
             </td>
             <td class="etc" >
               <div class="amount">
@@ -149,7 +150,12 @@
               무료
             </td>
             <td class="etc">
-              <button class="cart_list_option" id="deleteCartBtn" style="cursor:pointer">삭제하기</button>
+              <!--js의 prev이 향하는 곳 -->
+              <input type="hidden"  value="${prd.prdName }">
+              <button class="cart_list_option" style="cursor:pointer">삭제하기</button>
+              <!-- js의 next가 향하는 곳 -->
+              <input type="hidden"  value="${prd.cartNo }">
+
             </td>
           </tr>
          </c:forEach>
@@ -157,7 +163,7 @@
         <tfoot>
           <tr>
             <td colspan="7">
-              <button class="cart_list_option" id="deleteCartBtn" style="cursor:pointer">선택 삭제</button>
+              <button class="cart_list_option2" id="deleteCartBtn" style="cursor:pointer">선택 삭제</button>
             </td>
           </tr>
         </tfoot>
