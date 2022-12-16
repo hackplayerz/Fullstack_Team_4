@@ -47,12 +47,12 @@ public class ProductInfoController {
 		return "redirect:/product/cartList";
 	}
 	
+	// 장바구니 출력
 	@RequestMapping("/product/cartList")
 	public String cartList(Model model, HttpSession session) {
 		String mbId = (String)session.getAttribute("sid");
 		ArrayList<CartVO> cartList = cartService.cartList(mbId);
 		model.addAttribute("cartList", cartList);
-		System.out.println(cartList.get(0).getPrdName());
 		
 		return "/html/myPage";
 	}

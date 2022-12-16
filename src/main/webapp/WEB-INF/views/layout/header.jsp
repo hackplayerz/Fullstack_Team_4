@@ -37,7 +37,7 @@
 						<c:if test="${not empty sessionScope.sid }">
 							<a id="headerUserId">${sessionScope.sid}님 환영합니다.</a>
                             <a href="<c:url value='/member/logout'/>" id="headerMenuA" class="logOut">로그아웃</a>
-                            <a href="<c:url value='/html/Insert_myPage'/>" id="headerMenuA" class="myPage">마이페이지</a>
+                            <a href="<c:url value='/product/cartList'/>" id="headerMenuA" class="myPage">마이페이지</a>
 						</c:if>	
         </div>
     </div>
