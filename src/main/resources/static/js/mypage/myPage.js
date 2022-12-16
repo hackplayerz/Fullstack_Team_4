@@ -61,7 +61,7 @@
  					},
  					error:function(){
  						alert("실패");
- 					},
+ 					}
  				}); // ajax 종료
 			
 			}
@@ -69,7 +69,32 @@
 			alert("선택된 상품이 없습니다");
 		}
 	});
+	$.each($(".cart_list_option"), function(){
+  		$(this).on("click", function(){
+  			var answer = confirm($(this).prev().val()+ "을 삭제하시겠습니까?");
+  			if(answer){
+				var checkArr = new Array();
+				checkArr.push($(this).next().val());
+				// 서버로 전송
+				$.ajax({
+	 				type:"post",
+	 				url:"/product/deleteCart",
+	 				data: {"chbox":checkArr},
+	 				success:function(result){
+	 					if(result == 1){
+	 						location.href="/product/cartList";
+	 					}
+	 				},
+	 				error:function(){
+	 					alert("실패");
+	 				}
+				}); // ajax 종료
+			}
+		});	//on종료
+	});	// each 종료
+
 	
 	
 	
  }); // js 끝
+ 

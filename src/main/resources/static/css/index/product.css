@@ -10,7 +10,7 @@
 }
 #productBox a{
     text-decoration:none; /* <a> 태그 밑줄 없애기 */
-	font-size:25px;
+	font-size:17px;
 	font-weight:bold;
 	margin-top:0;
 	padding:0;
@@ -36,6 +36,7 @@
 	background-color: blanchedalmond;
 	border: 1px solid black;
 	text-align: center;
+	max-height: 400px;
 	
 }
 .Mainproduct div:first-child {
@@ -44,7 +45,12 @@
 }
 .Mainproduct div a{
 	margin: auto;
-	font-size: 20px;
+	font-size: 10px;
+	max-width: 300px;
+	white-space : nowrap;
+	overflow : hidden;
+	text-overflow : ellipsis;
+	
 }
 .Mainproduct div a img{
 	width: 300px;

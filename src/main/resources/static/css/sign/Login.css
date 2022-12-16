@@ -15,11 +15,17 @@ a{
     display: flex;
     justify-content: center;
 }
-h2{
+.loginSection h2{
 	font-size: 20px;
 	margin-top: 80px;
 	justify-content: center;
 	
+}
+.loginSection a{
+    color: #333;
+    text-decoration:none; /* <a> 태그 밑줄 없애기 */
+	font-size:14px;
+	font-weight:bold;
 }
 
 .container, h2{
@@ -63,23 +69,28 @@ h2{
 }
 
 #help {
+    width: 300px;
 	height: 100px;
     margin-left: 670px;
+    margin-right: 690px;
     font-size: small;
     margin-bottom: 20px;   
     justify-content: center;
 }
 
-ul{
+.loginSection ul{
+    
     height: 70px;
 }
 
-li{
+.loginSection li{
+    float: left;
 	display: inline-block;
-    height: 12px; line-height: 12px;
+    height: 12px;
+    line-height: 12px;
 }
 
-li:last-child{
+.loginSection li:last-child{
     border-left: 1px solid #333;
     padding-left: 10px;
     margin-left: 4px;

@@ -27,11 +27,11 @@ public class MyPageController {
 	
 	//===================================== 사이드바 =======================================
 	
-	//마이페이지 열기
-	@RequestMapping("/html/Insert_myPage")	//
-	public String insertMypage() {
-		return "/html/myPage";
-	}
+//	//마이페이지 열기
+//	@RequestMapping("/html/Insert_myPage")	//
+//	public String insertMypage() {
+//		return "/html/myPage";
+//	}
 	
 	//인포체인지 Bf 페이지 열기
 	@RequestMapping("/html/info_Change_Bf")	//
@@ -73,7 +73,7 @@ public class MyPageController {
 	@RequestMapping("/product/deleteCart")
 	public int deleteCart(@RequestParam("chbox[]") ArrayList<String> chkArr) {
 		int result = 0;
-		
+		System.out.println("product/deleteCart 호출");
 		//배열에서 cartNo를 추출해서 해당하는 상품 삭제하기
 		if(chkArr != null) {
 			for(String carNo : chkArr) {

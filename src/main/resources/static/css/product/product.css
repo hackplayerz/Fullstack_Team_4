@@ -1,15 +1,20 @@
 @charset "UTF-8";
 
 body{
-	width: 1600px;
-	margin: auto;
+    background-color: #fffff2;
 }
 #subCategoryMenu .menuAll a{
 	color: red;
 }
 #mainBody
 {
-	height: 1120px;
+    border-left: 1px solid rgb(138, 138, 138);
+	border-right: 1px solid rgb(138, 138, 138);
+    border-bottom: 1px solid rgb(138, 138, 138);
+    width: 1600px;
+	height: 1300px;
+    margin: auto;
+    margin-bottom: 50px;
 }
 
 #content 
