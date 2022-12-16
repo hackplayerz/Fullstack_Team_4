@@ -20,12 +20,6 @@ public class MemberService implements IMemberService {
 	@Autowired
 	private PasswordEncoder passwordEncoder;
 	
-	// 비밀번호 암호화하기 이전의 로그인 처리 방식
-//	@Override
-//	public String loginCheck(HashMap<String, Object> map) {		
-//		return dao.loginCheck(map);
-//	}
-	
 	// 암호화된 비밀번호로 로그인 체크
 	@Override
 	public String loginCheck(HashMap<String, Object> map) {		
