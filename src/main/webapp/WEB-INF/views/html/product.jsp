@@ -16,8 +16,6 @@
     <link rel="stylesheet" type="text/css" href="<c:url value = '/css/index/menu.css' />"> 
     <script src="<c:url value = '/js/jquery-3.6.1.min.js' />"></script>    
     <script src="<c:url value = '/js/product/product.js' />"></script>    
-    <script src="<c:url value = '/js/index/menu.js' />"></script>    
-    <script src="<c:url value = '/js/index/index.js' />"></script>
 
     <!-- Header 메인창 -->
     <c:import url="/WEB-INF/views/layout/toplink.jsp"/>
@@ -33,10 +31,11 @@
     </script>
 </head>
 <body>
-    <!-- Header 카테고리 메뉴 -->
-    <c:import url="/WEB-INF/views/layout/header.jsp" />
+    
 
     <div id="mainBody">
+        <!-- Header 카테고리 메뉴 -->
+    <c:import url="/WEB-INF/views/layout/header.jsp" />
         <!-- 카테고리 이름 -->
         <section id="category">
             <div id="categoryName">
