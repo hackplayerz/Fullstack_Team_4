@@ -15,30 +15,32 @@
 
     <c:import url="/WEB-INF/views/layout/toplink.jsp"/>
     
-	<header id="header">
-    <div id="headerBox">
-        <div id="logoBox">
-            
-            <a href="<c:url value='/'/>"><img src="<c:url value='/img/logo.png' />"/><h1>비전공 애견샵</h1></a>
-        </div>
-        <div id ="headerMenuBox">
-            <!-- 로그인 하기 전에 보여줄 메뉴 항목 -->
-						<c:if test="${empty sessionScope.sid }">
-                            <a href="<c:url value='/member/loginForm'/>" class="signIn">로그인</a>
-                            <a href="<c:url value='/member/hwForm'/>" class="signUn">회원가입</a>
-						</c:if>		
-						
-						<!-- 로그인 성공 후 보여줄 메뉴 항목 -->
-						<c:if test="${not empty sessionScope.sid }">
-							<p>${sessionScope.sid}님 환영합니다!</p>
-                            <a href="<c:url value='/member/logout'/>" class="logOut">로그아웃</a>
-                            <a href="<c:url value='/html/Insert_myPage'/>" class="myPage">마이페이지</a>
-						</c:if>	
-        </div>
-    </div>
-</header>
+	
 </head>
 <body>
+    <div class="memberBigBox">
+    <header id="topHeader">
+        <div id="headerBox">
+            <div id="logoBox">
+                
+                <a href="<c:url value='/'/>"><img src="<c:url value='/img/logo.png' />"/><h1>비전공 애견샵</h1></a>
+            </div>
+            <div id ="headerMenuBox">
+                <!-- 로그인 하기 전에 보여줄 메뉴 항목 -->
+                            <c:if test="${empty sessionScope.sid }">
+                                <a href="<c:url value='/member/loginForm'/>" id="headerMenuA" class="signIn">로그인</a>
+                                <a href="<c:url value='/member/hwForm'/>" id="headerMenuA" class="signUn">회원가입</a>
+                            </c:if>		
+                            
+                            <!-- 로그인 성공 후 보여줄 메뉴 항목 -->
+                            <c:if test="${not empty sessionScope.sid }">
+                                <a id="headerUserId">${sessionScope.sid}님 환영합니다.</a>
+                                <a href="<c:url value='/member/logout'/>" id="headerMenuA" class="logOut">로그아웃</a>
+                                <a href="<c:url value='/html/Insert_myPage'/>" id="headerMenuA" class="myPage">마이페이지</a>
+                            </c:if>	
+            </div>
+        </div>
+    </header>
     
 	<div class="member">
 	<form id="hwform" name="hwform" method="post"  action="<c:url value='/member/insert'/>">
@@ -134,6 +136,7 @@
         <!-- 7. 푸터 -->
         
     </div>
+</div>
     <c:import url="/WEB-INF/views/layout/footer.jsp" />
 </body>
 </html>
