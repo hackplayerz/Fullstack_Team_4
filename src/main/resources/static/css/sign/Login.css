@@ -5,6 +5,10 @@ body{
     margin: auto;
 }
 
+a{
+	text-decoration : none;
+}
+
 .pageName{
 	font-size: 40px;
     margin-top: 50px;
@@ -60,10 +64,8 @@ h2{
 
 #help {
 	height: 100px;
-    margin-left: 700px;
-    margin-right: 690px;
+    margin-left: 670px;
     font-size: small;
-    font-weight: 100;
     margin-bottom: 20px;   
     justify-content: center;
 }
