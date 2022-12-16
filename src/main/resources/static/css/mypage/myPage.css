@@ -1,7 +1,11 @@
 @charset "UTF-8";
 
-body { 
-  width : 1600px; 
+body{
+  background-color: #fffff2;
+}
+.myPageBody{
+  width: 1600px;
+  height: 1200px;
   margin: auto;
 }
 #header{
@@ -41,7 +45,6 @@ img {
 	float: left;
 	width : 280px;
 	margin-left: 80px;
-	background-color : white;
 	border-bottom: 1px solid #ddd;
 	border-top: 1px solid #ddd;
 	height:100%;
