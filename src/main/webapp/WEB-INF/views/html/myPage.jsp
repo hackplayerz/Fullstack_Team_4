@@ -11,14 +11,14 @@
   <link rel="stylesheet" type="text/css" href="<c:url value='/css/mypage/myPage.css' />">
   <link rel="stylesheet" type="text/css" href="<c:url value='/css/index/headerMenu.css' />">
   <link rel="stylesheet" type="text/css" href="<c:url value='/css/index/menu.css' />">
-  <!-- <link rel="stylesheet" type="text/css" href="<c:url value='/css/index/footer.css'/>">  -->
+  <link rel="stylesheet" type="text/css" href="<c:url value='/css/index/footer.css'/>">
   
   <script src="<c:url value='/js/jquery-3.6.1.min.js' />"></script>
   <script src="<c:url value='/js/index/menu.js' />"></script>
   <script src="<c:url value='/js/mypage/receiveMypage.js' />"></script>
   <script src="<c:url value='/js/mypage/myPage.js' />"></script>
   <script src="<c:url value='/js/mypage/myPage.js' />"></script>
-
+  <c:import url="/WEB-INF/views/layout/toplink.jsp"/>
   <script type="text/javascript">
 	var qty=1;
 	// 주문 수량을 변경하는 함수
@@ -51,9 +51,10 @@
   </script>  
 </head>
 <body>
-  <!-- Header 카테고리 메뉴 -->
+  
+	<div class="myPageBody">
+    <!-- Header 카테고리 메뉴 -->
   <c:import url="/WEB-INF/views/layout/header.jsp" />
-	
   <!-- 사이드 메뉴 영역 -->
   <section class="side_menu">
     <nav id="nav2">
@@ -181,10 +182,11 @@
       <span class="pay_box_text5"><fmt:formatNumber value="${sum }" pattern="#,###" /> 원</span>
     </div>
     <div class="pay_btx">
-      <button onClick="location.href='<c:url value="/index.jsp" />'"class="con_shopping" style="cursor:pointer">쇼핑 계속하기</button> 
+      <button onClick="location.href='/'"class="con_shopping" style="cursor:pointer">쇼핑 계속하기</button> 
       <button type="submit" class="stop_shopping" style="cursor:pointer">바로구매</button>
     </div>
   </section>
+</div>
 </div>
   <!-- Footer : 라이선스 -->
   <c:import url="/WEB-INF/views/layout/footer.jsp" />
