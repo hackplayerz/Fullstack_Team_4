@@ -52,7 +52,6 @@ public class ProductInfoController {
 		String mbId = (String)session.getAttribute("sid");
 		ArrayList<CartVO> cartList = cartService.cartList(mbId);
 		model.addAttribute("cartList", cartList);
-		System.out.println(cartList.get(0).getPrdName());
 		
 		return "/html/myPage";
 	}
